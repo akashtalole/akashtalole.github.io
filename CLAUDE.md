@@ -4,7 +4,8 @@
 
 Personal blog/portfolio for Akash Talole, built with **Jekyll** and the **Chirpy theme** (~7.5), hosted on **GitHub Pages** at `https://akashtalole.github.io`.
 
-- **Content focus**: AI/ML topics (GenAI, Claude Code, GitHub Copilot, Agentic AI, SDLC)
+- **Author**: Akash Talole — Lead AI Engineer, 11 years of industry experience
+- **Content focus**: Practical AI engineering — Claude Code, GitHub Copilot, Microsoft Copilot Studio, Agentic AI, Coding Agents, Agent Skills, Claude CoWork, AI in SDLC
 - **Deployment**: GitHub Actions builds the site and deploys to GitHub Pages on push to `main`/`master`
 
 ---
@@ -64,6 +65,48 @@ Pushing to `main` or `master` triggers `.github/workflows/pages-deploy.yml`:
 1. Builds with `bundle exec jekyll b`
 2. Validates HTML with `htmlproofer` (external links excluded)
 3. Deploys artifact to GitHub Pages
+
+---
+
+## Content Strategy & Voice
+
+### Author Background
+Akash is a Lead AI Engineer with 11 years of experience. Posts are written from the perspective of someone actively using these tools on real enterprise projects — not reviewing them from the outside.
+
+### Tone & Style
+- **Humanized, direct, no-fluff** — write like a senior engineer explaining something to a peer, not a tutorial site
+- **Practical over theoretical** — lead with real use cases, real friction, real outcomes
+- **Honest** — acknowledge limitations and failure modes; don't oversell tools
+- **Audience**: engineers who already code for a living and are past "should I try AI?" — they're in the "how do I use this well?" phase
+- Avoid: marketing language, excessive disclaimers, generic intros, bullet-point padding
+
+### Active Content Series: 30-Day AI Engineering Plan
+
+A pinned series (`_posts/2026-04-09-30-day-ai-engineering-blog-plan.md`) maps out 30 daily posts across five arcs. **Before creating any new post, check this plan to avoid duplicates and maintain arc continuity.**
+
+| Arc | Days | Theme |
+|-----|------|-------|
+| 1 | 1–6 | Foundations & the AI-Augmented Engineer |
+| 2 | 7–13 | Claude Code for Enterprise |
+| 3 | 14–19 | GitHub Copilot Mastery |
+| 4 | 20–25 | Coding Agents & Agent Skills |
+| 5 | 26–30 | Microsoft Copilot Studio & Multi-Agent Solutions |
+
+### Approved Tags & Categories
+
+Use these consistently — do not invent new tags without a clear reason:
+
+| Topic | Category | Tags |
+|-------|----------|------|
+| Claude Code | `ai`, `claude-code` | `claude-code`, `enterprise`, `coding-agents` |
+| Claude CoWork | `ai`, `claude-code` | `claude-cowork`, `pair-programming` |
+| GitHub Copilot | `ai`, `github-copilot` | `github-copilot`, `copilot-workspace` |
+| Copilot Studio | `ai`, `copilot-studio` | `copilot-studio`, `multi-agent`, `microsoft` |
+| Agentic AI | `ai`, `agentic-ai` | `agentic-ai`, `agents` |
+| Agent Skills | `ai`, `agent-skills` | `agent-skills`, `tool-use` |
+| AI in SDLC | `ai`, `sdlc` | `sdlc`, `ai-in-sdlc` |
+| Coding Agents | `ai`, `coding-agents` | `coding-agents`, `automation` |
+| Meta / Series | `ai`, `meta` | `meta` |
 
 ---
 
