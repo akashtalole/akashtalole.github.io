@@ -89,4 +89,4 @@ See you tomorrow.
 
 ---
 
-*This is Day 1 of the [30-Day AI Engineering series](/posts/30-days-of-ai-engineering-my-content-plan-as-a-lead-ai-engineer/). The full roadmap is in the pinned post.*
+*This is Day 1 of the [30-Day AI Engineering series](/posts/30-day-ai-engineering-blog-plan/). The full roadmap is in the pinned post.*
