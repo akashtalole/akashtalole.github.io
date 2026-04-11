@@ -124,13 +124,15 @@ Example: `_posts/2026-04-09-my-new-post.md`
 ---
 layout: post
 title: "Post Title Here"
-date: 2026-04-09 10:00:00 +0530
+date: 2026-04-09
 categories: [category1, category2]
 tags: [tag1, tag2]
 description: "Brief description for SEO and post previews."
 author: akashtalole
 ---
 ```
+
+> **Note on dates**: Use `YYYY-MM-DD` only — no time or timezone suffix. Adding a time (e.g. `08:00:00 +0530`) can cause Jekyll to silently skip the post if the CI build runs before that time in UTC. `_config.yml` sets `future: true` as a safety net, but the date-only format is the safest convention.
 
 ### Optional Front Matter
 

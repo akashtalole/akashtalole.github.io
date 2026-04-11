@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "30 Days of AI Engineering — My Content Plan as a Lead AI Engineer"
-date: 2026-04-09 08:00:00 +0530
+date: 2026-04-09
 categories: [ai, meta]
 tags: [ai, claude-code, github-copilot, copilot-studio, agentic-ai, agent-skills, sdlc, coding-agents]
 description: "A structured 30-day blog roadmap covering Claude Code, GitHub Copilot, Microsoft Copilot Studio, agentic AI, coding agents, and AI in SDLC — from a Lead AI Engineer with 11 years of experience."

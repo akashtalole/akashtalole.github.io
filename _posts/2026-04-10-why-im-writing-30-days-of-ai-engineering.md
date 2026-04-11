@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I'm Writing 30 Days of AI Engineering"
-date: 2026-04-10 08:00:00 +0530
+date: 2026-04-10
 categories: [ai, meta]
 tags: [meta, ai, agentic-ai, claude-code, coding-agents]
 description: "Eleven years as an engineer, and the last 18 months changed how I work more than the decade before. Here's why I'm documenting it all — and what I actually want to figure out."
