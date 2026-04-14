@@ -130,7 +130,7 @@ pwa:
 # ---------------------------------------------------------------------------
 # Pagination & URLs
 # ---------------------------------------------------------------------------
-future: true     # Always render posts regardless of build-time vs. post date
+future: false    # Only publish posts whose date is on or before the build date
 paginate: 10
 
 # ---------------------------------------------------------------------------
