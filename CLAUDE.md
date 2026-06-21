@@ -118,40 +118,46 @@ Place files in `_posts/` using the convention: `YYYY-MM-DD-slug-with-hyphens.md`
 
 Example: `_posts/2026-04-09-my-new-post.md`
 
-### Required Front Matter
+### Standard Front Matter (use for every post)
 
 ```yaml
 ---
 title: "Post Title Here"
 date: 2026-04-09
-categories: [category1, category2]
-tags: [tag1, tag2]
-description: "Brief description for SEO and post previews."
+categories: [ai, agentic-ai]
+tags: [agentic-ai, enterprise, coding-agents]
+description: "One-sentence description for SEO, home page list, and RSS feed."
+mermaid: true
 ---
 ```
 
-> **`layout: post` is NOT required** — Chirpy sets it automatically for all files in `_posts/`. Do not include it unless you have a specific reason to override.
+> **`layout: post` is NOT required** — Chirpy sets it automatically for all `_posts/` files. Existing posts include it; new posts should omit it.
+
+> **`author:` is NOT required** — Chirpy reads `social.name` and `social.links` from `_config.yml` automatically. Do not add `author:` to post front matter.
+
+> **`mermaid: true` is standard** — Every post on this blog includes a Mermaid diagram. Always add `mermaid: true` and insert a relevant diagram after the intro paragraph.
+
+> **`description:` is required** — One concise sentence. Shown in three places: home page post list, Further Reading section, and RSS feed. Also appears under the post title on the post page.
 
 > **Note on dates**: Use `YYYY-MM-DD` only — no time or timezone suffix. Adding a time (e.g. `08:00:00 +0530`) can cause Jekyll to silently skip the post if the CI build runs before that time in UTC. `_config.yml` sets `future: true` as a safety net, but the date-only format is the safest convention.
 
-> **Categories limit**: Chirpy supports **up to two** category elements per post. Tags can be zero to infinity but must always be **lowercase**.
+> **Categories**: Chirpy supports **up to two** elements. Always use the approved categories from the table below.
 
-> **Description**: Displayed in three places — the home page post list, the Further Reading section, and the RSS feed. Also appears under the post title on the post's own page.
+> **Tags**: Always **lowercase**, hyphen-separated. Can be zero to many. Use approved tags from the table below.
 
 ### Optional Front Matter
 
 ```yaml
-image:
-  path: /assets/img/post-image.jpg   # Preview image (1200×630px recommended, 1.91:1 ratio)
-  alt: "Image description"
-  lqip: /path/to/lqip-file           # Low-quality image placeholder (base64 URI or path)
-media_subpath: /assets/img/posts/    # URL prefix for all images in this post
-pin: true                            # Pin post to top of home page
-math: true                           # Enable MathJax rendering
-mermaid: true                        # Enable Mermaid diagram rendering
-toc: false                           # Disable table of contents (enabled globally by default)
+pin: true                            # Pin post to top of home page (use sparingly — series plan posts only)
+math: true                           # Enable MathJax rendering (only when post contains math equations)
+toc: false                           # Disable table of contents (TOC is on by default globally)
 comments: false                      # Disable comments for this post
-render_with_liquid: false            # Required for posts containing Liquid syntax examples
+render_with_liquid: false            # Add when post body contains Liquid/Jekyll template syntax
+media_subpath: /assets/posts/slug/   # URL prefix for all images in this post
+image:
+  path: /assets/posts/slug/preview.jpg  # Preview image — 1200×630px, 1.91:1 ratio
+  alt: "Alt text for the image"
+  lqip: data:image/webp;base64,...   # Optional: low-quality blur placeholder (base64 URI or path)
 ```
 
 ### Notes on `last_modified_at`
