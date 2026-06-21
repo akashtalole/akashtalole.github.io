@@ -6,11 +6,28 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Most AI team metrics measure the wrong things. Lines of code generated, acceptance rates, time saved — these measure AI activity, not AI value. Here's what to actually measure and why."
 author: akashtalole
+mermaid: true
 ---
 
 When a manager asks "how is AI adoption going?", they usually want a number. And the numbers that are easiest to produce — Copilot acceptance rate, lines of AI-generated code, hours reported as saved — are the numbers that tell you the least.
 
 Here's the measurement problem: AI adoption is not a goal. It's a means to business and engineering outcomes. The metrics that matter are the ones that track whether AI is actually improving those outcomes.
+
+```mermaid
+flowchart LR
+    A[Metrics Framework] --> B[Ignore: Activity Metrics]
+    A --> C[Track: Outcome Metrics]
+    B --> B1[Copilot acceptance rate]
+    B --> B2[Lines of AI-generated code]
+    B --> B3[Self-reported time saved]
+    C --> C1[Cycle time on defined task types]
+    C --> C2[Rework rate on AI-assisted output]
+    C --> C3[Review cycle length]
+    C --> C4[Bug rate by code origin]
+    C --> C5[Documentation freshness]
+    C --> D[Leading Indicator]
+    D --> D1[Engineers trying AI for new task types each sprint]
+```
 
 ---
 
