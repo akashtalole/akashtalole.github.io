@@ -6,6 +6,7 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "Every premium Copilot request costs something. Vague prompts cost as much as precise ones but produce worse output, forcing more follow-up requests. The prompt patterns that get useful output in one round instead of three."
 author: akashtalole
+mermaid: true
 ---
 
 Every Copilot Chat message you send is a premium request. A vague message that requires three follow-ups to get useful output costs three times as much as a precise message that gets it right on the first try.
@@ -13,6 +14,26 @@ Every Copilot Chat message you send is a premium request. A vague message that r
 Prompt quality is the highest-leverage cost control available to individual engineers. It also improves output quality. There's no tradeoff — better prompts are cheaper and produce better results.
 
 Here are the patterns that consistently reduce round-trips.
+
+```mermaid
+flowchart LR
+    A[Task to Complete] --> B{Choose Prompt Pattern}
+    B --> C[Specification Prompt]
+    B --> D[Context-First Prompt]
+    B --> E[Constraint Prompt]
+    B --> F[Format Prompt]
+    B --> G[One-Shot Reference]
+    B --> H[Decomposed Task]
+    C --> I[Usable Output in 1 Round]
+    D --> I
+    E --> I
+    F --> I
+    G --> I
+    H --> J[Multiple Focused Rounds]
+    I --> K[Lower Cost + Higher Quality]
+    J --> K
+    K --> L[Shared Team Prompt Library]
+```
 
 ---
 

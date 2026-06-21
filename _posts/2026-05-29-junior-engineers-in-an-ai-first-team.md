@@ -6,11 +6,28 @@ categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "The junior engineer role is changing more than any other in the AI transition. It's not disappearing — it's shifting. What the junior engineer job looks like in an AI-first team, what the learning path looks like, and what leads need to do differently."
 author: akashtalole
+mermaid: true
 ---
 
 There's a real anxiety in the industry about junior engineers and AI. If AI can write the code that junior engineers used to write, what are junior engineers for?
 
 I want to engage with this honestly rather than offering the reassuring "AI creates more jobs" answer.
+
+```mermaid
+flowchart TD
+    A[Junior Engineer in AI-First Team] --> B[Traditional path: implement clear tasks]
+    A --> C[AI-first path: different skill focus]
+    B -.->|AI compresses this| D[Shrinking volume of pure implementation work]
+    C --> E[AI output review and verification]
+    C --> F[Specification writing: precise acceptance criteria]
+    C --> G[Test case authoring: business rule edge cases]
+    E & F & G --> H[Unique value AI cannot provide]
+    A --> I[Lead responsibilities change too]
+    I --> J[Intentional AI-free tasks for deep learning]
+    I --> K[Reviews that check comprehension, not just output]
+    I --> L[Regular: what did you learn, not just what did you ship]
+    H --> M[Junior engineer growth path: understand what AI does, verify it critically]
+```
 
 ---
 

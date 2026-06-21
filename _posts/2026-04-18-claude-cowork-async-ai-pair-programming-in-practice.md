@@ -6,6 +6,7 @@ categories: [ai, claude-code]
 tags: [claude-cowork, pair-programming, claude-code, coding-agents, enterprise]
 description: "Claude CoWork isn't just Claude Code with a different name. It's a distinct mode of working — async, parallel, collaborative. Here's how I actually use it, where it earns its place, and where it doesn't."
 author: akashtalole
+mermaid: true
 ---
 
 Most of what I've written about Claude Code so far has been about synchronous interaction: you type, it responds, you decide what to do with the output. That's the dominant mode and it's genuinely useful.
@@ -13,6 +14,21 @@ Most of what I've written about Claude Code so far has been about synchronous in
 Claude CoWork is different. It's designed around a different interaction model — one that maps better to how senior engineers actually spend their time, where work isn't a continuous stream of focused coding sessions but a fragmented mix of tasks, reviews, context switches, and parallel concerns.
 
 Let me explain what I mean by that and how I've integrated it into my workflow.
+
+```mermaid
+sequenceDiagram
+    participant E as Engineer
+    participant C as Claude CoWork
+    participant W as Other Work
+
+    E->>C: Brief the task + provide context
+    E->>W: Do other work (meeting, another task)
+    C-->>C: Analyse, draft, produce artifact
+    C-->>E: Deliver output (analysis / draft / review)
+    E->>C: Review, steer, provide corrections
+    C-->>E: Refined output
+    E->>E: Accept, edit, apply to workflow
+```
 
 ---
 

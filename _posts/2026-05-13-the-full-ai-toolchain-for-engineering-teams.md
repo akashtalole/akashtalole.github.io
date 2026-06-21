@@ -6,11 +6,29 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code, github-copilot]
 description: "Not every AI tool belongs in every team's stack. Here's how to think about toolchain decisions for an engineering team — what each layer does, how the tools interact, and how to avoid the duplication trap."
 author: akashtalole
+mermaid: true
 ---
 
 One of the first decisions an AI-first team lead makes is: what tools does the team use, and for what?
 
 This sounds like a procurement question. It's actually an architectural question. The tools you choose, and how you assign them to different parts of the workflow, determine a lot of what's possible and what's hard.
+
+```mermaid
+graph TD
+    A[AI Toolchain] --> B[Layer 1: Reasoning & Agents]
+    A --> C[Layer 2: In-Editor Flow]
+    A --> D[Layer 3: Product Deployment]
+    A --> E[Supporting Layer]
+    B --> B1[Claude Code]
+    B1 --> B2[Complex analysis, multi-file, agentic tasks]
+    C --> C1[GitHub Copilot]
+    C1 --> C2[Autocomplete, suggestions, PR descriptions]
+    D --> D1[Copilot Studio]
+    D1 --> D2[Enterprise agents, multi-agent systems]
+    E --> E1[Prompt Library]
+    E --> E2[Custom Instructions / CLAUDE.md]
+    E --> E3[Evaluation Tooling]
+```
 
 ---
 

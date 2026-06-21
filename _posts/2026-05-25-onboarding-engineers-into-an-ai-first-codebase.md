@@ -6,6 +6,7 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "Onboarding in an AI-first team is different from traditional onboarding in specific, important ways. What changes, what the risks are, and how to structure onboarding so new engineers learn the codebase rather than just navigating it with AI."
 author: akashtalole
+mermaid: true
 ---
 
 Onboarding a new engineer into a team that uses AI heavily is one of the trickiest problems in the AI-first team.
@@ -13,6 +14,24 @@ Onboarding a new engineer into a team that uses AI heavily is one of the trickie
 The tools make it look easy. A new engineer can ask Claude Code to explain any part of the codebase. Copilot helps them write code in an unfamiliar style. They can be productive quickly.
 
 The risk: they can be productive without understanding. And in a codebase with significant complexity or historical constraints, the difference between productivity and understanding is the difference between a good teammate and a future production incident.
+
+```mermaid
+flowchart TD
+    A[New engineer starts] --> B[Week 1: AI-assisted orientation]
+    B --> C[Use Claude Code to explore codebase]
+    C --> D[Verify every AI explanation by reading code directly]
+    D --> E[Weeks 2-4: Guided tasks with AI, accountability check]
+    E --> F[After each task: discuss what was learned, not just what shipped]
+    F --> G[Month 2: Reviews check comprehension, not just output]
+    G --> H{Can explain why code is correct?}
+    H -->|No| I[Senior debrief: fill understanding gap]
+    H -->|Yes| J[Month 3: Deliberate AI-free tasks]
+    J --> K[Debug without Claude Code, write without Copilot]
+    K --> L{90-day outcome check}
+    L --> L1[Can explain architecture without AI]
+    L --> L2[Can debug production issue independently]
+    L --> L3[Can identify when AI suggestion is wrong for this codebase]
+```
 
 ---
 

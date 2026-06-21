@@ -6,11 +6,29 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "AI changes the communication surface between engineering and the rest of the organisation. Technical capabilities change faster, the gap in AI literacy varies widely, and new translation problems emerge. What works."
 author: akashtalole
+mermaid: true
 ---
 
 Cross-functional communication is always a translation problem. Engineers speak in technical constraints; product managers speak in user outcomes; designers speak in experience flows. Getting these three groups to produce a coherent outcome requires constant translation.
 
 AI adds a new dimension to this translation problem. Engineering capabilities are changing faster than product and design have updated their mental models of what's possible. And the AI literacy gap between functions is significant.
+
+```mermaid
+graph TD
+    A[Engineering] --> B[Translation Layer]
+    C[Product Management] --> B
+    D[Design] --> B
+    B --> E[Shared Understanding of AI Capabilities]
+    E --> F[Regular demos of AI-assisted work]
+    E --> G[Cross-functional retrospectives on AI impact]
+    E --> H[Honest communication about AI limitations]
+    A -->|Changed capability| I[Feasibility shifts fast]
+    I --> J{PM / Design aware?}
+    J -->|Over-expectation| K[Scoped, realistic delivery plan]
+    J -->|Under-expectation| L[Missed opportunities surfaced]
+    C -->|Better specs| M[AI-executable requirements]
+    M --> N[Higher quality AI-assisted implementation]
+```
 
 ---
 

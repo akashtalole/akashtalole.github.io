@@ -6,11 +6,31 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "The new consumption-based Copilot pricing makes ROI calculations both more important and more tractable. How to actually calculate whether Copilot is delivering value at its new cost, and what to do if the maths doesn't work."
 author: akashtalole
+mermaid: true
 ---
 
 Under flat-rate pricing, ROI calculations for Copilot were a formality. The cost was fixed; any productivity gain was pure upside. Under consumption-based pricing, the cost scales with usage, and the ROI calculation becomes a real operational question.
 
 This post is the honest version of that calculation — without the analyst-report inflation that typically surrounds AI productivity claims.
+
+```mermaid
+flowchart TD
+    A[Calculate Copilot ROI] --> B[Measure Cost Side]
+    A --> C[Measure Value Side]
+    B --> B1[Monthly Bill: Base + Premium Requests]
+    B --> B2[Governance & Optimisation Overhead]
+    C --> D{Measurement Method}
+    D --> D1[Task-Type Timing Study]
+    D --> D2[Velocity Delta]
+    D --> D3[Self-Reported Savings x 50%]
+    D1 --> E[Time Saved x Frequency x Engineer Count x Hourly Rate]
+    D2 --> E
+    D3 --> E
+    E --> F[ROI = Value - Cost / Cost]
+    F --> G{ROI Positive?}
+    G -->|Yes| H[Justify Spend to Stakeholders]
+    G -->|No for specific tier| I[Stop Using That Feature for That Task]
+```
 
 ---
 

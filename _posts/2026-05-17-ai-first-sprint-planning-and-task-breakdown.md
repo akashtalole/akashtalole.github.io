@@ -6,11 +6,28 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Sprint planning in an AI-first team looks different — estimation changes, task decomposition changes, and the relationship between a ticket and its implementation changes. What actually works and what to watch out for."
 author: akashtalole
+mermaid: true
 ---
 
 Sprint planning is where the AI-first team's changed capabilities either get accounted for or get ignored.
 
 Most teams that adopt AI tools leave their planning processes unchanged. The consequence: engineers complete work faster than estimated, the sprint ends early, and the team tries to pull in more work mid-sprint. This looks like success. It's actually a planning gap.
+
+```mermaid
+flowchart TD
+    A[Story arrives for planning] --> B{Requirement clarity?}
+    B -->|Clear, well-specified| C[Compress estimate 40-60%]
+    B -->|Ambiguous / complex| D[Keep standard estimate]
+    C --> E[Decompose into smaller atomic stories]
+    D --> F[Clarify requirements first]
+    F --> E
+    E --> G[Use AI to identify edge cases in planning]
+    G --> H[Add AI verification to Definition of Done]
+    H --> I[Sprint commitment]
+    I --> J{Actual velocity?}
+    J -->|Higher than expected| K[Recalibrate for next sprint]
+    J -->|On target| L[Baseline established]
+```
 
 ---
 

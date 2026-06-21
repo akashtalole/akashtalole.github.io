@@ -6,11 +6,31 @@ categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, enterprise, sdlc]
 description: "Connectors, custom APIs, authentication patterns, and the integration decisions that determine whether your Copilot Studio agents actually hold up under enterprise load. What works, what breaks, and what to build carefully."
 author: akashtalole
+mermaid: true
 ---
 
 A Copilot Studio agent that can only answer questions from its training data isn't very useful in enterprise contexts. The value comes from connecting it to live enterprise systems — CRM, ERP, ticketing, order management, knowledge bases — so it can answer questions about real data and take actions with real consequences.
 
 This is the integration layer, and it's where most enterprise deployments either succeed or stall.
+
+```mermaid
+graph TD
+    A[Copilot Studio Agent] --> B[Integration Layer]
+    B --> C[Built-in Connectors]
+    B --> D[Custom Connectors]
+    B --> E[Azure Functions]
+    C --> F[SharePoint / Dataverse]
+    C --> G[Salesforce / ServiceNow]
+    D -->|OpenAPI spec| H[Internal REST APIs]
+    E -->|Managed Identity| I[Azure Services]
+    E -->|Client credentials| J[Third-party APIs]
+    B --> K[Auth Pattern]
+    K --> L[OAuth: user-delegated]
+    K --> M[Service Principal]
+    K --> N[Managed Identity]
+    E --> O[Cache layer]
+    O -->|TTL by data type| P[Reduced latency + cost]
+```
 
 ---
 

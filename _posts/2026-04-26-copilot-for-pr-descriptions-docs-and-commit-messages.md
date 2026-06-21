@@ -6,6 +6,7 @@ categories: [ai, github-copilot]
 tags: [github-copilot, sdlc, ai-in-sdlc]
 description: "The non-code uses of GitHub Copilot that save the most time aren't the ones in the demos. PR descriptions, inline documentation, commit messages, and changelogs — the writing that accompanies code is where Copilot quietly earns its keep."
 author: akashtalole
+mermaid: true
 ---
 
 Every codebase has a writing problem. Not the code — the prose that's supposed to explain the code. PR descriptions that say "fixes bug." Commit messages that say "changes." Functions with no docstrings or docstrings that describe the implementation instead of the contract. Changelogs that are wrong or missing.
@@ -13,6 +14,16 @@ Every codebase has a writing problem. Not the code — the prose that's supposed
 These problems exist not because engineers can't write, but because writing about code after you've written the code is a second task that competes with the next thing. It consistently loses.
 
 Copilot reduces that competition by making the writing faster than the decision to defer it.
+
+```mermaid
+flowchart LR
+    A[Code written] --> B[Commit with\ndescriptive message\nCopilot CLI assists]
+    B --> C[PR opened\nCopilot generates description\nfrom commits]
+    C --> D[Functions documented\n/doc slash command]
+    D --> E[PR reviewed\nless time on context\nmore on substance]
+    E --> F[Release\nChangelog from commits\nCopilot aggregates]
+    F --> G[Team has\nliving documentation]
+```
 
 ---
 

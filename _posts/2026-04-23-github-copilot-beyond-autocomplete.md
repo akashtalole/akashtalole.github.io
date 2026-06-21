@@ -6,6 +6,7 @@ categories: [ai, github-copilot]
 tags: [github-copilot, copilot-workspace, sdlc, ai-in-sdlc, coding-agents]
 description: "Most engineers use about 20% of GitHub Copilot. Copilot Chat, slash commands, context variables, terminal integration, code explanation — the features that change how you work are the ones people skip past."
 author: akashtalole
+mermaid: true
 ---
 
 Arc 3 starts today. Seven days on GitHub Copilot — not the basics, but the parts that most engineers haven't fully explored.
@@ -13,6 +14,19 @@ Arc 3 starts today. Seven days on GitHub Copilot — not the basics, but the par
 Let me start with an observation: every team I've worked with that uses GitHub Copilot mostly uses it for autocomplete. Inline completions as you type. Which is fine — that's genuinely useful. But it's also roughly 20% of what Copilot can do.
 
 The other 80% is where the real leverage is, and most of it sits there unused because nobody took fifteen minutes to explore past the first feature they found.
+
+```mermaid
+graph TD
+    A[GitHub Copilot] --> B[Autocomplete\nInline completions]
+    A --> C[Copilot Chat\nContext-aware Q&A]
+    A --> D[Slash Commands\n/explain /fix /tests /doc]
+    A --> E[Context Variables\n@workspace @file #file]
+    A --> F[Terminal Integration\nShell command suggestions]
+    A --> G[PR Integration\nDescriptions + review]
+    A --> H[Inline Chat\nCtrl+I in-flow edits]
+    B --> B1[Most used — 20% of value]
+    C & D & E & F & G & H --> Z[The other 80%]
+```
 
 ---
 

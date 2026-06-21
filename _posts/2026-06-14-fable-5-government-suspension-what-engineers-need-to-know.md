@@ -6,6 +6,7 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "Claude Fable 5 — Anthropic's first public Mythos-class model — launched June 9. On June 12 the US government issued an export control directive and Anthropic pulled it globally. What the statement actually says, why the 'jailbreak' is almost comically mild, and what engineers building on these models need to do."
 author: akashtalole
+mermaid: true
 ---
 
 On June 9, 2026, Anthropic released Claude Fable 5 — their first public Mythos-class model. It benchmarked above everything else on the market. It was included in existing Pro and Team subscriptions at no extra cost. Engineers were running it through their agent frameworks within hours.
@@ -15,6 +16,17 @@ On June 12, at 5:21pm Eastern Time, the US government issued an export control d
 Anthropic complied within hours. The most capable AI model ever made generally available to the public was offline three days after launch.
 
 Anthropic has now published [their full statement](https://www.anthropic.com/news/fable-mythos-access). It's worth reading carefully, because the details matter.
+
+```mermaid
+graph TD
+    A[June 9: Fable 5 Launches<br/>First public Mythos-class model] --> B[June 12 5:21pm ET:<br/>Export Control Directive]
+    B --> C{Stated basis}
+    C -->|Jailbreak claim| D[Technique: ask model to<br/>read codebase & fix flaws]
+    D --> E[Same capability available<br/>in GPT-5.5 and others]
+    B --> F[Anthropic complies:<br/>Global disable within hours]
+    F --> G[Foreign nationals blocked<br/>worldwide including Anthropic staff]
+    F --> H[All other Anthropic models<br/>unaffected]
+```
 
 ---
 

@@ -6,6 +6,7 @@ categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Single-step agents are relatively predictable. Multi-step agents are where things get interesting — and where they fall apart in ways that are hard to diagnose. The orchestration patterns that hold up and the failure modes that will find you eventually."
 author: akashtalole
+mermaid: true
 ---
 
 A single-step agent calls one tool, gets a result, produces an output. Predictable, easy to test, easy to debug.
@@ -13,6 +14,28 @@ A single-step agent calls one tool, gets a result, produces an output. Predictab
 Multi-step agents chain multiple operations — read, analyse, write, test, repeat — toward a goal that requires several sequential decisions. These are where the real engineering value lives, and where the real engineering problems live.
 
 Today I want to cover the orchestration patterns that work and the failure modes I've run into building multi-step agents in production.
+
+```mermaid
+flowchart TD
+    A[Goal] --> B[Phase 1: Understand]
+    B --> C[Phase 2: Plan]
+    C --> D[Phase 3: Execute step]
+    D --> E{Verify step outcome}
+    E -->|Success| F{More steps?}
+    E -->|Failure| G{Retry limit reached?}
+    G -->|No| H[Inject recovery prompt]
+    H --> D
+    G -->|Yes| I[Escalate to human]
+    F -->|Yes| J{Irreversible action?}
+    J -->|Yes| K[Checkpoint: confirm]
+    K -->|Approved| D
+    K -->|Rejected| I
+    J -->|No| D
+    F -->|No| L[Phase 4: Validate]
+    L --> M[Report results]
+    D -.->|Goal drift detected| N[Inject goal reminder]
+    N --> D
+```
 
 ---
 

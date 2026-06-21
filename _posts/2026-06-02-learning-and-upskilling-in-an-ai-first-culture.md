@@ -6,11 +6,30 @@ categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Continuous learning in an AI-first team looks different from traditional upskilling. What to invest in, how to structure team learning, and how AI itself accelerates — and complicates — the development of engineering skills."
 author: akashtalole
+mermaid: true
 ---
 
 Learning has always been central to engineering. The tools change, the languages evolve, the patterns update. Engineers who stop learning become outdated.
 
 AI accelerates this dynamic significantly. The pace of change in AI tooling alone requires ongoing learning just to keep current with the tools you're using, let alone to develop new skills. Teams that don't invest in structured learning fall behind fast.
+
+```mermaid
+flowchart TD
+    A[AI-First Learning Path] --> B[Tier 1: High Leverage, Durable]
+    B --> B1[System Design & Architecture]
+    B --> B2[AI Output Evaluation]
+    B --> B3[Precise Specification Writing]
+    A --> C[Tier 2: High Leverage, Evolving]
+    C --> C1[Prompt Engineering]
+    C --> C2[AI Agent Design]
+    C --> C3[AI Failure Mode Awareness]
+    A --> D[Tier 3: Tool-Specific]
+    D --> D1[Copilot Shortcuts]
+    D --> D2[New Frameworks]
+    B --> E[Calibration Sessions]
+    C --> E
+    E --> F[Shared Team Knowledge]
+```
 
 ---
 

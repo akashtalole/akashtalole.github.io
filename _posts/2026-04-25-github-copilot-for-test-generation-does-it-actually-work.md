@@ -6,11 +6,25 @@ categories: [ai, github-copilot]
 tags: [github-copilot, sdlc, ai-in-sdlc, coding-agents]
 description: "The honest answer: sometimes yes, sometimes dangerously no. Copilot-generated tests can look complete while testing almost nothing. Here's where they're genuinely useful, where they create false confidence, and how to use them safely."
 author: akashtalole
+mermaid: true
 ---
 
 Test generation is the Copilot use case that gets the most enthusiastic demos and the most justified scepticism. Both reactions are reasonable, because the truth is genuinely split.
 
 Copilot can generate useful tests. It can also generate tests that look thorough, pass consistently, and catch nothing when you break the code they're supposed to protect. The difference between the two cases isn't obvious from the output — which is what makes this worth discussing carefully.
+
+```mermaid
+flowchart TD
+    A[Copilot generates tests] --> B{What kind of function?}
+    B -- Pure function\nclear behaviour --> C[Good results\nHappy path + edge cases]
+    B -- Side effects\nexternal calls --> D[Risk: mocks hide\nreal failure modes]
+    B -- Complex business\nlogic --> E[Risk: tests the\nimplementation not behaviour]
+    C --> F[Review: would this fail\nif the code broke?]
+    D --> F
+    E --> F
+    F -- Yes --> G[Safe to use as\nstarting point]
+    F -- No or unsure --> H[Rewrite the\ntest yourself]
+```
 
 ---
 

@@ -6,9 +6,22 @@ categories: [ai, agent-skills]
 tags: [ai, agent-skills]
 description: "Master the Agent Skills."
 author: akashtalole
+mermaid: true
 ---
 
 Agent skills are the building blocks that allow intelligent systems to do more than answer questions — they let those systems take action, interact with tools, and make progress on real tasks.
+
+```mermaid
+graph TD
+    A[Agent Skills] --> B[Tool Skills]
+    A --> C[Reasoning Skills]
+    A --> D[Communication Skills]
+    A --> E[Monitoring Skills]
+    B --> B1[APIs\nDatabases\nCLI Tools]
+    C --> C1[Planning\nSummarizing\nStrategy]
+    D --> D1[Emails\nReports\nTranslations]
+    E --> E1[Status Checks\nValidation\nCompletion Detection]
+```
 
 ## What Are Agent Skills?
 

@@ -6,11 +6,25 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, agent-skills, sdlc]
 description: "Prompt injection is the attack surface that didn't exist before LLM-based agents. An agent that reads external content — web pages, emails, documents, database records — can be manipulated by that content. The attack taxonomy and the defences that actually work."
 author: akashtalole
+mermaid: true
 ---
 
 Prompt injection is what happens when an attacker embeds instructions in content that an AI agent processes, and the agent follows those instructions rather than its original task.
 
 The name is borrowed from SQL injection, and the analogy is apt: just as SQL injection happens when user input is treated as SQL code, prompt injection happens when external content is treated as instructions.
+
+```mermaid
+flowchart TD
+    A[External Content Arrives] --> B{Injection Scanner}
+    B -->|Suspicious patterns| C[Flag and Quarantine]
+    B -->|Clean| D[Structured Prompt<br/>Clear content delimiters]
+    D --> E[Agent Processing]
+    E --> F{Action has<br/>side effects?}
+    F -->|Yes| G[Validate against<br/>original user intent]
+    G -->|Matches| H[Execute]
+    G -->|Mismatch| I[Block and Log]
+    F -->|No| H
+```
 
 ---
 

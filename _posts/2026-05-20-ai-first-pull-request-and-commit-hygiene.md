@@ -6,11 +6,29 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, github-copilot]
 description: "AI tools can generate PR descriptions and commit messages, but without intentional norms they produce noise instead of signal. What good AI-assisted PR hygiene looks like and the practices that make git history useful rather than polluted."
 author: akashtalole
+mermaid: true
 ---
 
 Pull requests and commits are communication artefacts. They tell reviewers what changed and why. They tell future engineers what the intent was when the code was written.
 
 AI can help write these. It can also pollute them with text that looks thorough but contains no real signal. The difference depends entirely on how the team uses it.
+
+```mermaid
+flowchart TD
+    A[Changes ready to commit] --> B[AI drafts commit summary]
+    B --> C{Non-trivial context?}
+    C -->|Yes| D[Engineer writes body: why, failure mode, tradeoff]
+    C -->|No| E[AI summary is sufficient]
+    D --> F[Commit with full context]
+    E --> F
+    F --> G[Open PR]
+    G --> H[AI generates diff summary]
+    H --> I[Engineer adds business context and why]
+    I --> J{Meets signal hygiene standard?}
+    J -->|New engineer can understand the problem and solution?| K[PR ready for review]
+    J -->|No| L[Add missing context]
+    L --> J
+```
 
 ---
 

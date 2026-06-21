@@ -6,11 +6,25 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, mcp, tool-use]
 description: "Single tool calls are easy. Production agents orchestrate dozens of tools across parallel branches, handle failures gracefully, version tool interfaces, and manage cost across thousands of calls per session. The patterns that make tool use reliable at scale."
 author: akashtalole
+mermaid: true
 ---
 
 Function calling was the capability that turned LLMs into agents. Give the model a list of tools, it decides which to call, you execute the call, return the result, continue. The basic pattern is well understood.
 
 The basic pattern breaks at scale. When your agent has 40 tools, runs parallel branches, makes 200 tool calls per session, and needs to handle partial failures without re-running everything — you need more than a tool list and a loop.
+
+```mermaid
+flowchart LR
+    A[Agent Step] --> B[Tool Registry<br/>Select relevant tools ≤15]
+    B --> C[LLM Selects Tool Calls]
+    C --> D{Calls independent?}
+    D -->|Yes| E[asyncio.gather<br/>Parallel Execute]
+    D -->|No| F[Sequential Execute]
+    E --> G[Compress Results]
+    F --> G
+    G --> H[Update Context]
+    H --> I[Next Agent Step]
+```
 
 ---
 

@@ -6,11 +6,32 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "The wrong response to Copilot cost surprises is blanket restrictions that cut high-value usage. The right response is targeted governance: spending limits, usage visibility, and smart seat management. How to implement controls without killing adoption."
 author: akashtalole
+mermaid: true
 ---
 
 When the finance team sees an unexpected Copilot bill, the instinctive response is restriction: cap usage, pull back premium features, limit who has access. This is understandable and usually wrong.
 
 Blanket restrictions are a blunt instrument. They reduce costs by reducing value — cutting the high-value features along with the waste. Smart governance is more precise: reduce waste, preserve value, create visibility so you can tell the difference.
+
+```mermaid
+flowchart TD
+    A[Unexpected Copilot Bill] --> B{Governance Response}
+    B -->|Wrong| C[Blanket Restrictions]
+    B -->|Right| D[Targeted Governance]
+    C --> E[Cut High-Value Features]
+    E --> F[Adoption Killed]
+    D --> G[Org Level: Spending Alerts + Policies]
+    D --> H[Team Level: Monthly Usage Review]
+    D --> I[Individual Level: Self-Visibility]
+    G --> J[Right-Size Seats Quarterly]
+    H --> K[Anomaly Detection]
+    I --> L[Engineer Self-Correction]
+    J --> M[Cost Reduced, Value Preserved]
+    K --> M
+    L --> M
+    style C fill:#ef4444,color:#fff
+    style D fill:#22c55e,color:#fff
+```
 
 ---
 

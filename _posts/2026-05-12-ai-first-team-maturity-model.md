@@ -6,9 +6,26 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "A practical maturity model for engineering teams adopting AI. Not a framework for consultants — a diagnostic for leads and engineers to understand where they actually are and what the next step looks like."
 author: akashtalole
+mermaid: true
 ---
 
 Yesterday I described four levels of AI adoption, from AI-absent to AI-first. Today I want to make that more concrete — because "where is your team today?" is the question that determines everything else.
+
+```mermaid
+flowchart TD
+    A[Rate each dimension 0-4] --> B[Tool Coverage]
+    A --> C[Shared Practices]
+    A --> D[Workflow Integration]
+    A --> E[Output Trust & Verification]
+    A --> F[Culture & Mindset]
+    B & C & D & E & F --> G[Sum score 0-20]
+    G --> H{Score range}
+    H -->|0-5| I[Focus: get tools in place]
+    H -->|6-10| J[Focus: write shared practices]
+    H -->|11-15| K[Focus: redesign one workflow with AI]
+    H -->|16-18| L[Focus: culture safety and evaluation]
+    H -->|19-20| M[AI-First — maintain as team grows]
+```
 
 ---
 

@@ -6,11 +6,34 @@ categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Thirty days of writing about AI and teams. Before the final synthesis, one post on the things that AI doesn't change — the human qualities that make engineering teams great regardless of the tools they use."
 author: akashtalole
+mermaid: true
 ---
 
 This series has been about change. What changes for junior engineers, for senior engineers, for team culture, for workflow, for governance.
 
 Before the final post, I want to write about what doesn't change. Because in the urgency of adapting to AI, teams can lose sight of the foundations that made them good before — and those foundations don't need to change.
+
+```mermaid
+graph TD
+    A[Great Engineering Team] --> B[Judgment]
+    A --> C[Accountability]
+    A --> D[Relationships]
+    A --> E[Curiosity]
+    A --> F[Honesty]
+    B --> B1[AI generates options, humans choose]
+    C --> C1[No AI blame-shifting on shipped code]
+    D --> D1[Trust built through reliability]
+    D --> D2[Political navigation stays human]
+    E --> E1[Questions whether the pattern should exist]
+    E --> E2[Experiments beyond documentation]
+    F --> F1[Says what is true, not what is wanted]
+    F --> F2[Culture of honest estimates]
+    B1 --> G[Resilient AI-First Team]
+    C1 --> G
+    D1 --> G
+    E1 --> G
+    F1 --> G
+```
 
 ---
 

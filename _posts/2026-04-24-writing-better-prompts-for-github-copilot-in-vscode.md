@@ -6,11 +6,23 @@ categories: [ai, github-copilot]
 tags: [github-copilot, sdlc, ai-in-sdlc, coding-agents]
 description: "Copilot reads your code and your comments before it generates anything. Understanding what it pays attention to — and shaping that context deliberately — is the difference between useful suggestions and noise."
 author: akashtalole
+mermaid: true
 ---
 
 Yesterday I covered the Copilot features most engineers miss. Today I want to go one level deeper on something that applies to all of them: how to give Copilot the context it needs to produce output worth using.
 
 This is specifically about VS Code, where most of the interaction is implicit — Copilot reads your code as you write it and generates suggestions without you having to ask explicitly. That makes it different from prompting a chat interface, and it requires a slightly different set of habits.
+
+```mermaid
+flowchart TD
+    A[Better Copilot Output] --> B[Precise Comments\nDescribe intent before writing]
+    A --> C[Show Pattern First\nOne example teaches conventions]
+    A --> D[Descriptive Names\nFunction names as signals]
+    A --> E[Open Relevant Tabs\nDeliberate context management]
+    A --> F[Specific Inline Chat\nExact change + preserve what]
+    A --> G[File Path as Signal\nDirectory structure matters]
+    B & C & D & E & F & G --> H[Suggestions that fit\nyour codebase first time]
+```
 
 ---
 

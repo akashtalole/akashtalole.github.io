@@ -6,11 +6,26 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, langgraph, tool-use]
 description: "Stateless agents are easy to build and fragile in production. Long-running tasks, multi-turn conversations, and recovery from failures all require explicit state management. The patterns that make agents durable."
 author: akashtalole
+mermaid: true
 ---
 
 The simplest AI agent architecture is stateless: each request is independent, nothing persists between calls. Stateless agents are easy to build, easy to scale, and fragile for anything non-trivial.
 
 Real tasks take time. Conversations span multiple turns. Networks fail. Users return to continue a task they started yesterday. Stateless agents can't handle any of this gracefully.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Idle
+    Idle --> Running : User submits task
+    Running --> Checkpointed : Auto-save state
+    Checkpointed --> Running : Continue
+    Running --> AwaitingHuman : interrupt() called
+    AwaitingHuman --> Running : Human provides input
+    Running --> Completed : Task done
+    Running --> Failed : Error
+    Failed --> Running : Retry from checkpoint
+    Completed --> [*]
+```
 
 ---
 

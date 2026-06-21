@@ -6,11 +6,26 @@ categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc]
 description: "GDPR, SOC 2, HIPAA, financial regulations — deploying Claude Code in regulated environments requires more than a comfortable feeling about security. Here's what actually needs to be addressed and the questions your security team will ask."
 author: akashtalole
+mermaid: true
 ---
 
 Most AI tooling rollout guides assume you're working in a fairly permissive environment: startup, scale-up, or a large tech company with a pragmatic security posture. That's not the context a lot of enterprise engineers work in.
 
 Regulated industries — financial services, healthcare, government, anything touching EU personal data — have specific, non-negotiable requirements that generic AI rollout advice doesn't address. If you're in one of those environments, or heading toward one, here's what you actually need to work through.
+
+```mermaid
+flowchart TD
+    A[Regulated Environment\nClause Code Rollout] --> B[Classify Data\nPII / PHI / PCI / IP]
+    B --> C{Data in prompts?}
+    C -- Permitted --> D[Sign DPA with Anthropic]
+    C -- Prohibited --> E[Block via policy\n+ secrets detection]
+    D --> F[Confirm data residency\n+ retention policy]
+    F --> G[Address prompt injection\nrisks for automation]
+    G --> H[Define tool access controls\nleast privilege]
+    H --> I[Build audit trail\nfor compliance]
+    I --> J[Security team review\nwith documented answers]
+    J --> K[Approved rollout]
+```
 
 ---
 

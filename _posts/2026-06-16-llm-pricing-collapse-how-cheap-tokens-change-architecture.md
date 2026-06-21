@@ -6,6 +6,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc, coding-agents]
 description: "LLM inference costs dropped 99.7% between 2023 and 2026. Input tokens that cost $30/million now cost $0.10. This isn't just a budget story — it changes which architectures are economically viable and where to invest engineering effort."
 author: akashtalole
+mermaid: true
 ---
 
 The most dramatic economic shift in AI infrastructure has been almost entirely underreported: the cost of LLM inference has collapsed.
@@ -13,6 +14,17 @@ The most dramatic economic shift in AI infrastructure has been almost entirely u
 March 2023: GPT-4 API input tokens at $30 per million. April 2026: Gemini 3.1 Flash at $0.10 per million input tokens. That's a 99.7% price reduction in three years.
 
 This is not primarily a cost-reduction story, though it is that. It's an architecture story. What was economically unviable in 2023 is routine in 2026. And the architecture decisions that made sense at $30/million don't make sense at $0.10/million.
+
+```mermaid
+graph TD
+    A[LLM Pricing 2023-2026] --> B[2023: $30/M input tokens]
+    B --> C[2024: $3/M frontier]
+    C --> D[2026: $0.10/M efficient<br/>99.7% price drop]
+    D --> E{Architecture implications}
+    E --> F[Multi-tier routing<br/>now economical]
+    E --> G[High-frequency AI calls<br/>now viable]
+    E --> H[Batch processing<br/>fully affordable]
+```
 
 ---
 

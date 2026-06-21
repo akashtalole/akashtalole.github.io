@@ -6,11 +6,27 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "The RAG vs fine-tuning debate is largely resolved in 2026: the answer is hybrid. Volatile knowledge in retrieval, stable behaviour in fine-tuning. Here's the decision framework and the specific cases where each approach wins."
 author: akashtalole
+mermaid: true
 ---
 
 The RAG vs fine-tuning debate occupied a lot of AI engineering discourse for two years. In 2026, the production consensus has emerged: it's not either/or. It's hybrid, with each technique doing what it does best.
 
 The simple version: put volatile knowledge in retrieval. Put stable behaviour in fine-tuning. Stop forcing one tool to do both jobs.
+
+```mermaid
+flowchart TD
+    A[Knowledge Requirement] --> B{Type?}
+    B -->|External / updated docs| C[RAG]
+    B -->|Behavioral style change| D[Fine-Tuning]
+    B -->|Both| E[Hybrid]
+    C --> F{Update frequency?}
+    F -->|Daily| G[Real-time RAG]
+    F -->|Stable| H[Cached RAG]
+    D --> I{Training data?}
+    I -->|Available| J[Fine-tune]
+    I -->|None| K[Prompt engineering first]
+    E --> L[Fine-tune style +<br/>RAG for facts]
+```
 
 ---
 

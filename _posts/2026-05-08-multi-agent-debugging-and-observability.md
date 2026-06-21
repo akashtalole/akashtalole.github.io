@@ -6,6 +6,7 @@ categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, agentic-ai, enterprise]
 description: "When a single agent misbehaves you have one thing to debug. When a multi-agent system misbehaves, the problem could be anywhere across orchestrator, specialists, connectors, and flows. How to build observability that makes the invisible visible."
 author: akashtalole
+mermaid: true
 ---
 
 Multi-agent systems fail in interesting ways.
@@ -13,6 +14,24 @@ Multi-agent systems fail in interesting ways.
 A user asks about their order. The orchestrator routes to the order agent. The order agent calls a Power Automate flow. The flow calls the order management API. The API returns data that the flow parses incorrectly. The agent presents wrong information confidently. The user escalates.
 
 At which point did it go wrong? Without observability, you're reconstructing the failure from user reports and guesswork. With observability, you have a trace.
+
+```mermaid
+flowchart TD
+    A[User Report / Alert] --> B[Get SessionId]
+    B --> C[Pull correlation trace from App Insights]
+    C --> D{Find divergence point}
+    D -->|Routing issue| E[Check orchestrator intent log]
+    D -->|Specialist issue| F[Check specialist conversation trace]
+    D -->|Flow issue| G[Check Power Automate run history]
+    D -->|External API issue| H[Check connector / Azure Function log]
+    E --> I[Reproduce in test environment]
+    F --> I
+    G --> I
+    H --> I
+    I --> J[Fix root cause]
+    J --> K[Verify fix]
+    K --> L[Deploy to production]
+```
 
 ---
 

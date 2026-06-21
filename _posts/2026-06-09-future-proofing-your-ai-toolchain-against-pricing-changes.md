@@ -6,6 +6,7 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc, agentic-ai]
 description: "Copilot's pricing change is not an isolated event. Every major AI vendor will reprice as the market matures. The teams that handle this well have built toolchains with deliberate flexibility. What that looks like in practice."
 author: akashtalole
+mermaid: true
 ---
 
 GitHub's pricing change isn't unique. It's the first of many.
@@ -15,6 +16,27 @@ The AI tool market is in a phase where vendors are figuring out how to monetise 
 The teams that handle Copilot's pricing change well are the ones that built their toolchain with deliberate flexibility. The teams that scramble are the ones that built deep dependencies on a single tool's specific features and pricing structure.
 
 Here's how to build for flexibility.
+
+```mermaid
+flowchart TD
+    A[Build Resilient AI Toolchain] --> B[Dependency Audit]
+    B --> B1[Which workflows are tool-exclusive?]
+    B --> B2[What is the switching cost?]
+    B --> B3[Are we over-indexed on one tier?]
+    B1 --> C[Apply Resilience Principles]
+    C --> D[Layer by Capability, Not Brand]
+    C --> E[Model-Agnostic Prompts]
+    C --> F[Measure Outcomes, Not Tool Metrics]
+    C --> G[Maintain Human Capability]
+    D --> H[Quarterly Toolchain Review]
+    E --> H
+    F --> H
+    G --> H
+    H --> I[Cost Trend Check]
+    H --> J[Capability Gap Check]
+    H --> K[Competitor Review]
+    H --> L[Switching Cost Assessment]
+```
 
 ---
 

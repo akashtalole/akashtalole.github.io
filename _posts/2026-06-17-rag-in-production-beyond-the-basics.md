@@ -6,6 +6,7 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "The basic RAG tutorial gets you to a working prototype. Production RAG requires hybrid search, re-ranking, query transformation, and failure handling that tutorials don't cover. What separates a demo from a system that actually works."
 author: akashtalole
+mermaid: true
 ---
 
 Retrieval-Augmented Generation is the most widely implemented architectural pattern in enterprise AI. It's also the pattern where the gap between tutorial quality and production quality is widest.
@@ -13,6 +14,19 @@ Retrieval-Augmented Generation is the most widely implemented architectural patt
 The basic RAG pipeline is three steps: embed the query, retrieve similar documents, stuff them into the context window. This works well in demos. In production, it breaks in predictable ways that require specific solutions.
 
 This post covers what those solutions are.
+
+```mermaid
+flowchart LR
+    A[Query] --> B[Embed Query]
+    B --> C[Vector Search]
+    A --> D[BM25 Keyword Search]
+    C --> E[Reciprocal Rank Fusion]
+    D --> E
+    E --> F[Cross-Encoder Re-ranking]
+    F --> G[Top-K Context]
+    G --> H[LLM Generation]
+    H --> I[Answer + Citations]
+```
 
 ---
 

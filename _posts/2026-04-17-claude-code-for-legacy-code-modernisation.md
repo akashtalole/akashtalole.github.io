@@ -6,11 +6,21 @@ categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "Legacy codebases are where senior engineers spend a disproportionate amount of their time — and where AI tooling pays off most. Here's the approach I use with Claude Code to understand, document, and safely modernise code nobody fully understands."
 author: akashtalole
+mermaid: true
 ---
 
 If you asked me where Claude Code has made the biggest practical difference in my work, I'd say legacy code. Not greenfield development. Not writing new services from scratch. The gnarly, underdocumented, no-tests-anywhere codebases that every engineering team has at least one of.
 
 This is the work that's most painful to hand to junior engineers, most cognitively expensive for senior ones, and most likely to be deferred until it becomes a crisis. AI tooling doesn't eliminate that work, but it meaningfully reduces the cost of doing it well.
+
+```mermaid
+flowchart LR
+    A[Legacy Codebase\nNo docs, no tests] --> B[Phase 1: Understand\nClaude Code as explainer]
+    B --> C[Phase 2: Document\nInline comments + docstrings + ADRs]
+    C --> D[Phase 3: Add Tests\nCharacterise current behaviour]
+    D --> E[Phase 4: Refactor\nClaude Code for design\nCopilot for execution]
+    E --> F[Modernised Codebase\nDocumented + tested + maintainable]
+```
 
 ---
 

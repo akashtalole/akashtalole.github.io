@@ -6,6 +6,7 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, tool-use]
 description: "Reasoning models think before responding — generating extended chain-of-thought that improves accuracy on hard problems at the cost of latency and tokens. When the thinking investment pays off, and when it doesn't."
 author: akashtalole
+mermaid: true
 ---
 
 Reasoning Language Models (RLMs) — Claude with extended thinking, GPT-5 with chain-of-thought modes, the Gemini reasoning models — represent a different paradigm from standard next-token prediction. They generate extended internal reasoning before producing a response.
@@ -13,6 +14,20 @@ Reasoning Language Models (RLMs) — Claude with extended thinking, GPT-5 with c
 Claude Sonnet 4.5 with reasoning enabled reached 45.4% on long-horizon agentic reasoning benchmarks, compared to 2.6% without reasoning. On hard mathematical and coding problems, the gap is consistently large.
 
 But reasoning tokens are expensive, slow, and not always necessary. The question is: when do you use them?
+
+```mermaid
+flowchart TD
+    A[LLM Call Needed] --> B{Task Type?}
+    B -->|Classification| C[Standard Model]
+    B -->|Extraction| C
+    B -->|Simple generation| C
+    B -->|Multi-step logic| D[Reasoning Model]
+    B -->|Complex code| D
+    B -->|Planning| D
+    B -->|High-stakes decision| D
+    C --> E[Fast + cheap<br/>~$0.003/call]
+    D --> F[Slower + expensive<br/>~$0.05/call<br/>Much better on hard tasks]
+```
 
 ---
 

@@ -6,11 +6,24 @@ categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "AI pre-review before human review changes the economics of code review on large teams. What Claude Code actually catches, what it consistently misses, and how to calibrate trust so it helps rather than creates a false safety net."
 author: akashtalole
+mermaid: true
 ---
 
 Code review is one of the highest-leverage activities on an engineering team. It's also one of the most inconsistently done. Reviews get rushed when people are busy, skipped when schedules are tight, and variable in quality depending on who does them and how much attention they have that day.
 
 AI pre-review doesn't fix the inconsistency problem entirely. But it raises the floor — ensuring a baseline level of review happens on every PR, every time, regardless of team capacity. Here's how I've integrated Claude Code into the review workflow and what I've learned about where to trust it.
+
+```mermaid
+flowchart LR
+    A[PR Submitted] --> B[AI Pre-Review\nClaude Code]
+    B --> C{Issues found?}
+    C -- Yes --> D[Author fixes\nmechanical issues]
+    D --> B
+    C -- No --> E[Human Review\nFocus: architecture\nbusiness logic\ndesign decisions]
+    E --> F{Approved?}
+    F -- Changes needed --> D
+    F -- Approved --> G[Merge]
+```
 
 ---
 

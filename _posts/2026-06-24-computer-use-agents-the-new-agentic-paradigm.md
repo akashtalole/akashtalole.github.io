@@ -6,11 +6,26 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, tool-use]
 description: "Claude Opus 4.8 and GPT-5.4 can control computers — take screenshots, click buttons, fill forms, navigate applications. Computer use agents open use cases that tool-calling can't reach. The capabilities, the risks, and where they actually fit."
 author: akashtalole
+mermaid: true
 ---
 
 The agentic AI capability that attracted the most attention in early 2026 wasn't a reasoning benchmark or a context length extension. It was computer use: AI models that can see a screen, click a mouse, type into forms, and navigate applications as a human would.
 
 Claude Opus 4.8 and GPT-5.4 both ship computer use capabilities. This isn't a gimmick — it opens a category of automation that API-based tool calling fundamentally can't reach.
+
+```mermaid
+flowchart LR
+    A[Task] --> B[Take Screenshot]
+    B --> C[LLM Analyses Screen]
+    C --> D{Action Decision}
+    D -->|click| E[pyautogui.click]
+    D -->|type| F[pyautogui.typewrite]
+    D -->|key| G[pyautogui.hotkey]
+    D -->|scroll| H[pyautogui.scroll]
+    E & F & G & H --> I{Task Complete?}
+    I -->|No| B
+    I -->|Yes| J[Done]
+```
 
 ---
 

@@ -6,9 +6,21 @@ categories: [ai, agentic-ai]
 tags: [ai, agentic-ai]
 description: "Master the Agentic AI."
 author: akashtalole
+mermaid: true
 ---
 
 Artificial intelligence has moved beyond passive tools and into the realm of autonomous decision-making. Agentic AI is the next wave: systems that can plan, act, and learn with a level of independence previously reserved for human-like agents.
+
+```mermaid
+flowchart LR
+    A[Goal Definition] --> B[Task Planning]
+    B --> C[Action Execution]
+    C --> D{Evaluate Result}
+    D -- Goal Met --> E[Done]
+    D -- Adjust Needed --> B
+    D -- Error --> F[Handle Failure]
+    F --> B
+```
 
 ## What is Agentic AI?
 

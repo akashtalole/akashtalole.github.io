@@ -6,11 +6,21 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, enterprise]
 description: "The 2026 pattern for cost-efficient production agents: small language models handle simple tasks cheaply, large models handle complex tasks well. How to design the routing layer, what to measure, and what the cost-quality tradeoffs actually look like."
 author: akashtalole
+mermaid: true
 ---
 
 The LLM pricing collapse I covered on Day 6 created a tiered market: efficient small models at a fraction of the cost of frontier reasoning models. The question is how to use both appropriately.
 
 The emerging pattern in production 2026 systems is hybrid SLM + LLM orchestration — small language models for high-volume, low-complexity tasks and large models for the tasks that need frontier reasoning.
+
+```mermaid
+flowchart TD
+    A[Incoming Task] --> B{Task Router}
+    B -->|classify_intent<br/>extract_entities<br/>summarise| C[Efficient Model<br/>claude-haiku-4-5<br/>$0.10-0.25/M tokens]
+    B -->|generate_response<br/>code_review| D[Frontier Model<br/>claude-sonnet-4-6<br/>$3-5/M tokens]
+    B -->|debug_complex<br/>plan_architecture| E[Reasoning Model<br/>claude-opus-4-8<br/>$15-75/M tokens]
+    C & D & E --> F[Output]
+```
 
 ---
 

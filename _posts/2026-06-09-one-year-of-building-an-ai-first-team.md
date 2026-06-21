@@ -6,6 +6,7 @@ categories: [ai, meta]
 tags: [meta, ai, agentic-ai, sdlc, enterprise]
 description: "Thirty posts on the AI-first engineering team. Here's the synthesis: what actually changed, what I was wrong about, what remains genuinely hard, and the principles that held up across the whole arc."
 author: akashtalole
+mermaid: true
 ---
 
 Thirty posts. One arc.
@@ -13,6 +14,23 @@ Thirty posts. One arc.
 This series was an attempt to think carefully about the team-level problems in AI adoption — not the individual productivity gains, but the cultural, workflow, and human dynamics that determine whether an engineering team builds something durable or something brittle.
 
 Here's the synthesis.
+
+```mermaid
+flowchart LR
+    A[Month 1\nFoundations] --> B[Month 2\nWorkflow Redesign]
+    B --> C[Month 3\nCulture & Norms]
+    C --> D[Month 4\nGovernance & Scale]
+    D --> E[Month 5\nSynthesis]
+    A --> A1[Layered Toolchain Principle]
+    B --> B1[Specification Quality as Leverage]
+    C --> C1[Active Norm-Setting Required]
+    D --> D1[Governance Enables Adoption]
+    E --> E1[AI Amplifies What Is Already There]
+    E1 --> F[Build Human Foundations First]
+    F --> G[Judgment + Accountability\nRelationships + Curiosity + Honesty]
+    style F fill:#22c55e,color:#fff
+    style E1 fill:#3b82f6,color:#fff
+```
 
 ---
 

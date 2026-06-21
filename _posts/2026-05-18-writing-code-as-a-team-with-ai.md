@@ -6,11 +6,34 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code, github-copilot]
 description: "Pair programming changes when AI is the third party in the room. How AI-first teams structure collaborative coding, what norms work, and the question of ownership when AI writes the code."
 author: akashtalole
+mermaid: true
 ---
 
 Traditional pair programming: two engineers, one keyboard, one screen. The driver writes; the navigator thinks ahead. Roles rotate. Learning happens bidirectionally.
 
 AI changes the shape of this. Now there's a third party — always available, fast, doesn't get tired, and has no stake in whether the code is good.
+
+```mermaid
+sequenceDiagram
+    participant D as Driver
+    participant N as Navigator
+    participant AI as AI (Copilot/Claude)
+
+    D->>AI: Request code / accepts suggestion
+    AI-->>D: Generated code
+    D->>N: Share output for review
+    N->>N: Evaluate design-level direction
+    N->>D: Feedback on approach or acceptance
+    alt Design-level issue
+        N->>D: Redirect to correct approach
+        D->>AI: Refined request
+        AI-->>D: Revised code
+    else Output approved
+        D->>D: Verify correctness and understanding
+        D-->>N: Ready to commit
+    end
+    Note over D,N: Navigator must stay at design level,<br/>not just review AI output line-by-line
+```
 
 ---
 

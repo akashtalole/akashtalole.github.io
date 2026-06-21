@@ -6,11 +6,28 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, agent-skills, sdlc]
 description: "Autonomous agents can take actions that are hard or impossible to reverse. The engineering principle of blast radius control — limiting what can go wrong when an agent makes a mistake — and the specific patterns that implement it."
 author: akashtalole
+mermaid: true
 ---
 
 The more capable an agent, the larger its potential blast radius. An agent that can send emails, modify databases, call APIs, and manage infrastructure can cause significant damage if it makes a mistake — or is manipulated into making one.
 
 Blast radius control is the discipline of limiting what can go wrong. It's the agent equivalent of the principle of least privilege, combined with patterns that make harmful actions require explicit human approval.
+
+```mermaid
+flowchart TD
+    A[Agent Action Request] --> B{CapabilityTier?}
+    B --> C[READ_ONLY\nread, search, query]
+    B --> D[DRAFT\ncreate drafts, staging writes]
+    B --> E[STANDARD\nsend prepared, update CRM]
+    B --> F[PRIVILEGED\ndelete, pay, publish external]
+    C --> G[Execute freely]
+    D --> G
+    E --> G
+    F --> H{Human Approval}
+    H -->|approve| I[Execute action]
+    H -->|reject| J[Handle rejection]
+    H -->|modify| H
+```
 
 ---
 

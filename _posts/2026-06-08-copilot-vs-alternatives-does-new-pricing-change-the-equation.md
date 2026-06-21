@@ -6,11 +6,33 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc, claude-code]
 description: "When Copilot pricing goes up, the comparison to alternatives becomes live again. An honest assessment of Copilot vs. Claude Code vs. Cursor vs. Codeium under the new pricing, and when switching or supplementing makes sense."
 author: akashtalole
+mermaid: true
 ---
 
 The new Copilot pricing has reactivated a conversation that went quiet when Copilot became the obvious default: is it still the best value, or does the new cost structure make alternatives worth a fresh look?
 
 I'll give you my honest assessment — not as a Copilot advocate or detractor, but as someone who uses multiple tools and has specific views about what each does well.
+
+```mermaid
+graph TD
+    A[AI Coding Tool Selection] --> B[In-Editor Autocomplete]
+    A --> C[Chat and Inline Assistance]
+    A --> D[Agentic Multi-File Editing]
+    A --> E[Enterprise Governance]
+    B --> B1[GitHub Copilot]
+    B --> B2[Cursor]
+    B --> B3[Codeium]
+    C --> C1[Cursor - Best Context Mgmt]
+    C --> C2[Copilot Chat - Mature]
+    C --> C3[Claude Code - Complex Reasoning]
+    D --> D1[Claude Code - Strongest]
+    D --> D2[Copilot Workspace]
+    D --> D3[Cursor Agent]
+    E --> E1[GitHub Copilot Enterprise Only]
+    style E1 fill:#22c55e,color:#fff
+    style D1 fill:#22c55e,color:#fff
+    style C1 fill:#22c55e,color:#fff
+```
 
 ---
 

@@ -6,11 +6,30 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, github-copilot]
 description: "AI can write tests faster than any engineer. The question isn't whether to use AI for tests — it's whether the tests AI writes are testing the right things. The trust and verification problem in AI-first testing."
 author: akashtalole
+mermaid: true
 ---
 
 Test generation is one of the clearest wins in AI-assisted development. An engineer can generate a reasonable unit test suite for a function in seconds rather than minutes. Coverage increases, the tedious work of writing assertions decreases.
 
 The problem nobody talks about enough: when AI writes the code and AI writes the tests, the test suite may be internally consistent and completely wrong.
+
+```mermaid
+flowchart TD
+    A[Engineer specifies expected behaviour] --> B[AI generates code]
+    A --> C[AI generates tests]
+    B & C --> D[Engineer reviews tests against spec]
+    D --> E{Tests cover business intent?}
+    E -->|No| F[Engineer adds domain-specific edge cases]
+    F --> G[Run tests]
+    E -->|Yes| G
+    G --> H{All pass?}
+    H -->|Yes| I{High coverage but wrong spec?}
+    H -->|No| J[Fix code or test]
+    J --> G
+    I -->|Risk: circular testing| K[Validate: tests test the right things]
+    I -->|Confirmed correct| L[Ship]
+    K --> L
+```
 
 ---
 

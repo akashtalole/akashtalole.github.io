@@ -6,11 +6,30 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc, sdlc]
 description: "GitHub Copilot's shift to token-based and premium request pricing has caught teams off guard. What the new model actually means, why it's causing budget chaos, and the practical strategies to use Copilot effectively without bill shock."
 author: akashtalole
+mermaid: true
 ---
 
 GitHub Copilot changed its pricing model and the engineering Twitter/LinkedIn discourse has been loud for weeks. Teams are seeing unexpected bills. Enterprise budget owners are asking uncomfortable questions. Engineers are getting told to "use Copilot less."
 
 I want to cut through the noise and be direct about what's actually changed, why it's causing problems, and what you should actually do about it.
+
+```mermaid
+graph LR
+    A[Base Subscription] --> B[Tier 1: Free]
+    B --> B1[Inline Completions]
+    B --> B2[Tab Suggestions]
+    A --> C[Tier 2: Premium]
+    C --> C1[Copilot Chat]
+    C --> C2[/explain /fix /test]
+    C --> C3[PR Summaries]
+    A --> D[Tier 3: High Cost]
+    D --> D1[Copilot Workspace]
+    D --> D2[Agent Mode]
+    D --> D3[Long-Context Operations]
+    style B fill:#22c55e,color:#fff
+    style C fill:#f59e0b,color:#fff
+    style D fill:#ef4444,color:#fff
+```
 
 ---
 

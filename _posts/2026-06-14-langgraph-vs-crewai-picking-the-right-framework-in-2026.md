@@ -6,11 +6,25 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, langgraph, crewai, coding-agents, enterprise]
 description: "LangGraph and CrewAI have emerged as the two production-viable agent frameworks in 2026. AutoGen is deprecated. Here's an honest comparison of when each framework fits, with the specific architectural differences that determine the choice."
 author: akashtalole
+mermaid: true
 ---
 
 The agent framework landscape has settled. Not completely — new options continue to emerge — but the production tier has two clear leaders: LangGraph for complex, state-driven workflows and CrewAI for role-based, accessible multi-agent systems.
 
 And AutoGen? Microsoft moved it to maintenance mode. If you're starting a new project, move on.
+
+```mermaid
+flowchart TD
+    A[Choose Agent Framework] --> B{Workflow type?}
+    B -->|Complex state machine<br/>fine-grained control| C[LangGraph]
+    B -->|Role-based collaboration<br/>accessible design| D[CrewAI]
+    C --> E{Team has ML<br/>infrastructure skills?}
+    E -->|Yes| F[LangGraph StateGraph<br/>+ PostgreSQL checkpointing]
+    E -->|No| G[Consider CrewAI instead]
+    D --> H{Workflow structure<br/>known upfront?}
+    H -->|Yes| I[Sequential Process]
+    H -->|No| J[Hierarchical Process]
+```
 
 ---
 

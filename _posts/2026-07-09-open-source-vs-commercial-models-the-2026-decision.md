@@ -6,11 +6,27 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "In 2025, open-source models were clearly behind. In 2026, the gap has closed significantly on many tasks. The framework for deciding when open-source deployment makes sense and when commercial APIs are still the right call."
 author: akashtalole
+mermaid: true
 ---
 
 In 2024, the choice between open-source and commercial models was straightforward: commercial frontier models were substantially better on almost everything that mattered for production applications. Open-source models were viable for simple tasks and cost-sensitive applications where quality could be traded.
 
 In 2026, the picture is more complex.
+
+```mermaid
+flowchart TD
+    A[New AI Workload] --> B{Data leaves\nyour infra?}
+    B -->|cannot| C[Self-hosted open-source\nLlama 4 / Qwen3 / DeepSeek]
+    B -->|acceptable| D{Volume\n>50M tokens/day?}
+    D -->|yes| E{ML ops\ncapability?}
+    D -->|no| F[Commercial API]
+    E -->|strong| C
+    E -->|limited| F
+    F --> G{Task complexity?}
+    G -->|frontier reasoning| H[Claude Opus / GPT-5]
+    G -->|mid-tier| I[Claude Sonnet / Mistral]
+    G -->|high-volume simple| J[Claude Haiku / Llama 4 Scout\non-prem or API]
+```
 
 ---
 

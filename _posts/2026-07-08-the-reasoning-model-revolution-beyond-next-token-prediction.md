@@ -6,6 +6,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, coding-agents, enterprise, ai-in-sdlc]
 description: "Reasoning models represent a different approach to AI capability — not better pattern matching, but explicit test-time computation. What changed architecturally, why the benchmark gaps are real, and where the technology is heading."
 author: akashtalole
+mermaid: true
 ---
 
 Standard large language models are, at their core, learned functions from input sequences to output probability distributions. They're extraordinarily good at this — the capability that emerges from predicting the next token at scale has proven to be far more general than anyone expected.
@@ -13,6 +14,16 @@ Standard large language models are, at their core, learned functions from input 
 But next-token prediction has a ceiling. For problems requiring sequential logical deduction, where each step must be correct before the next is meaningful, a model that generates output in a single forward pass can't verify its intermediate steps. It can't catch its own errors before they compound.
 
 Reasoning models do something different.
+
+```mermaid
+flowchart LR
+    A[RLHF\n2022-2023\nHuman preference scores\nCorruptible signal] --> B[RLVR\n2024\nVerifiable reward signals\nProgrammatic checking]
+    B --> C[RLEF\n2025-2026\nExecution feedback\nCode runs — pass or fail]
+    C --> D[Next frontier\nScience · DB queries\nSimulation results]
+    A -->|problem: humans prefer\nconfident over correct| B
+    B -->|limited to verifiable\ndomains| C
+    C -->|exact unchallengeable\nreward signal| D
+```
 
 ---
 

@@ -6,11 +6,29 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "The toolchain is the easy part. The culture is where AI adoption succeeds or fails. What norms an AI-first team needs, what psychological safety looks like in this context, and the conversations most teams avoid having."
 author: akashtalole
+mermaid: true
 ---
 
 You can have the right tools, the right access, the right training. If the culture isn't right, adoption stalls.
 
 I've seen this pattern more than once: an organisation invests in Copilot licences, runs a launch event, and three months later half the team isn't using it. The tools are fine. The culture didn't change.
+
+```mermaid
+graph TD
+    A[AI-First Culture] --> B[Psychological Safety]
+    A --> C[Shared Norms]
+    B --> B1[Safe to say AI was wrong]
+    B --> B2[Safe to admit gaps in AI knowledge]
+    B --> B3[AI failure modes in post-mortems]
+    C --> C1[Transparency about AI usage]
+    C --> C2[Honesty about failure modes]
+    C --> C3[Shared prompt library]
+    C --> C4[No throughput pressure via AI speed]
+    A --> D[Hidden Anxieties to Address]
+    D --> D1[Job security fears]
+    D --> D2[Legitimacy of AI-assisted work]
+    D --> D3[Feeling behind on AI skills]
+```
 
 ---
 

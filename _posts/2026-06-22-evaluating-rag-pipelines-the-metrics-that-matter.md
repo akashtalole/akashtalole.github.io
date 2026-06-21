@@ -6,11 +6,25 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "Most RAG systems are deployed without a proper evaluation framework. Teams discover quality problems from user complaints rather than metrics. The evaluation metrics, frameworks, and test set design that make RAG quality measurable."
 author: akashtalole
+mermaid: true
 ---
 
 The most common RAG failure mode in production is not a technical failure — it's a quality failure that nobody noticed during development because there was no evaluation framework.
 
 The pipeline worked. It retrieved something. It generated a response. Nobody checked whether the retrieved content was relevant or whether the generated response was accurate.
+
+```mermaid
+graph TD
+    A[RAG Evaluation] --> B[Retrieval Quality]
+    A --> C[Generation Quality]
+    B --> D[Context Precision<br/>Retrieved docs relevant?]
+    B --> E[Context Recall<br/>All needed facts found?]
+    C --> F[Faithfulness<br/>Claims grounded in context?]
+    C --> G[Answer Relevancy<br/>Actually answers the question?]
+    D & E --> H[Retrieval Score]
+    F & G --> I[Generation Score]
+    H & I --> J[Overall RAG Score]
+```
 
 ---
 

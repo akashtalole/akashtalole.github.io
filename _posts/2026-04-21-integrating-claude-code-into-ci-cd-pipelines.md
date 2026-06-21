@@ -6,6 +6,7 @@ categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "Moving AI code review from a manual step to an automated part of your CI/CD pipeline. Practical integration patterns, what to automate, what to leave manual, and the cost and complexity tradeoffs I've run into."
 author: akashtalole
+mermaid: true
 ---
 
 Yesterday I covered using Claude Code for manual pre-review — the author pastes the diff, gets feedback, fixes issues before submitting. That's a good starting point. But it relies on individual discipline, and discipline is inconsistent under pressure.
@@ -13,6 +14,22 @@ Yesterday I covered using Claude Code for manual pre-review — the author paste
 The more durable pattern is automating it: make the AI review happen as part of the pipeline, on every PR, every time, without anyone having to remember to do it.
 
 Here's what I've tried, what worked, what didn't, and what the tradeoffs look like in practice.
+
+```mermaid
+flowchart TD
+    A[PR Opened] --> B[CI Pipeline Triggered]
+    B --> C[AI: Generate PR Description]
+    B --> D[AI: Security Pattern Check]
+    B --> E[AI: Test Coverage Gap Analysis]
+    C --> F[Post as PR Comment]
+    D --> G{High severity?}
+    G -- Yes --> H[Block merge\nRequire review]
+    G -- No --> I[Informational comment]
+    E --> F
+    H --> J[Human Reviews & Approves]
+    I --> J
+    J --> K[Merge to protected branch]
+```
 
 ---
 

@@ -6,6 +6,7 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "At some point every AI investment has to justify itself. How to build a credible business case for AI tooling, what metrics to use, what to avoid, and the honest conversation about what AI adoption is actually worth."
 author: akashtalole
+mermaid: true
 ---
 
 At some point you will have to justify the AI investment to someone who doesn't use the tools and wants to see numbers.
@@ -13,6 +14,27 @@ At some point you will have to justify the AI investment to someone who doesn't 
 The mistake most engineers make in this conversation is leading with technology. "Claude Code is amazing, Copilot saves me so much time." This lands as evangelism and doesn't move decision-makers.
 
 The conversation that works is business outcomes: what changed, what it cost, what the organisation got.
+
+```mermaid
+flowchart TD
+    A[Build AI Business Case] --> B[Cost Baseline]
+    A --> C[Measurable Task Impact]
+    A --> D[Risk Reduction Case]
+    A --> E[Adoption Costs Included]
+    B --> B1[Engineer Hours x Hourly Rate]
+    C --> C1[Specific Before/After Times]
+    C --> C2[Cycle Time Reduction]
+    C --> C3[Time-to-First-Contribution]
+    D --> D1[Fewer Defects]
+    D --> D2[Faster Incident Resolution]
+    E --> E1[Training Time]
+    E --> E2[Productivity Dip During Transition]
+    B1 --> F[Present to Decision-Makers]
+    C1 --> F
+    D1 --> F
+    E1 --> F
+    F --> G[Honest Case Wins Trust]
+```
 
 ---
 

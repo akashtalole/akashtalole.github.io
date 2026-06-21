@@ -6,6 +6,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, agents, coding-agents, agent-skills, claude-code, copilot-studio]
 description: "Agentic AI is one of the most overused phrases in tech right now. Here's what it actually means for engineers building real systems — and why the mental model matters more than the buzzword."
 author: akashtalole
+mermaid: true
 ---
 
 "Agentic AI" is everywhere right now. Every product announcement uses it. Half the LinkedIn posts about AI use it. Most of them mean something slightly different by it, and a few mean nothing at all.
@@ -13,6 +14,18 @@ author: akashtalole
 That's a problem, because the concept underneath the buzzword is actually important — not as a marketing term, but as an engineering paradigm. If you're building systems that use AI, or using AI tools to build systems, understanding what "agentic" really means will change how you think about design, failure, and trust.
 
 So let's be precise about it.
+
+```mermaid
+flowchart TD
+    A[Goal Given to Agent] --> B[Observe Environment]
+    B --> C[Reason: Plan Next Action]
+    C --> D[Act: Use Tool]
+    D --> E{Evaluate Outcome}
+    E -- Goal Met --> F[Done / Report]
+    E -- Continue --> B
+    E -- Failure --> G[Handle Error / Recover]
+    G --> B
+```
 
 ---
 

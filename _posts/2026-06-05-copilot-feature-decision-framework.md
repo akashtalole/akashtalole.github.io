@@ -6,11 +6,31 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "Inline completion, Copilot Chat, Copilot Workspace, agent mode — four distinct tools with different costs and capabilities. A practical decision framework so engineers reach for the right tool instead of defaulting to the most expensive one."
 author: akashtalole
+mermaid: true
 ---
 
 One of the clearest cost-control wins in the new Copilot pricing model is matching the tool to the task. Using Copilot Workspace for a task that inline completion handles is like hiring a senior consultant to do data entry — it's not that the consultant can't do it, it's that it's the wrong tool and you're paying the wrong rate.
 
 Here's a decision framework for the four main Copilot modalities.
+
+```mermaid
+flowchart TD
+    A[New Task] --> B{Single line or block completion?}
+    B -->|Yes| C[Inline Completion - Free]
+    B -->|No| D{Understanding existing code?}
+    D -->|Yes| E[Copilot Chat with /explain]
+    D -->|No| F{Changes across multiple files?}
+    F -->|Yes - mechanical changes| G[Copilot Workspace]
+    F -->|Yes - complex judgment| H{Needs to run and iterate?}
+    F -->|No - single file| I[Chat with constraints]
+    H -->|Yes| J[Agent Mode - Highest Cost]
+    H -->|No| G
+    style C fill:#22c55e,color:#fff
+    style E fill:#f59e0b,color:#fff
+    style I fill:#f59e0b,color:#fff
+    style G fill:#ef4444,color:#fff
+    style J fill:#ef4444,color:#fff
+```
 
 ---
 

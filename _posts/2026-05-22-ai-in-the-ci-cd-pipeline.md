@@ -6,11 +6,30 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, coding-agents]
 description: "CI/CD pipelines enforce quality automatically. AI can extend what's enforceable — from security scanning to semantic code review. Where AI-powered gates add real value in the pipeline and where they add noise."
 author: akashtalole
+mermaid: true
 ---
 
 CI/CD pipelines are where quality gates live. Tests pass or they don't. Lint checks pass or they don't. Security scans find vulnerabilities or they don't.
 
 AI extends what's checkable in a pipeline. Where traditional CI can verify syntactic and structural correctness, AI gates can start checking semantic intent — does this code do what it claims to do? But adding AI to pipelines requires care about what you're actually enforcing and what noise you're adding.
+
+```mermaid
+flowchart TD
+    A[PR opened] --> B[Standard gates: lint, tests, type check]
+    B --> C[AI-assisted gates: advisory phase]
+    C --> C1[AI code review: flag missing error handling]
+    C --> C2[PR description completeness check]
+    C --> C3[Commit message quality check]
+    C --> C4[AI security scan: SAST patterns]
+    C --> C5[Documentation drift detection]
+    C1 & C2 & C3 & C4 & C5 --> D{Gate findings}
+    D -->|Advisory only at first| E[Report to engineer, not blocking]
+    E --> F[Collect false positive data]
+    F --> G{Signal quality validated?}
+    G -->|Yes| H[Promote gate to blocking]
+    G -->|No| I[Tune or remove gate]
+    H --> J[Merge]
+```
 
 ---
 
