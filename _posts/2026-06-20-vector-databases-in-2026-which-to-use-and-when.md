@@ -6,11 +6,25 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "The vector database landscape has matured. Qdrant, pgvector, Weaviate, and Pinecone each have a clear profile. Here's the decision framework based on scale, existing infrastructure, and query patterns — not benchmarks."
 author: akashtalole
+mermaid: true
 ---
 
 The vector database market has matured significantly since 2023. There are now clear leaders with distinct profiles, and the decision between them is more about your context than about which one has the best benchmark numbers.
 
 This post is the practical decision guide.
+
+```mermaid
+flowchart TD
+    A[Choose Vector DB] --> B{Scale?}
+    B -->|Under 1M vectors| C{Already use Postgres?}
+    B -->|Over 1M vectors| D{Managed service?}
+    C -->|Yes| E[pgvector]
+    C -->|No| F[Qdrant]
+    D -->|Yes| G[Pinecone]
+    D -->|No| H{Multi-modal?}
+    H -->|Yes| I[Weaviate]
+    H -->|No| J[Qdrant]
+```
 
 ---
 

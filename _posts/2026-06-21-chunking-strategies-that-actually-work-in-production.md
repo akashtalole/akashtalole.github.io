@@ -6,9 +6,21 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "How you split documents determines what your RAG system can find. Fixed-size chunking is the beginner approach. Semantic chunking, parent-document retrieval, and document-type-aware splitting are what production systems actually use."
 author: akashtalole
+mermaid: true
 ---
 
 Chunking is the unglamorous part of RAG that has an outsized impact on retrieval quality. Teams that spend all their effort on embedding models and vector databases but default to naive fixed-size chunking are leaving significant quality on the table.
+
+```mermaid
+flowchart TD
+    A[Document Input] --> B{Choose Strategy}
+    B -->|Simple / fast| C[Fixed-size Chunks<br/>512-1024 tokens + overlap]
+    B -->|Better coherence| D[Semantic Chunking<br/>Split on meaning boundaries]
+    B -->|Best retrieval| E[Parent-Child<br/>Small child retrieved<br/>Large parent used]
+    C --> F[Easy, predictable]
+    D --> G[Higher quality, slower]
+    E --> H[Highest precision + context<br/>Most complex]
+```
 
 ---
 

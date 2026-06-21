@@ -6,6 +6,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, mcp, coding-agents, tool-use, enterprise]
 description: "Model Context Protocol (MCP) has become the de facto standard for connecting AI agents to tools and data sources. What it is, how it works, how to build an MCP server, and why it matters more than which model you use."
 author: akashtalole
+mermaid: true
 ---
 
 If you've been building AI agents in the past 12 months, you've almost certainly encountered MCP — or you've been building the same thing it does, less standardised.
@@ -13,6 +14,18 @@ If you've been building AI agents in the past 12 months, you've almost certainly
 Model Context Protocol is the JSON-RPC 2.0 based protocol that governs how AI models connect to external tools and data sources. Originally developed by Anthropic and now governed by the Linux Foundation with support from OpenAI, Google, Microsoft, and AWS, it's become the de facto standard for tool connectivity in AI systems.
 
 This post is the practical explanation — what MCP is, how it works, and what you need to know to build with it.
+
+```mermaid
+graph LR
+    A[AI Agent / Host] -->|JSON-RPC 2.0| B[MCP Client]
+    B -->|stdio / SSE| C[MCP Server]
+    C --> D[(Tools)]
+    C --> E[(Resources)]
+    C --> F[(Prompts)]
+    D --> G[Execute actions]
+    E --> H[Read data]
+    F --> I[Reusable instructions]
+```
 
 ---
 

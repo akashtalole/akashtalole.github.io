@@ -6,6 +6,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc]
 description: "GPT-5.5, Claude Opus 4.8, and Gemini 3.1 Ultra are all genuinely extraordinary and nearly indistinguishable on most benchmarks. The frontier model gap has closed. Here's what that changes for how engineers build."
 author: akashtalole
+mermaid: true
 ---
 
 In 2023, the model you chose mattered enormously. GPT-4 was a generation ahead of everything else. The choice of model was an architectural decision with significant product impact.
@@ -13,6 +14,17 @@ In 2023, the model you chose mattered enormously. GPT-4 was a generation ahead o
 In mid-2026, that's no longer true at the frontier. GPT-5.5, Claude Opus 4.8, and Gemini 3.1 Ultra are all remarkable systems that score within a few percentage points of each other on the benchmarks that matter. The model wars, at the frontier, are effectively over.
 
 This changes several things about how we build.
+
+```mermaid
+flowchart TD
+    A[Model Selection 2026] --> B{Task Complexity}
+    B -->|Low| C[Efficient Tier<br/>Haiku 4.5<br/>$0.10/M]
+    B -->|Medium| D[Frontier Tier<br/>Sonnet 4.6<br/>$3/M]
+    B -->|High| E[Reasoning Tier<br/>Opus 4.8<br/>$15/M]
+    C --> F[60-70% of tasks]
+    D --> G[25-35% of tasks]
+    E --> H[5-10% of tasks]
+```
 
 ---
 

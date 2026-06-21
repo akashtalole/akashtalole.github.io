@@ -6,6 +6,7 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "Context windows are finite even at 100K+ tokens. Long-running agents accumulate state, conversation history, and tool outputs that eventually overflow the window. The strategies that keep production agents working correctly over time."
 author: akashtalole
+mermaid: true
 ---
 
 Context windows have grown dramatically — 100K, 200K, even 1M tokens for some models. Engineers sometimes assume this makes context management a solved problem.
@@ -13,6 +14,19 @@ Context windows have grown dramatically — 100K, 200K, even 1M tokens for some 
 It doesn't. Long-running agents accumulate state. A customer service agent handling a complex inquiry may go through dozens of tool calls and multi-turn conversation before resolution. An autonomous coding agent working on a large codebase exploration fills its context quickly. And as context fills, model performance degrades — the "lost in the middle" problem, where information in the middle of a long context is less reliably attended to.
 
 Context management is an active concern in any non-trivial agent deployment.
+
+```mermaid
+graph TD
+    A[200K Token Budget] --> B[System Prompt ~2K]
+    A --> C[Conversation History ~50K]
+    A --> D[Retrieved Context ~40K]
+    A --> E[Tool Results ~20K]
+    A --> F[Output Reserve ~8K]
+    C -->|Overflow| G[Summarise old turns]
+    D -->|Overflow| H[Compress results]
+    E -->|Overflow| I[Truncate verbose output]
+    G & H & I --> J[Stay within budget]
+```
 
 ---
 

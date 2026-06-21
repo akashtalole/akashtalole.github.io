@@ -6,11 +6,22 @@ categories: [ai, enterprise]
 tags: [agentic-ai, coding-agents, enterprise, sdlc]
 description: "The Cloud Security Alliance found security flaws in 62% of AI-generated code samples they tested. What types of flaws, why AI generates them, and the review and tooling practices that catch them before they reach production."
 author: akashtalole
+mermaid: true
 ---
 
 In early 2026, the Cloud Security Alliance published results from a large-scale analysis of AI-generated code. Across models, languages, and task types, 62% of code samples contained at least one security flaw.
 
 That number gets cited a lot. What gets cited less often is the breakdown: what kinds of flaws, in what contexts, and what the implications actually are for teams using AI-assisted development.
+
+```mermaid
+pie title Security Flaw Distribution in AI-Generated Code
+    "Injection vulnerabilities" : 18
+    "Hardcoded credentials" : 15
+    "Insecure dependencies" : 12
+    "Insufficient input validation" : 10
+    "Error handling leaks" : 7
+    "Other" : 18
+```
 
 ---
 

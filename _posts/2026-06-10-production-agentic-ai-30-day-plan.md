@@ -6,6 +6,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, coding-agents, enterprise, ai-in-sdlc, mcp]
 description: "The third series. After covering individual AI tooling and team-level adoption, this one goes into the production engineering layer: protocols, RAG, advanced agent architectures, security, and scaling. 30 posts, June 10 to July 9."
 author: akashtalole
+mermaid: true
 ---
 
 Two series done. The first covered the tools — Claude Code, GitHub Copilot, Copilot Studio, coding agents — from an individual engineer's perspective. The second covered what changes at the team level when AI is adopted seriously.
@@ -74,6 +75,15 @@ This series is for engineers who've moved past "AI is interesting" and are now a
 | 28 | The Reasoning Model Revolution — Beyond Next-Token Prediction |
 | 29 | Open-Source vs Commercial Models — The 2026 Decision |
 | 30 | Where Agentic AI Goes Next — The Honest View |
+
+```mermaid
+graph LR
+    A[Production Agentic AI] --> B[Arc 1: Landscape<br/>Days 1-6]
+    A --> C[Arc 2: RAG & Knowledge<br/>Days 7-12]
+    A --> D[Arc 3: Architecture<br/>Days 13-18]
+    A --> E[Arc 4: Security<br/>Days 19-24]
+    A --> F[Arc 5: Scale & Future<br/>Days 25-30]
+```
 
 ---
 
