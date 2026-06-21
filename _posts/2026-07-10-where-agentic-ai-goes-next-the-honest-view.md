@@ -6,9 +6,27 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "30 days of production agentic AI engineering. What the hype gets wrong, what's genuinely changing, the capabilities that are real versus the ones that are demo-ware, and the engineering skills that will matter over the next two years."
 author: akashtalole
+mermaid: true
 ---
 
 This is the final post in a 30-day series on production agentic AI engineering. It's a good moment to step back from the tactical and say something honest about where we are and where this is going.
+
+```mermaid
+graph TD
+    R[Real in production today]
+    C[Real but needs care]
+    D[Still demo-ware]
+    R --> R1[Document analysis at scale]
+    R --> R2[Code gen with human review]
+    R --> R3[Customer service — defined queries]
+    R --> R4[Research agents — structured output]
+    C --> C1[Computer use — structured UIs]
+    C --> C2[Multi-agent research + synthesis]
+    C --> C3[Autonomous code modification]
+    D --> D1[Fully autonomous software engineering]
+    D --> D2[General-purpose novel-situation agents]
+    D --> D3[Self-improving without structured loops]
+```
 
 ---
 

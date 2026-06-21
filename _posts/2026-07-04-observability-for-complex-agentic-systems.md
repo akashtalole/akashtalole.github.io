@@ -6,11 +6,25 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "An agent that takes 47 steps, calls 12 tools, and costs $0.23 to run is a black box without proper observability. Tracing, metrics, and cost attribution for agentic systems — what to instrument and how to make the data useful."
 author: akashtalole
+mermaid: true
 ---
 
 Traditional application observability — request/response logs, error rates, p99 latency — is necessary but not sufficient for agentic systems. When something goes wrong in a 40-step agent workflow, "the request failed" is useless. You need to know which step failed, what the agent was trying to do, what it had retrieved so far, and why it made the decision it made.
 
 Agentic observability is a different discipline.
+
+```mermaid
+graph TD
+    A[Agent Session] --> B[Traces\nOTel spans per step]
+    A --> C[Metrics\nlatency · error rate · throughput]
+    A --> D[Cost Attribution\ntokens · USD per step]
+    B --> E[Step spans\nnode · input · output · latency]
+    E --> F[LLM call spans\nmodel · input tokens · output tokens · cost]
+    E --> G[Tool call spans\ntool name · params · result · latency]
+    C --> H[Dashboard\nP50/P95/P99 · error by step · abandonment rate]
+    D --> I[Cost alerts\nhigh-cost session detection]
+    F --> I
+```
 
 ---
 

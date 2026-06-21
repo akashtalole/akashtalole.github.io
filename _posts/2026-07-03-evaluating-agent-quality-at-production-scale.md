@@ -6,9 +6,25 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "How do you know your agent is getting better rather than worse? Evaluation for agentic systems is harder than for single-turn LLM calls — tasks span multiple steps, outputs are open-ended, and human review doesn't scale. The evaluation architecture that makes continuous improvement possible."
 author: akashtalole
+mermaid: true
 ---
 
 Shipping an agent isn't the end of quality work — it's the beginning. Model versions change, prompts drift, tools evolve, and the distribution of real-world tasks doesn't match what you tested against. Without a systematic evaluation pipeline, you find out an agent regressed when a user files a complaint.
+
+```mermaid
+flowchart TD
+    A[Agent Output] --> B[Level 1: Deterministic Checks\nruns in CI, fast & free]
+    B -->|pass| C[Level 2: LLM-as-Judge\nrubric scoring, scalable]
+    B -->|fail| F[Flag as regression]
+    C -->|score >= threshold| D[Production sample\n5-10% to Level 3]
+    C -->|score < threshold| F
+    D --> E[Level 3: Human Evaluation\nground truth, calibration]
+    E --> G[Calibrate LLM judge]
+    E --> H[Add case to regression suite]
+    F --> H
+    H --> I[Regression suite\n50-100 cases]
+    I --> B
+```
 
 ---
 

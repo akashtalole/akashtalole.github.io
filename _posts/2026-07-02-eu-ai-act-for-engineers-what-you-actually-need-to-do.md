@@ -6,11 +6,25 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, sdlc, ai-in-sdlc]
 description: "The EU AI Act's main obligations entered full enforcement in August 2026. This is what the Act actually requires of engineering teams building AI systems — not the legal overview, but the specific technical and documentation work that compliance requires."
 author: akashtalole
+mermaid: true
 ---
 
 The EU AI Act became fully applicable in August 2026. Most coverage of it reads like legal commentary — risk tiers, obligations, prohibited systems. Useful context, but not what an engineering team needs to start a compliance sprint.
 
 This post is for engineers who've been told "we need to be EU AI Act compliant" and need to know what that means in practice.
+
+```mermaid
+graph TD
+    A[Your AI System] --> B{Risk Classification}
+    B --> C[Unacceptable Risk\nProhibited outright]
+    B --> D[High Risk\nCritical infra, employment,\nmedical, law enforcement]
+    B --> E[Limited Risk\nChatbots, deepfakes,\nemotion recognition]
+    B --> F[Minimal Risk\nInternal tools, code\nassistants, general automation]
+    C --> G[Do not build]
+    D --> H[Technical docs\nAudit logging\nHuman oversight\nConformity assessment]
+    E --> I[Disclose AI identity\nMark synthetic content]
+    F --> J[No specific obligations\nbeyond existing law]
+```
 
 ---
 

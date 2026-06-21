@@ -6,9 +6,27 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "Agentic systems that work at 10 users per day face different problems at 10,000. Horizontal scaling, async processing, caching, rate limit management, and the reliability patterns that keep agents working when the underlying LLMs don't."
 author: akashtalole
+mermaid: true
 ---
 
 Scaling AI agents is a different problem from scaling traditional web services. The bottleneck isn't your database or your application server — it's the external LLM APIs you depend on, which have their own rate limits, availability characteristics, and cost structures.
+
+```mermaid
+flowchart TD
+    A[User Request] --> B[API Gateway]
+    B --> C{Interactive?}
+    C -->|yes| D[Sync Handler\nstreaming response]
+    C -->|no| E[Task Queue\nhigh / standard / batch]
+    E --> F[Worker Pool\nCelery workers]
+    F --> G[Rate Limiter\nTPM + RPM token bucket]
+    G --> H{Cache Hit?}
+    H -->|yes| I[Return cached result]
+    H -->|no| J[LLM Provider\nPrimary: Anthropic]
+    J -->|rate limit / error| K[Fallback Provider\nOpenAI → Google]
+    J -->|success| L[Cache + Return]
+    K --> L
+    D --> G
+```
 
 ---
 

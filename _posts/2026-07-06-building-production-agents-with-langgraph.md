@@ -6,11 +6,24 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, langgraph, tool-use]
 description: "A complete production-grade research agent built with LangGraph: typed state, tool execution, human-in-the-loop review, PostgreSQL persistence, and error recovery. The patterns that make LangGraph agents reliable in production."
 author: akashtalole
+mermaid: true
 ---
 
 LangGraph's core abstraction — a graph of nodes with typed state flowing between them — maps well to how production agents actually need to work: explicit state transitions, checkpointed persistence, and controllable execution.
 
 This walkthrough builds a complete research agent: it takes a question, searches the web, synthesises findings, and requests human review before delivering a final answer.
+
+```mermaid
+flowchart TD
+    START([START]) --> P[plan_searches\nGenerate 3 queries via LLM]
+    P --> S[execute_searches\nTavily web search]
+    S --> Y[synthesise\nDraft answer from results]
+    Y --> H[human_review\ninterrupt — await decision]
+    H -->|approve| D[deliver_answer\nSend final answer]
+    H -->|revise & iterations left| P
+    H -->|reject or max iterations| END2([END])
+    D --> END2
+```
 
 ---
 
