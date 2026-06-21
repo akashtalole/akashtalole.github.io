@@ -6,6 +6,7 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "AI can reason about architecture, but architectural decisions require context, constraints, and judgment that AI doesn't have by default. How AI-first teams use AI in design reviews without outsourcing the judgment."
 author: akashtalole
+mermaid: true
 ---
 
 Architecture decisions are where AI assistance gets most interesting and most dangerous at the same time.
@@ -13,6 +14,24 @@ Architecture decisions are where AI assistance gets most interesting and most da
 Interesting because AI can reason about architectural tradeoffs with genuine sophistication — surfacing options the team hasn't considered, identifying coupling risks, comparing approaches against known patterns.
 
 Dangerous because architectural decisions are irreversible, context-dependent, and require knowledge of your specific constraints that AI doesn't have unless you provide it explicitly.
+
+```mermaid
+flowchart TD
+    A[Architecture problem] --> B[Author writes proposal]
+    B --> C[Run through AI with constraints]
+    C --> D[AI generates: risks, alternatives, missing edge cases]
+    D --> E[Add AI challenges to review doc]
+    E --> F[Design review meeting]
+    F --> G{Team responds to challenges}
+    G -->|Addressed| H[ADR: AI drafts structure]
+    G -->|Not addressed| I[Revise design]
+    I --> F
+    H --> J[Engineer fills in: decision, context, constraints]
+    J --> K[ADR committed to repo]
+    K --> L{Future code change touches this area?}
+    L -->|Yes| M[Reference ADR in PR]
+    L -->|No| N[Decision preserved]
+```
 
 ---
 

@@ -6,6 +6,7 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, github-copilot]
 description: "Code review was designed for humans writing code. When AI writes a significant portion of a PR, the review process needs to change — what to focus on, how to annotate AI-assisted sections, and the failure modes that AI introduces."
 author: akashtalole
+mermaid: true
 ---
 
 Code review is where AI-first teams most often underinvest.
@@ -13,6 +14,24 @@ Code review is where AI-first teams most often underinvest.
 There's a subtle psychological dynamic at play: AI-generated code looks clean. It follows style conventions, handles common error cases, passes lint checks. It looks like the output of a careful engineer. So reviewers give it less scrutiny than handwritten code that looks rougher.
 
 This is backwards. The categories of mistakes AI makes are different from human mistakes, and reviewers need to know what to look for.
+
+```mermaid
+flowchart TD
+    A[AI-Assisted PR arrives] --> B[Skip: style and formatting review]
+    A --> C[Check: business logic correctness]
+    A --> D[Check: boundary and edge cases]
+    A --> E[Check: security patterns]
+    A --> F[Check: hallucinated or wrong APIs]
+    C --> G{Author can explain why correct?}
+    G -->|No| H[Block — needs deeper review]
+    G -->|Yes| I[Review tests against spec, not code]
+    I --> J{Tests cover business intent?}
+    J -->|No| K[Add missing test cases]
+    J -->|Yes| L[Approve]
+    D --> G
+    E --> G
+    F --> G
+```
 
 ---
 

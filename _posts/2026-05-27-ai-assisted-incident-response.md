@@ -6,11 +6,33 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code, coding-agents]
 description: "Production incidents are high-stakes, time-pressured, and often involve code or systems the on-call engineer didn't write. AI can significantly accelerate incident response — but only if you've prepared for it."
 author: akashtalole
+mermaid: true
 ---
 
 Production incidents don't wait for you to be familiar with the system. At 2am, the on-call engineer gets paged. The service is down. They may or may not have worked on the component that's failing.
 
 This is the scenario where AI assistance has the highest stakes and the highest potential value. It's also where it has the highest potential for a wrong AI suggestion leading to a worse incident.
+
+```mermaid
+flowchart TD
+    A[Alert fires / Incident starts] --> B[AI: interpret errors and stack traces]
+    B --> C[AI: generate ranked hypotheses]
+    C --> D[Engineer: investigate top hypothesis]
+    D --> E[AI: navigate codebase, pull relevant logs]
+    E --> F{Root cause found?}
+    F -->|No| G[AI: cross-reference runbook and known failure modes]
+    G --> D
+    F -->|Yes| H[Engineer: decide on remediation]
+    H --> I{AI suggests action?}
+    I -->|Yes| J[Engineer verifies understanding before executing]
+    I -->|No| J
+    J --> K[Execute remediation]
+    K --> L[AI drafts stakeholder status update]
+    L --> M[Engineer reviews and sends]
+    M --> N[Incident resolved]
+    N --> O[AI drafts post-mortem structure]
+    O --> P[Engineer fills in context and root cause]
+```
 
 ---
 

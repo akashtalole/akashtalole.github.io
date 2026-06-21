@@ -6,6 +6,7 @@ categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "The traditional markers of seniority — coding speed, pattern familiarity, ability to implement complex features — are being compressed by AI. What senior engineers are actually for in an AI-first team."
 author: akashtalole
+mermaid: true
 ---
 
 Senior engineers have historically been valuable for several things that AI is now commoditising. The ability to implement a complex feature quickly. Deep familiarity with the codebase and its patterns. The productivity advantage that comes from having seen and solved similar problems before.
@@ -13,6 +14,23 @@ Senior engineers have historically been valuable for several things that AI is n
 AI compresses some of this advantage. A junior engineer with Claude Code can implement many complex features more quickly than a senior engineer without AI tools. Codebase familiarity is partially replaced by AI's ability to read and synthesise code at speed.
 
 This doesn't make senior engineers less valuable. It changes what the value is.
+
+```mermaid
+graph TD
+    A[Senior Engineer Value] --> B[Being Compressed by AI]
+    A --> C[Remaining Fully Human]
+    B --> B1[Implementation speed]
+    B --> B2[Pattern recall and boilerplate]
+    C --> C1[Judgment under uncertainty]
+    C --> C2[Trust calibration for AI output]
+    C --> C3[System-level and architectural thinking]
+    C --> C4[Mentoring and knowledge transfer]
+    C --> C5[Stakeholder communication and requirement clarification]
+    A --> D[New Value in AI-First Teams]
+    D --> D1[AI practice ownership and prompt design]
+    D --> D2[Creating team context: CLAUDE.md, prompt libraries]
+    D --> D3[Multiplying AI output quality across the whole team]
+```
 
 ---
 

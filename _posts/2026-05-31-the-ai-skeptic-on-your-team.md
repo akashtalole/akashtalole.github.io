@@ -6,11 +6,27 @@ categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Every team going through AI adoption has at least one AI skeptic. Some concerns are legitimate. Some are fear-based resistance. Knowing the difference — and responding to each appropriately — is one of the harder parts of leading an AI-first team."
 author: akashtalole
+mermaid: true
 ---
 
 Every team has one. The engineer who doesn't use the AI tools, or uses them minimally and apologetically. Who raises objections in team meetings. Who completes their work reliably but outside the AI-assisted workflow the rest of the team is building.
 
 How you handle this person matters more than it might seem. Get it wrong and you either marginalise a legitimate voice or let one person block a transition the team needs to make.
+
+```mermaid
+flowchart TD
+    A[AI Skeptic on the team] --> B{Identify type}
+    B -->|Principled| C[Engage concerns directly and honestly]
+    B -->|Productivity| D[Find their real bottlenecks, demonstrate value there]
+    B -->|Identity-threatened| E[Create wins where human judgment is clearly dominant]
+    B -->|Legitimately correct| F[Listen carefully — they may be right for their context]
+    C --> G[Concerns shape better team policies]
+    D --> H[Pair with engineer who has similar workflow]
+    E --> I[Small wins shift the relationship over time]
+    F --> J[Document specific case; don't force adoption]
+    G & H & I & J --> K[Good outcome: skeptic's concerns improve adoption approach]
+    K --> L[Stronger practices than a team of enthusiasts who never examined downsides]
+```
 
 ---
 

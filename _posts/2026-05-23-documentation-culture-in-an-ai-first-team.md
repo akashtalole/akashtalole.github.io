@@ -6,6 +6,7 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "The honest answer: AI makes documentation happen more often, but it can make documentation less useful if you're not careful. The documentation culture patterns that work in AI-first teams, and the failure modes to watch."
 author: akashtalole
+mermaid: true
 ---
 
 One of the consistent findings from my April series: AI dramatically lowers the activation energy for writing documentation. Engineers who would never have written a README are willing to prompt Claude Code to generate one from their code.
@@ -13,6 +14,22 @@ One of the consistent findings from my April series: AI dramatically lowers the 
 This is unambiguously good for teams that had a documentation deficit — and most teams did.
 
 But it surfaces a different problem. When documentation is easy to generate, teams can end up with a lot of documentation that's technically correct but doesn't contain the information that actually matters. Volume without value.
+
+```mermaid
+flowchart TD
+    A[Code change complete] --> B[AI generates structure and what]
+    B --> C[Human writes: why, decisions, caveats]
+    C --> D[Review docs like code]
+    D --> E{Why is present? Context sufficient?}
+    E -->|No| F[Add missing context]
+    F --> D
+    E -->|Yes| G[Docs added to PR as part of DoD]
+    G --> H[Code merges]
+    H --> I{Future code change affects documented behaviour?}
+    I -->|Yes| J[AI flags potential drift]
+    J --> K[Human reviews and updates docs]
+    I -->|No| L[Docs remain current]
+```
 
 ---
 

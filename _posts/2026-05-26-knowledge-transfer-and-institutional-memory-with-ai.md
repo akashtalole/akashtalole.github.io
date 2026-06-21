@@ -6,11 +6,30 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "Institutional knowledge — why systems work the way they do, what was tried and failed, the constraints nobody wrote down — is what makes teams resilient. AI can help retrieve it but can't replace it. How AI-first teams protect institutional memory."
 author: akashtalole
+mermaid: true
 ---
 
 Every team has knowledge that lives in people's heads rather than in systems. Why the authentication service uses the unusual session management approach. Why the order processor has that seemingly redundant idempotency check. What happened the last time someone removed the rate limiter.
 
 This knowledge is what separates a team that can debug a novel production incident in 30 minutes from a team that takes two days. And it's the knowledge that evaporates when engineers leave.
+
+```mermaid
+graph TD
+    A[Institutional Knowledge] --> B[Documented]
+    A --> C[Undocumented / Tacit]
+    B --> B1[Code comments with war stories]
+    B --> B2[ADRs with context and constraints]
+    B --> B3[Post-mortem documents]
+    B --> B4[Offboarding knowledge dumps]
+    C --> C1[Lives only in engineers heads]
+    C --> C2[AI cannot retrieve it]
+    C --> C3[Lost when engineers leave]
+    B -->|AI retrieval interface| D[Claude Code Q&A over docs]
+    D --> E[Compounding ROI on documentation quality]
+    C --> F[Single point of failure]
+    F --> G[Knowledge retrieval testing: can we explain unusual patterns?]
+    G -->|No| H[Document before it is lost]
+```
 
 ---
 
