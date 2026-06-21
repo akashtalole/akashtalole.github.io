@@ -6,11 +6,27 @@ categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Memory is where agentic systems get subtle and hard to debug. Context windows fill up. Conversation history grows. The agent starts forgetting, confusing, or contradicting itself. Here's how to design memory properly from the start."
 author: akashtalole
+mermaid: true
 ---
 
 If you've built a basic agent and run it on longer tasks, you've hit the memory problem. The agent starts well, but somewhere in the middle it seems to forget what it was doing. It re-reads files it already processed. It contradicts conclusions it reached earlier. It loses track of progress.
 
 This isn't a model quality issue. It's a context management issue — and it's entirely solvable if you design for it from the start.
+
+```mermaid
+graph TD
+    A[Agent Task] --> B[Working Memory]
+    A --> C[Short-Term Memory]
+    A --> D[Long-Term Memory]
+    B -->|Explicit task state object| E[Per-step progress tracking]
+    C -->|Summarise tool results| F[Compressed conversation history]
+    C -->|Trim when full| G[Context window management]
+    D -->|External JSON/DB| H[Cross-session knowledge store]
+    H -->|Inject relevant findings| I[New session context]
+    E --> J[Agent stays on track]
+    F --> J
+    I --> J
+```
 
 ---
 

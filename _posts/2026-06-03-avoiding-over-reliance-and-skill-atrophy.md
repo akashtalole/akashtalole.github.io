@@ -6,6 +6,7 @@ categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Over-reliance on AI is a real risk — not a theoretical one. Engineers who stop practicing skills they've outsourced to AI lose them. How to build AI-first practices that augment capability rather than erode it."
 author: akashtalole
+mermaid: true
 ---
 
 Skill atrophy is what happens when you stop practicing something. It's been understood for decades in physical skills — athletes who stop training lose conditioning. It applies to cognitive skills too.
@@ -13,6 +14,23 @@ Skill atrophy is what happens when you stop practicing something. It's been unde
 AI introduces a new version of this problem: when AI does a task well enough, engineers stop practicing it. Over time, they can no longer do it without AI. If AI becomes unavailable or unreliable for that task, the team's capability has degraded.
 
 This isn't hypothetical. I've seen it happen in specific, small ways already.
+
+```mermaid
+graph TD
+    A[Engineer Uses AI for Task] --> B{Understands Output?}
+    B -->|Yes - Reviews & Learns| C[Skill Amplified]
+    B -->|No - Just Accepts| D[Skill Atrophied]
+    C --> E[AI as Accelerator]
+    D --> F[AI as Substitute]
+    F --> G[Fragile Engineer]
+    E --> H[Resilient Engineer]
+    H --> I[Deliberate AI-Free Practice]
+    I --> H
+    G --> J[Recovery Drills Needed]
+    J --> I
+    style C fill:#22c55e,color:#fff
+    style D fill:#ef4444,color:#fff
+```
 
 ---
 

@@ -6,11 +6,26 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "AI doesn't eliminate roles — it changes what each role is for. What senior engineers, juniors, and tech leads actually do differently in an AI-first team, and why the value propositions of each role need re-examination."
 author: akashtalole
+mermaid: true
 ---
 
 The most anxiety-producing question in AI adoption conversations is the one about roles. "What happens to junior engineers when AI can write code?" "Do we need as many senior engineers?" "What's a tech lead actually for now?"
 
 These are real questions. I want to answer them honestly, without the "AI just creates more jobs" reassurance that sidesteps the actual change.
+
+```mermaid
+graph TD
+    A[Role Evolution in AI-First Teams] --> B[Junior Engineers]
+    A --> C[Senior Engineers]
+    A --> D[Tech Leads]
+    B -->|Before AI| B1[Implement clear, bounded tasks]
+    B -->|With AI| B2[Verify AI output, write specs, author tests]
+    C -->|Compressed by AI| C1[Implementation speed advantage]
+    C -->|Remains human| C2[Requirement disambiguation & system-level thinking]
+    D -->|Reduced need| D1[Style and pattern enforcement]
+    D -->|Expanded role| D2[AI practice ownership & prompt design]
+    D -->|Expanded role| D3[Trust calibration across team]
+```
 
 ---
 

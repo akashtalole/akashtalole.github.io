@@ -6,11 +6,30 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "What works for a team of 8 doesn't automatically scale to 80 or 800. The specific challenges of AI adoption at scale — consistency, coordination, measurement, and the rollout sequencing that makes organisational transitions stick."
 author: akashtalole
+mermaid: true
 ---
 
 Everything in this series has been written primarily at the team level — 6 to 20 engineers, operating under a single technical lead, able to establish shared norms through direct conversation.
 
 Scaling that to a larger engineering organisation is a different problem. The direct relationship between lead and every engineer doesn't exist. Norms can't spread through conversation alone. Measurement becomes harder. And the variance in AI maturity across teams creates coordination challenges.
+
+```mermaid
+flowchart TD
+    A[Org-Level AI Adoption] --> B[Centralised Toolchain Decisions]
+    A --> C[AI Champion Network]
+    A --> D[Shared Prompt Libraries]
+    A --> E[Centralised Measurement]
+    C --> F[Team Champion]
+    F --> G[Cross-Team Knowledge Share]
+    G --> D
+    B --> H[Wave 1: High-Affinity Team]
+    H --> I[Codify Learnings]
+    I --> J[Wave 2: Skeptical Team]
+    J --> K[Tiered Practices by Maturity]
+    K --> L[Base Policies for All]
+    K --> M[Advanced Practices Optional]
+    E --> N[Cycle Time / Defect Rate]
+```
 
 ---
 

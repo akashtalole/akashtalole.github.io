@@ -6,11 +6,30 @@ categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, agentic-ai, enterprise]
 description: "Copilot Studio is not a chatbot builder. It's a platform for deploying AI agents across enterprise systems. Here's the developer's honest guide — what it's genuinely good at, where it has rough edges, and how to think about it alongside code-first approaches."
 author: akashtalole
+mermaid: true
 ---
 
 Arc 5 starts today. The final six days cover Microsoft Copilot Studio and multi-agent systems — the work I'm doing right now in production.
 
 I want to start with an honest developer's introduction to Copilot Studio, because most of the material out there is either marketing content or power-user tutorials that skip the things developers actually need to understand.
+
+```mermaid
+graph TD
+    A[Copilot Studio Agent] --> B[Topic-Based Flows]
+    A --> C[Generative AI Answers]
+    A --> D[Channels]
+    B -->|Structured, predictable| E[High-stakes transactions]
+    C -->|Flexible, LLM-driven| F[FAQ and knowledge queries]
+    A --> G[Connectors]
+    G --> H[Built-in: SharePoint, Salesforce, Dynamics]
+    G --> I[Custom: OpenAPI spec]
+    G --> J[Power Automate flows]
+    D --> K[Teams]
+    D --> L[Web / Mobile]
+    A --> M[Enterprise auth]
+    M --> N[OAuth user-delegated]
+    M --> O[Service principal]
+```
 
 ---
 

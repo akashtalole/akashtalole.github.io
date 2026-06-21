@@ -6,6 +6,7 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "Most teams don't know how they're using Copilot until the bill surprises them. A practical guide to auditing current usage, categorising requests by cost tier, and building a usage baseline before optimising."
 author: akashtalole
+mermaid: true
 ---
 
 The first step to managing Copilot costs under the new pricing model is understanding what you're actually doing today.
@@ -13,6 +14,22 @@ The first step to managing Copilot costs under the new pricing model is understa
 Most teams don't. They know they're "using Copilot" but have no visibility into which features, how often, and at what cost tier. You can't optimise what you haven't measured, and the surprise bill is what happens when measurement comes after the fact.
 
 Here's how to do the audit before the next billing cycle.
+
+```mermaid
+flowchart TD
+    A[Start Audit] --> B[Step 1: Get the Data]
+    B --> B1[GitHub Admin Dashboard]
+    B --> B2[IDE-Level Telemetry]
+    B1 --> C[Step 2: Categorise Requests]
+    B2 --> C
+    C --> C1[Tier 1: Free Completions]
+    C --> C2[Tier 2: Premium Chat]
+    C --> C3[Tier 3: High-Cost Agent]
+    C --> D[Step 3: Identify Heavy Users]
+    D --> E[Step 4: Calculate Cost per Engineer]
+    E --> F[Step 5: Set Baseline]
+    F --> G[Optimise Usage]
+```
 
 ---
 

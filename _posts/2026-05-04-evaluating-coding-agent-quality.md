@@ -6,6 +6,7 @@ categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, sdlc]
 description: "An agent that runs without crashing is not the same as an agent that works. Evaluating coding agent quality properly — what to measure, how to build an eval suite, and what the numbers actually tell you."
 author: akashtalole
+mermaid: true
 ---
 
 The hardest question in coding agent development isn't how to build one — it's how to know if it's good enough to trust.
@@ -13,6 +14,24 @@ The hardest question in coding agent development isn't how to build one — it's
 "Did it run?" is not sufficient. "Did the tests pass?" is not sufficient. I've seen agents that run cleanly, pass all tests, and produce code that's wrong in ways that only become visible in production. The evaluation problem in agentic systems is genuinely hard, and most teams solve it poorly.
 
 Here's how I approach it.
+
+```mermaid
+flowchart TD
+    A[Eval Suite: representative tasks] --> B[Run each task 3-5 times]
+    B --> C[Score each run]
+    C --> D[Aggregate pass rate per task]
+    D --> E{Pass rate by difficulty}
+    E -->|Easy tasks < 90%| F[Fundamental capability gap]
+    E -->|Medium 70-80%| G[Acceptable for production]
+    E -->|Hard < 50%| H[Assisted mode only]
+    D --> I[Break down by tag / task type]
+    I --> J[Identify reliable domains]
+    I --> K[Identify unreliable domains]
+    J --> L[Deploy autonomously]
+    K --> M[Deploy with human review]
+    D --> N[Cluster failure modes]
+    N --> O[Fix prompt or tool design]
+```
 
 ---
 

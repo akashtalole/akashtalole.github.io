@@ -6,11 +6,31 @@ categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, tool-use, automation]
 description: "Function calling works in demos. In production it breaks in ways demos don't show. The tool use patterns that hold up under real load — retry logic, result validation, tool chaining, and error handling the agent can actually reason about."
 author: akashtalole
+mermaid: true
 ---
 
 Yesterday I showed you how to build a basic coding agent with tool use. Today I want to go deeper on the tool use patterns themselves — specifically the ones that distinguish agents that work reliably in production from the ones that work in demos and then silently fail.
 
 The gap between demo and production tool use is larger than most people expect. Here's where it lives.
+
+```mermaid
+flowchart TD
+    A[Agent calls tool] --> B{Tool returns result?}
+    B -->|Structured result| C[Agent reasons on fields]
+    B -->|Raw string| D[Agent parses text]
+    B -->|Failure / None| E[Dead end in agent loop]
+    C --> F{Result valid?}
+    D --> G{Parse correct?}
+    F -->|Yes| H[Proceed to next step]
+    F -->|No| I[Return structured error with suggestion]
+    G -->|Yes| H
+    G -->|No| E
+    I --> J[Agent retries with context]
+    E --> K[Loop stalls]
+    H --> L{Idempotent write?}
+    L -->|Yes| M[Safe to retry on failure]
+    L -->|No| N[Duplicate / corrupt state risk]
+```
 
 ---
 

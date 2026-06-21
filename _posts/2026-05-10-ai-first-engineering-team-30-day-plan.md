@@ -6,6 +6,7 @@ categories: [ai, meta]
 tags: [meta, ai, agentic-ai, sdlc, enterprise]
 description: "A 30-day series on what changes when an engineering team — not just an individual engineer — adopts AI as a first-class part of how they work. From culture and workflows to governance and the human side."
 author: akashtalole
+mermaid: true
 pin: true
 ---
 
@@ -14,6 +15,20 @@ Thirty days of writing about AI tooling gave me the individual perspective — w
 This series asks the harder question: **what changes for the team?**
 
 Not the productivity of one engineer with AI. The culture, workflows, practices, and human dynamics of an entire engineering team that treats AI as a first-class part of how they build software. The AI-first engineering team.
+
+```mermaid
+graph LR
+    A[AI-First Engineering Team Series] --> B[Arc 1: Foundations]
+    A --> C[Arc 2: Dev Workflow]
+    A --> D[Arc 3: Knowledge & Docs]
+    A --> E[Arc 4: People & Skills]
+    A --> F[Arc 5: Governance & Scale]
+    B --> B1[Days 1-6]
+    C --> C1[Days 7-12]
+    D --> D1[Days 13-18]
+    E --> E1[Days 19-24]
+    F --> F1[Days 25-30]
+```
 
 ---
 

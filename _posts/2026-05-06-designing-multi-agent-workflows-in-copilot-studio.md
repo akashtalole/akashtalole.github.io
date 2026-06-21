@@ -6,6 +6,7 @@ categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, agentic-ai, enterprise]
 description: "A single Copilot Studio agent handles one domain well. A multi-agent system handles complex enterprise workflows — routing, handoff, shared context, and orchestration. Here's the architecture and the decisions that matter."
 author: akashtalole
+mermaid: true
 ---
 
 Single-agent architectures have clear limits. One agent covering customer service, order management, account queries, and escalation becomes a complicated mess of topics, conditions, and edge cases that's hard to maintain and harder to extend.
@@ -13,6 +14,36 @@ Single-agent architectures have clear limits. One agent covering customer servic
 Multi-agent architectures solve this by decomposing the problem: each agent has a narrow, well-defined domain, and an orchestrating layer routes between them based on intent. The system as a whole handles complex workflows; individual agents remain simple and maintainable.
 
 This is the architecture I use for the enterprise solution I'm building, and today I want to walk through the design decisions.
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant O as Orchestrator
+    participant OA as Order Agent
+    participant AA as Account Agent
+    participant KA as Knowledge Agent
+    participant H as Human Handoff
+
+    U->>O: Sends request
+    O->>O: Classify intent + extract entities
+    alt Order query
+        O->>OA: Route with context
+        OA->>OA: Query Order System
+        OA-->>O: Result + completion signal
+    else Account query
+        O->>AA: Route with context
+        AA->>AA: Query CRM
+        AA-->>O: Result + completion signal
+    else Policy/FAQ
+        O->>KA: Route with context
+        KA->>KA: Generative answer from SharePoint
+        KA-->>O: Result
+    else Low confidence
+        O->>H: Escalate
+        H-->>U: Human takes over
+    end
+    O-->>U: Final response
+```
 
 ---
 

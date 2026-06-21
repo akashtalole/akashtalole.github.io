@@ -6,11 +6,31 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "Enterprise governance for AI tools isn't bureaucracy — it's what makes AI adoption sustainable. What effective engineering-team AI governance looks like, what it prevents, and how to implement it without killing velocity."
 author: akashtalole
+mermaid: true
 ---
 
 "Governance" is the word that makes engineers check out of AI adoption conversations. It sounds like compliance, red tape, the thing that slows everything down.
 
 The teams that have done AI governance well have found the opposite: that thoughtful governance is what enables sustained, confident AI adoption rather than the tentative, hedged adoption that exists without it.
+
+```mermaid
+graph TD
+    A[AI Governance Framework] --> B[Approved Tool List]
+    A --> C[Data Classification]
+    A --> D[Acceptable Use Policy]
+    A --> E[Audit Logging]
+    A --> F[Incident Response]
+    C --> C1[Public: Always OK]
+    C --> C2[Internal: Approved Tools Only]
+    C --> C3[Confidential: Never in AI Prompts]
+    B --> G[Security-Reviewed Tools Only]
+    D --> H[One Page, Enforceable]
+    E --> I[High-Risk Scenarios Only]
+    F --> J[Pre-Written Playbook]
+    style C3 fill:#ef4444,color:#fff
+    style C2 fill:#f59e0b,color:#fff
+    style C1 fill:#22c55e,color:#fff
+```
 
 ---
 

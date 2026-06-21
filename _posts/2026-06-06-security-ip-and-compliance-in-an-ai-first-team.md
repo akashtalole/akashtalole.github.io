@@ -6,11 +6,35 @@ categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "Security and compliance aren't afterthoughts in an AI-first team — they're constraints that shape tool selection, data practices, and workflow design. The practical approach to IP protection, data security, and compliance in an AI-assisted engineering environment."
 author: akashtalole
+mermaid: true
 ---
 
 Security and compliance questions come up early in every enterprise AI adoption conversation, and they're often handled in one of two dysfunctional ways: either dismissed ("just don't put sensitive stuff in") or over-managed ("we need approval for every AI interaction").
 
 Neither works. Here's the practical middle.
+
+```mermaid
+graph TD
+    A[AI Security Considerations] --> B[IP Protection]
+    A --> C[Data Security]
+    A --> D[Code Output Security]
+    A --> E[Compliance]
+    B --> B1[Enterprise Tools Only]
+    B --> B2[Verify Data Usage Commitments]
+    C --> C1[Never: Customer PII]
+    C --> C2[Never: Auth Credentials]
+    C --> C3[Never: Contractually Restricted Data]
+    C --> C4[Review: Proprietary Algorithms]
+    D --> D1[Check Authorization Paths]
+    D --> D2[Check Secrets Management]
+    D --> D3[Check Cryptographic Choices]
+    E --> E1[SOX: Audit Trail]
+    E --> E2[HIPAA: No PHI in Prompts]
+    E --> E3[GDPR: Data Residency]
+    style C1 fill:#ef4444,color:#fff
+    style C2 fill:#ef4444,color:#fff
+    style C3 fill:#ef4444,color:#fff
+```
 
 ---
 

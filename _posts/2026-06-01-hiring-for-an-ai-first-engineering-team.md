@@ -6,11 +6,30 @@ categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "What to look for when hiring engineers who will work in an AI-first team. The skills that matter more now, the skills that matter less, and how to interview for AI collaboration ability rather than just raw coding ability."
 author: akashtalole
+mermaid: true
 ---
 
 Hiring is where team culture and capability get set. In an AI-first team, the criteria that make someone a strong candidate have shifted — not completely, but meaningfully.
 
 The engineers who thrive in AI-first environments have different strengths than the engineers who thrived in pre-AI environments. Hiring for the old profile misses some of what the new environment needs.
+
+```mermaid
+flowchart TD
+    A[Candidate Applies] --> B{AI Literacy Check}
+    B -->|No AI experience| C[Flag for ramp-up needs]
+    B -->|Has AI experience| D{Evaluate Core Skills}
+    D --> E[Judgment & Critical Evaluation]
+    D --> F[Communication & Specification]
+    D --> G[Systems Thinking]
+    E --> H{Interview Stage}
+    F --> H
+    G --> H
+    H --> I[AI-Available Coding Exercise]
+    I --> J[Code Review of AI Output]
+    J --> K{Decision}
+    K -->|Strong evaluator| L[Offer]
+    K -->|Weak evaluator| M[Pass]
+```
 
 ---
 

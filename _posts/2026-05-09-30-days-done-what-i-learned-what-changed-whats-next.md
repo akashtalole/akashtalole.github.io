@@ -6,11 +6,31 @@ categories: [ai, meta]
 tags: [meta, ai, claude-code, github-copilot, copilot-studio, agentic-ai]
 description: "Thirty posts across five arcs. Here's the honest synthesis: the biggest surprises, the things I was wrong about, what actually changed in my thinking, and where I think all of this is heading."
 author: akashtalole
+mermaid: true
 ---
 
 Thirty posts. Thirty consecutive days of writing about AI engineering from the inside — not reviewing tools from the outside, but trying to document what's actually happening in the work.
 
 I want to close the series with something more than a summary. A synthesis. What I actually learned, where my thinking shifted, and the open questions I'm carrying forward.
+
+```mermaid
+flowchart LR
+    A[30 Days of AI Engineering] --> B[Arc 1: Foundations]
+    A --> C[Arc 2: Claude Code]
+    A --> D[Arc 3: GitHub Copilot]
+    A --> E[Arc 4: Coding Agents]
+    A --> F[Arc 5: Copilot Studio]
+    B --> G[Key shift: tool layer beats model selection]
+    C --> H[Key shift: governance enables, not blocks]
+    D --> I[Key shift: docs impact underestimated]
+    E --> J[Key shift: eval gap is larger than expected]
+    F --> K[Key shift: multi-agent ages in unknown ways]
+    G --> L[Open questions for next series]
+    H --> L
+    I --> L
+    J --> L
+    K --> L
+```
 
 ---
 

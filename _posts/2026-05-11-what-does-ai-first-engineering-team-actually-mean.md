@@ -6,6 +6,7 @@ categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Everyone's talking about AI-first teams. Most of what gets called 'AI-first' is just 'we have Copilot licences.' Here's the actual distinction — and why it matters for how you structure your team."
 author: akashtalole
+mermaid: true
 ---
 
 Most teams that call themselves "AI-first" aren't.
@@ -15,6 +16,19 @@ They have GitHub Copilot licences. Some engineers use them. Some don't. There's 
 That's not AI-first. That's AI-available.
 
 The distinction matters because AI-available teams capture maybe 20% of the value AI could deliver. The other 80% is locked behind workflow changes that most teams never make.
+
+```mermaid
+graph LR
+    L0[Level 0: AI-Absent] -->|Get tools| L1[Level 1: AI-Available]
+    L1 -->|Add shared practices| L2[Level 2: AI-Adopted]
+    L2 -->|Redesign workflows| L3[Level 3: AI-Integrated]
+    L3 -->|Culture and evaluation| L4[Level 4: AI-First]
+    L0 -.->|~0% of potential value| V0[ ]
+    L1 -.->|~20% of potential value| V1[ ]
+    L2 -.->|~50% of potential value| V2[ ]
+    L3 -.->|~70% of potential value| V3[ ]
+    L4 -.->|~100% of potential value| V4[ ]
+```
 
 ---
 
