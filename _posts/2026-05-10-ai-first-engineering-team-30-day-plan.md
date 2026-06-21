@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "The AI-First Engineering Team — 30-Day Blog Plan"
+title: "The AI-First Engineering Team — 30-Day Blog"
 date: 2026-05-10
 categories: [ai, meta]
 tags: [meta, ai, agentic-ai, sdlc, enterprise]
 description: "A 30-day series on what changes when an engineering team — not just an individual engineer — adopts AI as a first-class part of how they work. From culture and workflows to governance and the human side."
-author: akashtalole
 mermaid: true
 pin: true
+image:
+  path: assets/posts/30-day-ai-engineering-blog-plan/ai-first-engineering-team-30-day-plan.png
+  alt: "30 Day Blog"
+  no_bg: true
 ---
 
 Thirty days of writing about AI tooling gave me the individual perspective — what changes for one engineer using Claude Code, GitHub Copilot, and Copilot Studio.
@@ -50,58 +53,58 @@ These are the questions I'm working through in practice. Thirty posts to think t
 
 ### Arc 1 — Foundations: What "AI-First Team" Actually Means (Days 1–6)
 
-| Day | Post |
-|-----|------|
-| 1 | What Does "AI-First Engineering Team" Actually Mean? |
-| 2 | The AI-First Team Maturity Model — Where Is Your Team Today? |
-| 3 | The Full AI Toolchain for Engineering Teams |
-| 4 | Rethinking Team Roles in an AI-First World |
-| 5 | AI-First Team Culture: Norms, Expectations, and Psychological Safety |
-| 6 | Measuring Progress — What Metrics Actually Matter for an AI-First Team |
+| Day | Post                                                                   |
+| --- | ---------------------------------------------------------------------- |
+| 1   | What Does "AI-First Engineering Team" Actually Mean?                   |
+| 2   | The AI-First Team Maturity Model — Where Is Your Team Today?           |
+| 3   | The Full AI Toolchain for Engineering Teams                            |
+| 4   | Rethinking Team Roles in an AI-First World                             |
+| 5   | AI-First Team Culture: Norms, Expectations, and Psychological Safety   |
+| 6   | Measuring Progress — What Metrics Actually Matter for an AI-First Team |
 
 ### Arc 2 — The Development Workflow Reimagined (Days 7–12)
 
-| Day | Post |
-|-----|------|
-| 7 | AI-First Sprint Planning and Task Breakdown |
-| 8 | Writing Code as a Team with AI — Pair Programming Norms |
-| 9 | Code Review Culture When AI Writes the Code |
-| 10 | AI-First Pull Request and Commit Hygiene |
-| 11 | Testing in an AI-First Team — Trust, Verification, and Coverage |
-| 12 | AI in the CI/CD Pipeline — Automated Quality Gates |
+| Day | Post                                                            |
+| --- | --------------------------------------------------------------- |
+| 7   | AI-First Sprint Planning and Task Breakdown                     |
+| 8   | Writing Code as a Team with AI — Pair Programming Norms         |
+| 9   | Code Review Culture When AI Writes the Code                     |
+| 10  | AI-First Pull Request and Commit Hygiene                        |
+| 11  | Testing in an AI-First Team — Trust, Verification, and Coverage |
+| 12  | AI in the CI/CD Pipeline — Automated Quality Gates              |
 
 ### Arc 3 — Knowledge, Documentation, and Context (Days 13–18)
 
-| Day | Post |
-|-----|------|
-| 13 | Documentation Culture in an AI-First Team — Better or Worse? |
-| 14 | Architecture Decisions with AI — ADRs, Design Reviews, Technical Debt |
-| 15 | Onboarding New Engineers into an AI-First Codebase |
-| 16 | Knowledge Transfer and Institutional Memory with AI |
-| 17 | AI-Assisted Incident Response — When Production Breaks |
-| 18 | Cross-Functional Communication — PMs, Designers, and AI Engineers |
+| Day | Post                                                                  |
+| --- | --------------------------------------------------------------------- |
+| 13  | Documentation Culture in an AI-First Team — Better or Worse?          |
+| 14  | Architecture Decisions with AI — ADRs, Design Reviews, Technical Debt |
+| 15  | Onboarding New Engineers into an AI-First Codebase                    |
+| 16  | Knowledge Transfer and Institutional Memory with AI                   |
+| 17  | AI-Assisted Incident Response — When Production Breaks                |
+| 18  | Cross-Functional Communication — PMs, Designers, and AI Engineers     |
 
 ### Arc 4 — People, Skills, and the Human Side (Days 19–24)
 
-| Day | Post |
-|-----|------|
-| 19 | Junior Engineers in an AI-First Team — Different, Not Lesser |
-| 20 | Senior Engineers in an AI-First Team — What Seniority Means Now |
-| 21 | The AI-Skeptic on Your Team — How to Bring Them Along |
-| 22 | Hiring for an AI-First Engineering Team |
-| 23 | Learning and Upskilling in an AI-First Culture |
-| 24 | Avoiding Over-Reliance and the Skill Atrophy Problem |
+| Day | Post                                                            |
+| --- | --------------------------------------------------------------- |
+| 19  | Junior Engineers in an AI-First Team — Different, Not Lesser    |
+| 20  | Senior Engineers in an AI-First Team — What Seniority Means Now |
+| 21  | The AI-Skeptic on Your Team — How to Bring Them Along           |
+| 22  | Hiring for an AI-First Engineering Team                         |
+| 23  | Learning and Upskilling in an AI-First Culture                  |
+| 24  | Avoiding Over-Reliance and the Skill Atrophy Problem            |
 
 ### Arc 5 — Governance, Enterprise, and the Road Ahead (Days 25–30)
 
-| Day | Post |
-|-----|------|
-| 25 | Enterprise AI Governance for Engineering Teams |
-| 26 | Scaling AI Adoption Across a Larger Engineering Org |
-| 27 | Security, IP, and Compliance in an AI-First Team |
-| 28 | Measuring ROI and Making the Business Case for AI |
-| 29 | What Doesn't Change — The Human Core of Great Engineering |
-| 30 | One Year of Building an AI-First Team — What I Learned |
+| Day | Post                                                      |
+| --- | --------------------------------------------------------- |
+| 25  | Enterprise AI Governance for Engineering Teams            |
+| 26  | Scaling AI Adoption Across a Larger Engineering Org       |
+| 27  | Security, IP, and Compliance in an AI-First Team          |
+| 28  | Measuring ROI and Making the Business Case for AI         |
+| 29  | What Doesn't Change — The Human Core of Great Engineering |
+| 30  | One Year of Building an AI-First Team — What I Learned    |
 
 ---
 

@@ -5,7 +5,6 @@ date: 2026-04-09
 categories: [ai, meta]
 tags: [ai, claude-code, github-copilot, copilot-studio, agentic-ai, agent-skills, sdlc, coding-agents]
 description: "A structured 30-day blog roadmap covering Claude Code, GitHub Copilot, Microsoft Copilot Studio, agentic AI, coding agents, and AI in SDLC — from a Lead AI Engineer with 11 years of experience."
-author: Akash Talole
 pin: true
 mermaid: true
 image:
