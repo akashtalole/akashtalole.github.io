@@ -127,7 +127,6 @@ date: 2026-04-09
 categories: [category1, category2]
 tags: [tag1, tag2]
 description: "Brief description for SEO and post previews."
-author: akashtalole
 ---
 ```
 
