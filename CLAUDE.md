@@ -122,7 +122,6 @@ Example: `_posts/2026-04-09-my-new-post.md`
 
 ```yaml
 ---
-layout: post
 title: "Post Title Here"
 date: 2026-04-09
 categories: [category1, category2]
@@ -132,24 +131,218 @@ author: akashtalole
 ---
 ```
 
+> **`layout: post` is NOT required** — Chirpy sets it automatically for all files in `_posts/`. Do not include it unless you have a specific reason to override.
+
 > **Note on dates**: Use `YYYY-MM-DD` only — no time or timezone suffix. Adding a time (e.g. `08:00:00 +0530`) can cause Jekyll to silently skip the post if the CI build runs before that time in UTC. `_config.yml` sets `future: true` as a safety net, but the date-only format is the safest convention.
+
+> **Categories limit**: Chirpy supports **up to two** category elements per post. Tags can be zero to infinity but must always be **lowercase**.
+
+> **Description**: Displayed in three places — the home page post list, the Further Reading section, and the RSS feed. Also appears under the post title on the post's own page.
 
 ### Optional Front Matter
 
 ```yaml
 image:
-  path: /assets/img/post-image.jpg
+  path: /assets/img/post-image.jpg   # Preview image (1200×630px recommended, 1.91:1 ratio)
   alt: "Image description"
-pin: true          # Pin post to top of home page
-math: true         # Enable LaTeX math rendering
-mermaid: true      # Enable Mermaid diagram rendering
-toc: false         # Disable table of contents (enabled globally by default)
-comments: false    # Disable comments for this post
+  lqip: /path/to/lqip-file           # Low-quality image placeholder (base64 URI or path)
+media_subpath: /assets/img/posts/    # URL prefix for all images in this post
+pin: true                            # Pin post to top of home page
+math: true                           # Enable MathJax rendering
+mermaid: true                        # Enable Mermaid diagram rendering
+toc: false                           # Disable table of contents (enabled globally by default)
+comments: false                      # Disable comments for this post
+render_with_liquid: false            # Required for posts containing Liquid syntax examples
 ```
 
 ### Notes on `last_modified_at`
 
 Do **not** set `last_modified_at` manually. The plugin `_plugins/posts-lastmod-hook.rb` reads Git history and sets it automatically for posts with more than one commit.
+
+---
+
+## Chirpy Markdown Features
+
+### Prompts
+
+Four prompt types — rendered as styled callout blocks:
+
+```markdown
+> Tip content here.
+{: .prompt-tip }
+
+> Info content here.
+{: .prompt-info }
+
+> Warning content here.
+{: .prompt-warning }
+
+> Danger content here.
+{: .prompt-danger }
+```
+
+### Filepath Highlight
+
+Render a path with special styling using `{: .filepath}`:
+
+```markdown
+`/path/to/file.md`{: .filepath}
+```
+
+### Code Blocks
+
+**Hide line numbers** (all languages show line numbers by default except `plaintext`, `console`, `terminal`):
+
+```markdown
+```shell
+echo 'No line numbers'
+```
+{: .nolineno }
+```
+
+**Show filename instead of language label:**
+
+```markdown
+```yaml
+key: value
+```
+{: file="_config.yml" }
+```
+
+> **Never use `{% highlight %}`** — it is incompatible with Chirpy. Always use fenced code blocks (` ``` `).
+{: .prompt-danger }
+
+**Liquid code in posts**: Add `render_with_liquid: false` to front matter, or wrap with `{% raw %}...{% endraw %}`.
+
+### Images
+
+**Size** (use width/height or shorthand w/h):
+
+```markdown
+![Alt text](/path/to/img.png){: width="700" height="400" }
+![Alt text](/path/to/img.png){: w="700" h="400" }
+```
+
+**Position** (caption cannot be used when position is set):
+
+```markdown
+![Alt text](/path/to/img.png){: .normal }   <!-- left-aligned -->
+![Alt text](/path/to/img.png){: .left }     <!-- float left -->
+![Alt text](/path/to/img.png){: .right }    <!-- float right -->
+```
+
+**Dark/Light mode images:**
+
+```markdown
+![Light mode only](/img/light.png){: .light }
+![Dark mode only](/img/dark.png){: .dark }
+```
+
+**Shadow:**
+
+```markdown
+![Alt text](/path/to/img.png){: .shadow }
+```
+
+**Caption** — add italics on the next line after an image:
+
+```markdown
+![Alt text](/path/to/img.png)
+_This becomes the image caption_
+```
+
+**Preview image** (front matter): Recommended 1200×630px, aspect ratio 1.91:1. Images outside this ratio are scaled and cropped.
+
+```yaml
+image:
+  path: /assets/img/preview.jpg
+  alt: Alt text
+  lqip: data:image/webp;base64,...   # optional LQIP blur placeholder
+```
+
+**Image storage convention**: Post-specific images go in `assets/posts/<slug>/` (e.g. `assets/posts/my-post-slug/image.png`), then reference with `media_subpath` in front matter.
+
+### Media Embeds
+
+**Social platforms** (YouTube, Twitch, Bilibili, Spotify):
+
+```liquid
+{% include embed/youtube.html id='VIDEO_ID' %}
+{% include embed/twitch.html id='VIDEO_ID' %}
+{% include embed/bilibili.html id='VIDEO_ID' %}
+{% include embed/spotify.html id='TRACK_ID' %}
+{% include embed/spotify.html id='TRACK_ID' compact=1 dark=1 %}
+```
+
+**Video files:**
+
+```liquid
+{% include embed/video.html src='/path/to/video.mp4' %}
+
+{%
+  include embed/video.html
+  src='/path/to/video.mp4'
+  types='ogg|mov'
+  poster='poster.png'
+  title='Demo video'
+  autoplay=true
+  loop=true
+  muted=true
+%}
+```
+
+**Audio files:**
+
+```liquid
+{% include embed/audio.html src='/path/to/audio.mp3' %}
+{% include embed/audio.html src='/path/to/audio.mp3' types='ogg|wav' title='Demo' %}
+```
+
+### Mathematics (MathJax)
+
+Enable with `math: true` in front matter. Then use:
+
+```markdown
+<!-- Block math — blank lines before and after $$ are mandatory -->
+
+$$
+LaTeX_expression
+$$
+
+<!-- Inline math (in a sentence) — no blank lines -->
+"The value is $$ x = 5 $$ in this case."
+
+<!-- Inline math in lists — escape the first $ -->
+1. \$$ x = 1 $$
+```
+
+### Mermaid Diagrams
+
+Enable with `mermaid: true` in front matter. Wrap graph code in ` ```mermaid ``` ` fences:
+
+````markdown
+```mermaid
+flowchart TD
+    A[Start] --> B{Decision}
+    B -->|Yes| C[End]
+    B -->|No| A
+```
+````
+
+### Task Lists
+
+```markdown
+- [ ] Incomplete item
+- [x] Completed item
+```
+
+### Pinned Posts
+
+```yaml
+pin: true
+```
+
+Pinned posts appear at the top of the home page, sorted by date descending.
 
 ---
 
