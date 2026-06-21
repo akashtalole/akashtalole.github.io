@@ -5,7 +5,6 @@ date: 2026-07-06
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, langgraph, tool-use]
 description: "A complete production-grade research agent built with LangGraph: typed state, tool execution, human-in-the-loop review, PostgreSQL persistence, and error recovery. The patterns that make LangGraph agents reliable in production."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-06-02
 categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Continuous learning in an AI-first team looks different from traditional upskilling. What to invest in, how to structure team learning, and how AI itself accelerates — and complicates — the development of engineering skills."
-author: akashtalole
 mermaid: true
 ---
 

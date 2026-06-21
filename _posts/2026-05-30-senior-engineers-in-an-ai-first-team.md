@@ -5,7 +5,6 @@ date: 2026-05-30
 categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "The traditional markers of seniority — coding speed, pattern familiarity, ability to implement complex features — are being compressed by AI. What senior engineers are actually for in an AI-first team."
-author: akashtalole
 mermaid: true
 ---
 

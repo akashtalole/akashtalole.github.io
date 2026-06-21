@@ -5,7 +5,6 @@ date: 2026-06-11
 categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc]
 description: "GPT-5.5, Claude Opus 4.8, and Gemini 3.1 Ultra are all genuinely extraordinary and nearly indistinguishable on most benchmarks. The frontier model gap has closed. Here's what that changes for how engineers build."
-author: akashtalole
 mermaid: true
 ---
 

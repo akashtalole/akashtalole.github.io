@@ -5,7 +5,6 @@ date: 2026-04-28
 categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, sdlc, ai-in-sdlc]
 description: "Getting GitHub Copilot approved and sustainably deployed in an enterprise isn't just a procurement exercise. Policy controls, content exclusions, audit logs, IP considerations, and making the compliance team an ally rather than a blocker."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-06-08
 categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Thirty days of writing about AI and teams. Before the final synthesis, one post on the things that AI doesn't change — the human qualities that make engineering teams great regardless of the tools they use."
-author: akashtalole
 mermaid: true
 ---
 

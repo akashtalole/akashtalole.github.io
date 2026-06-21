@@ -5,7 +5,6 @@ date: 2026-07-09
 categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "In 2025, open-source models were clearly behind. In 2026, the gap has closed significantly on many tasks. The framework for deciding when open-source deployment makes sense and when commercial APIs are still the right call."
-author: akashtalole
 mermaid: true
 ---
 

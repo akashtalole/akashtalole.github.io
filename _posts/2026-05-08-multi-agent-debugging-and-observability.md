@@ -5,7 +5,6 @@ date: 2026-05-08
 categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, agentic-ai, enterprise]
 description: "When a single agent misbehaves you have one thing to debug. When a multi-agent system misbehaves, the problem could be anywhere across orchestrator, specialists, connectors, and flows. How to build observability that makes the invisible visible."
-author: akashtalole
 mermaid: true
 ---
 

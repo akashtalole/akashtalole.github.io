@@ -5,7 +5,6 @@ date: 2026-06-22
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "Most RAG systems are deployed without a proper evaluation framework. Teams discover quality problems from user complaints rather than metrics. The evaluation metrics, frameworks, and test set design that make RAG quality measurable."
-author: akashtalole
 mermaid: true
 ---
 

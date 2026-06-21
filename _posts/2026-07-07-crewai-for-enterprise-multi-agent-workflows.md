@@ -5,7 +5,6 @@ date: 2026-07-07
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, crewai, enterprise]
 description: "CrewAI's role-based model makes multi-agent collaboration intuitive to design and reason about. How to structure enterprise workflows as agent crews, integrate MCP tools, handle the enterprise deployment requirements, and where CrewAI's model excels over LangGraph's."
-author: akashtalole
 mermaid: true
 ---
 

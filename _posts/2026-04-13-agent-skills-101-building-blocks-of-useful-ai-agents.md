@@ -5,7 +5,6 @@ date: 2026-04-13
 categories: [ai, agent-skills]
 tags: [agent-skills, tool-use, agentic-ai, agents, coding-agents, claude-code, copilot-studio]
 description: "What makes an agent skill actually useful? The anatomy of well-designed skills — inputs, outputs, side effects, error handling, and the design mistakes that make agents unpredictable."
-author: akashtalole
 mermaid: true
 ---
 

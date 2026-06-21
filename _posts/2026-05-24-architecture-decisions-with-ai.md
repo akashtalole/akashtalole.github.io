@@ -5,7 +5,6 @@ date: 2026-05-24
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "AI can reason about architecture, but architectural decisions require context, constraints, and judgment that AI doesn't have by default. How AI-first teams use AI in design reviews without outsourcing the judgment."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-06-23
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, langgraph, tool-use]
 description: "Stateless agents are easy to build and fragile in production. Long-running tasks, multi-turn conversations, and recovery from failures all require explicit state management. The patterns that make agents durable."
-author: akashtalole
 mermaid: true
 ---
 

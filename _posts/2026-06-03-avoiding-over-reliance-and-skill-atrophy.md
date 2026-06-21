@@ -5,7 +5,6 @@ date: 2026-06-03
 categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Over-reliance on AI is a real risk — not a theoretical one. Engineers who stop practicing skills they've outsourced to AI lose them. How to build AI-first practices that augment capability rather than erode it."
-author: akashtalole
 mermaid: true
 ---
 

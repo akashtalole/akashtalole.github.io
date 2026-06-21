@@ -5,7 +5,6 @@ date: 2026-05-20
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, github-copilot]
 description: "AI tools can generate PR descriptions and commit messages, but without intentional norms they produce noise instead of signal. What good AI-assisted PR hygiene looks like and the practices that make git history useful rather than polluted."
-author: akashtalole
 mermaid: true
 ---
 

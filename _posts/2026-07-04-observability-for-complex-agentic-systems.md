@@ -5,7 +5,6 @@ date: 2026-07-04
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "An agent that takes 47 steps, calls 12 tools, and costs $0.23 to run is a black box without proper observability. Tracing, metrics, and cost attribution for agentic systems — what to instrument and how to make the data useful."
-author: akashtalole
 mermaid: true
 ---
 

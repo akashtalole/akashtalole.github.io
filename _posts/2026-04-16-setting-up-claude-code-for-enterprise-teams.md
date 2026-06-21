@@ -5,7 +5,6 @@ date: 2026-04-16
 categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "Rolling Claude Code out to an enterprise team isn't just an IT ticket. Auth, data handling, governance, cost controls, and rollout strategy — what you actually need to sort out before flipping the switch."
-author: akashtalole
 mermaid: true
 ---
 

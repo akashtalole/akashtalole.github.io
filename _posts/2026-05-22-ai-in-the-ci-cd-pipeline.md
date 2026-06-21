@@ -5,7 +5,6 @@ date: 2026-05-22
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, coding-agents]
 description: "CI/CD pipelines enforce quality automatically. AI can extend what's enforceable — from security scanning to semantic code review. Where AI-powered gates add real value in the pipeline and where they add noise."
-author: akashtalole
 mermaid: true
 ---
 

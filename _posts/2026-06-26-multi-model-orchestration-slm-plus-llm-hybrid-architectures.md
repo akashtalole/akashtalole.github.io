@@ -5,7 +5,6 @@ date: 2026-06-26
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, enterprise]
 description: "The 2026 pattern for cost-efficient production agents: small language models handle simple tasks cheaply, large models handle complex tasks well. How to design the routing layer, what to measure, and what the cost-quality tradeoffs actually look like."
-author: akashtalole
 mermaid: true
 ---
 

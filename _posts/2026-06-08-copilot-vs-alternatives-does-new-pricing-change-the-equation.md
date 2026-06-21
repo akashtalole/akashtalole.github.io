@@ -5,7 +5,6 @@ date: 2026-06-08
 categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc, claude-code]
 description: "When Copilot pricing goes up, the comparison to alternatives becomes live again. An honest assessment of Copilot vs. Claude Code vs. Cursor vs. Codeium under the new pricing, and when switching or supplementing makes sense."
-author: akashtalole
 mermaid: true
 ---
 

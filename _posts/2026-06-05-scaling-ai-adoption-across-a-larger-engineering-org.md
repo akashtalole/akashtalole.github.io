@@ -5,7 +5,6 @@ date: 2026-06-05
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "What works for a team of 8 doesn't automatically scale to 80 or 800. The specific challenges of AI adoption at scale — consistency, coordination, measurement, and the rollout sequencing that makes organisational transitions stick."
-author: akashtalole
 mermaid: true
 ---
 

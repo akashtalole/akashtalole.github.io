@@ -5,7 +5,6 @@ date: 2026-05-04
 categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, sdlc]
 description: "An agent that runs without crashing is not the same as an agent that works. Evaluating coding agent quality properly — what to measure, how to build an eval suite, and what the numbers actually tell you."
-author: akashtalole
 mermaid: true
 ---
 

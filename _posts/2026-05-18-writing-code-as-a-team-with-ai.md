@@ -5,7 +5,6 @@ date: 2026-05-18
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code, github-copilot]
 description: "Pair programming changes when AI is the third party in the room. How AI-first teams structure collaborative coding, what norms work, and the question of ownership when AI writes the code."
-author: akashtalole
 mermaid: true
 ---
 

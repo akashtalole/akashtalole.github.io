@@ -5,7 +5,6 @@ date: 2026-04-29
 categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Arc 4 starts here. Coding agents that work in production aren't just LLMs with tool access — they're systems designed around specific principles: scoped action spaces, recovery from failure, human checkpoints, and evaluations that reflect real use."
-author: akashtalole
 mermaid: true
 ---
 

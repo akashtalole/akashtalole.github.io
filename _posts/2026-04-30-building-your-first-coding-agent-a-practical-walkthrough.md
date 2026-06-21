@@ -5,7 +5,6 @@ date: 2026-04-30
 categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Stop reading about coding agents and build one. A practical walkthrough of a real, useful coding agent — the decisions made along the way, the things that broke, and what the finished version looks like."
-author: akashtalole
 mermaid: true
 ---
 

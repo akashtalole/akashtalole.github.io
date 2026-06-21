@@ -5,7 +5,6 @@ date: 2026-04-23
 categories: [ai, github-copilot]
 tags: [github-copilot, copilot-workspace, sdlc, ai-in-sdlc, coding-agents]
 description: "Most engineers use about 20% of GitHub Copilot. Copilot Chat, slash commands, context variables, terminal integration, code explanation — the features that change how you work are the ones people skip past."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-06-04
 categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "Every premium Copilot request costs something. Vague prompts cost as much as precise ones but produce worse output, forcing more follow-up requests. The prompt patterns that get useful output in one round instead of three."
-author: akashtalole
 mermaid: true
 ---
 

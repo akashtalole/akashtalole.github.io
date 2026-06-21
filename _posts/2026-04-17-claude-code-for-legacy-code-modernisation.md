@@ -5,7 +5,6 @@ date: 2026-04-17
 categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "Legacy codebases are where senior engineers spend a disproportionate amount of their time — and where AI tooling pays off most. Here's the approach I use with Claude Code to understand, document, and safely modernise code nobody fully understands."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-06-30
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, agent-skills, sdlc]
 description: "Prompt injection is the attack surface that didn't exist before LLM-based agents. An agent that reads external content — web pages, emails, documents, database records — can be manipulated by that content. The attack taxonomy and the defences that actually work."
-author: akashtalole
 mermaid: true
 ---
 

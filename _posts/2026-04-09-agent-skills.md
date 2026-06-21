@@ -5,7 +5,6 @@ date: 2026-04-09
 categories: [ai, agent-skills]
 tags: [ai, agent-skills]
 description: "Master the Agent Skills."
-author: akashtalole
 mermaid: true
 ---
 

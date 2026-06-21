@@ -5,7 +5,6 @@ date: 2026-06-05
 categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "Inline completion, Copilot Chat, Copilot Workspace, agent mode — four distinct tools with different costs and capabilities. A practical decision framework so engineers reach for the right tool instead of defaulting to the most expensive one."
-author: akashtalole
 mermaid: true
 ---
 

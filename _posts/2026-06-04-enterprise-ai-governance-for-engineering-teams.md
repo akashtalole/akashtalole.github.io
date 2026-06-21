@@ -5,7 +5,6 @@ date: 2026-06-04
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "Enterprise governance for AI tools isn't bureaucracy — it's what makes AI adoption sustainable. What effective engineering-team AI governance looks like, what it prevents, and how to implement it without killing velocity."
-author: akashtalole
 mermaid: true
 ---
 

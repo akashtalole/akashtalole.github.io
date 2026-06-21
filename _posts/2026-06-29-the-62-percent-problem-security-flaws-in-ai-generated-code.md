@@ -5,7 +5,6 @@ date: 2026-06-29
 categories: [ai, enterprise]
 tags: [agentic-ai, coding-agents, enterprise, sdlc]
 description: "The Cloud Security Alliance found security flaws in 62% of AI-generated code samples they tested. What types of flaws, why AI generates them, and the review and tooling practices that catch them before they reach production."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-06-27
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, tool-use]
 description: "Long-term memory is what separates agents that get smarter over time from agents that start from scratch on every session. The four memory patterns, how to implement each, and the engineering decisions that make agent memory practical."
-author: akashtalole
 mermaid: true
 ---
 

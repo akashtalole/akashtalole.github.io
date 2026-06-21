@@ -5,7 +5,6 @@ date: 2026-05-14
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "AI doesn't eliminate roles — it changes what each role is for. What senior engineers, juniors, and tech leads actually do differently in an AI-first team, and why the value propositions of each role need re-examination."
-author: akashtalole
 mermaid: true
 ---
 

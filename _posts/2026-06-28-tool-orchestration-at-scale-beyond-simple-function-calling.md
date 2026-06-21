@@ -5,7 +5,6 @@ date: 2026-06-28
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, mcp, tool-use]
 description: "Single tool calls are easy. Production agents orchestrate dozens of tools across parallel branches, handle failures gracefully, version tool interfaces, and manage cost across thousands of calls per session. The patterns that make tool use reliable at scale."
-author: akashtalole
 mermaid: true
 ---
 

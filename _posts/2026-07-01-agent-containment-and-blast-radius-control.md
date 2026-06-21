@@ -5,7 +5,6 @@ date: 2026-07-01
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, agent-skills, sdlc]
 description: "Autonomous agents can take actions that are hard or impossible to reverse. The engineering principle of blast radius control — limiting what can go wrong when an agent makes a mistake — and the specific patterns that implement it."
-author: akashtalole
 mermaid: true
 ---
 

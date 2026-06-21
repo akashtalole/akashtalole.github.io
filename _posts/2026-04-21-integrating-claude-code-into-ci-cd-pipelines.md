@@ -5,7 +5,6 @@ date: 2026-04-21
 categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "Moving AI code review from a manual step to an automated part of your CI/CD pipeline. Practical integration patterns, what to automate, what to leave manual, and the cost and complexity tradeoffs I've run into."
-author: akashtalole
 mermaid: true
 ---
 

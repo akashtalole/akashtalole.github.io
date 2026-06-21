@@ -5,7 +5,6 @@ date: 2026-04-26
 categories: [ai, github-copilot]
 tags: [github-copilot, sdlc, ai-in-sdlc]
 description: "The non-code uses of GitHub Copilot that save the most time aren't the ones in the demos. PR descriptions, inline documentation, commit messages, and changelogs — the writing that accompanies code is where Copilot quietly earns its keep."
-author: akashtalole
 mermaid: true
 ---
 

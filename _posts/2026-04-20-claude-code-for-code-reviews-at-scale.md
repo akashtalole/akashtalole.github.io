@@ -5,7 +5,6 @@ date: 2026-04-20
 categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "AI pre-review before human review changes the economics of code review on large teams. What Claude Code actually catches, what it consistently misses, and how to calibrate trust so it helps rather than creates a false safety net."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-05-12
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "A practical maturity model for engineering teams adopting AI. Not a framework for consultants — a diagnostic for leads and engineers to understand where they actually are and what the next step looks like."
-author: akashtalole
 mermaid: true
 ---
 

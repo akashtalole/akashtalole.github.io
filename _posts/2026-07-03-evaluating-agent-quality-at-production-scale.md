@@ -5,7 +5,6 @@ date: 2026-07-03
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "How do you know your agent is getting better rather than worse? Evaluation for agentic systems is harder than for single-turn LLM calls — tasks span multiple steps, outputs are open-ended, and human review doesn't scale. The evaluation architecture that makes continuous improvement possible."
-author: akashtalole
 mermaid: true
 ---
 

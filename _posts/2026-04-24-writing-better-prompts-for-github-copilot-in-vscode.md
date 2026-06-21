@@ -5,7 +5,6 @@ date: 2026-04-24
 categories: [ai, github-copilot]
 tags: [github-copilot, sdlc, ai-in-sdlc, coding-agents]
 description: "Copilot reads your code and your comments before it generates anything. Understanding what it pays attention to — and shaping that context deliberately — is the difference between useful suggestions and noise."
-author: akashtalole
 mermaid: true
 ---
 

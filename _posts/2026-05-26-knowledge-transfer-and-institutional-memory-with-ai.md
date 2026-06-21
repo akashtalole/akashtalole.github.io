@@ -5,7 +5,6 @@ date: 2026-05-26
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "Institutional knowledge — why systems work the way they do, what was tried and failed, the constraints nobody wrote down — is what makes teams resilient. AI can help retrieve it but can't replace it. How AI-first teams protect institutional memory."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-06-03
 categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "Most teams don't know how they're using Copilot until the bill surprises them. A practical guide to auditing current usage, categorising requests by cost tier, and building a usage baseline before optimising."
-author: akashtalole
 mermaid: true
 ---
 

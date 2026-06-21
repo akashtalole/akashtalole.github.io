@@ -5,7 +5,6 @@ date: 2026-04-09
 categories: [ai, github-copilot]
 tags: [ai, github-copilot]
 description: "Master the GitHub Copilot."
-author: akashtalole
 mermaid: true
 ---
 

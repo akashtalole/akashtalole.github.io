@@ -5,7 +5,6 @@ date: 2026-05-29
 categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "The junior engineer role is changing more than any other in the AI transition. It's not disappearing — it's shifting. What the junior engineer job looks like in an AI-first team, what the learning path looks like, and what leads need to do differently."
-author: akashtalole
 mermaid: true
 ---
 

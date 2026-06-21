@@ -5,7 +5,6 @@ date: 2026-04-27
 categories: [ai, github-copilot]
 tags: [github-copilot, copilot-workspace, coding-agents, agentic-ai, sdlc]
 description: "Copilot Workspace takes GitHub Copilot from in-editor suggestions to multi-step agentic task execution. Here's what it actually does, how it works in practice, and where it fits alongside Claude Code."
-author: akashtalole
 mermaid: true
 ---
 

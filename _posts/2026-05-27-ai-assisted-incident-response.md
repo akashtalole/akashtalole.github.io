@@ -5,7 +5,6 @@ date: 2026-05-27
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code, coding-agents]
 description: "Production incidents are high-stakes, time-pressured, and often involve code or systems the on-call engineer didn't write. AI can significantly accelerate incident response — but only if you've prepared for it."
-author: akashtalole
 mermaid: true
 ---
 

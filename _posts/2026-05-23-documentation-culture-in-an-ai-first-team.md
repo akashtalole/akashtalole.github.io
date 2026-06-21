@@ -5,7 +5,6 @@ date: 2026-05-23
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "The honest answer: AI makes documentation happen more often, but it can make documentation less useful if you're not careful. The documentation culture patterns that work in AI-first teams, and the failure modes to watch."
-author: akashtalole
 mermaid: true
 ---
 

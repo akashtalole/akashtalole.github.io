@@ -5,7 +5,6 @@ date: 2026-06-10
 categories: [ai, agentic-ai]
 tags: [agentic-ai, coding-agents, enterprise, ai-in-sdlc, mcp]
 description: "The third series. After covering individual AI tooling and team-level adoption, this one goes into the production engineering layer: protocols, RAG, advanced agent architectures, security, and scaling. 30 posts, June 10 to July 9."
-author: akashtalole
 mermaid: true
 ---
 

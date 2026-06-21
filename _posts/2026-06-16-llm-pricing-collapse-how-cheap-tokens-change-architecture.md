@@ -5,7 +5,6 @@ date: 2026-06-16
 categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc, coding-agents]
 description: "LLM inference costs dropped 99.7% between 2023 and 2026. Input tokens that cost $30/million now cost $0.10. This isn't just a budget story — it changes which architectures are economically viable and where to invest engineering effort."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-04-11
 categories: [ai, sdlc]
 tags: [sdlc, ai-in-sdlc, agentic-ai, coding-agents, github-copilot, claude-code]
 description: "Where AI genuinely fits in the software development lifecycle today, where it's oversold, and what 11 years of engineering experience tells me about separating signal from noise."
-author: akashtalole
 mermaid: true
 ---
 

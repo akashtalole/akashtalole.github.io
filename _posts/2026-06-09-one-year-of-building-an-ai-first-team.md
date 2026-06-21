@@ -5,7 +5,6 @@ date: 2026-06-09
 categories: [ai, meta]
 tags: [meta, ai, agentic-ai, sdlc, enterprise]
 description: "Thirty posts on the AI-first engineering team. Here's the synthesis: what actually changed, what I was wrong about, what remains genuinely hard, and the principles that held up across the whole arc."
-author: akashtalole
 mermaid: true
 ---
 

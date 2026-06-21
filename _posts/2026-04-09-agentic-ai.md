@@ -5,7 +5,6 @@ date: 2026-04-09
 categories: [ai, agentic-ai]
 tags: [ai, agentic-ai]
 description: "Master the Agentic AI."
-author: akashtalole
 mermaid: true
 ---
 

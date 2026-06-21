@@ -5,7 +5,6 @@ date: 2026-04-12
 categories: [ai, agentic-ai]
 tags: [agentic-ai, agents, coding-agents, agent-skills, claude-code, copilot-studio]
 description: "Agentic AI is one of the most overused phrases in tech right now. Here's what it actually means for engineers building real systems — and why the mental model matters more than the buzzword."
-author: akashtalole
 mermaid: true
 ---
 

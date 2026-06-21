@@ -5,7 +5,6 @@ date: 2026-04-22
 categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc]
 description: "GDPR, SOC 2, HIPAA, financial regulations — deploying Claude Code in regulated environments requires more than a comfortable feeling about security. Here's what actually needs to be addressed and the questions your security team will ask."
-author: akashtalole
 mermaid: true
 ---
 

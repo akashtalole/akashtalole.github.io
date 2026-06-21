@@ -5,7 +5,6 @@ date: 2026-04-19
 categories: [ai, claude-code]
 tags: [claude-code, enterprise, coding-agents, github-copilot, sdlc]
 description: "Prompt engineering for coding tasks is not about magic phrases or elaborate templates. It's about giving the model what it needs to do the job. Here are the patterns I actually use — and the mistakes that waste the most time."
-author: akashtalole
 mermaid: true
 ---
 

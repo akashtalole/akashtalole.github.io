@@ -5,7 +5,6 @@ date: 2026-06-07
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "At some point every AI investment has to justify itself. How to build a credible business case for AI tooling, what metrics to use, what to avoid, and the honest conversation about what AI adoption is actually worth."
-author: akashtalole
 mermaid: true
 ---
 

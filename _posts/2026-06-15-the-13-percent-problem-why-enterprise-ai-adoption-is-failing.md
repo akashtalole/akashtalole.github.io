@@ -5,7 +5,6 @@ date: 2026-06-15
 categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "80% of enterprises have adopted AI. Only 13% see enterprise-wide business impact. The gap is not about capability — it's about integration, operational complexity, and the failure to treat AI deployment like production engineering."
-author: akashtalole
 mermaid: true
 ---
 

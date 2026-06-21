@@ -5,7 +5,6 @@ date: 2026-05-05
 categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, agentic-ai, enterprise]
 description: "Copilot Studio is not a chatbot builder. It's a platform for deploying AI agents across enterprise systems. Here's the developer's honest guide — what it's genuinely good at, where it has rough edges, and how to think about it alongside code-first approaches."
-author: akashtalole
 mermaid: true
 ---
 

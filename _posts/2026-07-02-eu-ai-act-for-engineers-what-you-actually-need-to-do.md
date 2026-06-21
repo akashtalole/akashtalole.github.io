@@ -5,7 +5,6 @@ date: 2026-07-02
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, sdlc, ai-in-sdlc]
 description: "The EU AI Act's main obligations entered full enforcement in August 2026. This is what the Act actually requires of engineering teams building AI systems — not the legal overview, but the specific technical and documentation work that compliance requires."
-author: akashtalole
 mermaid: true
 ---
 

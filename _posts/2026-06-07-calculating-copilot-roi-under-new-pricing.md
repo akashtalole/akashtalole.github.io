@@ -5,7 +5,6 @@ date: 2026-06-07
 categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "The new consumption-based Copilot pricing makes ROI calculations both more important and more tractable. How to actually calculate whether Copilot is delivering value at its new cost, and what to do if the maths doesn't work."
-author: akashtalole
 mermaid: true
 ---
 

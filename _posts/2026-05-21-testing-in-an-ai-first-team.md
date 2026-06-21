@@ -5,7 +5,6 @@ date: 2026-05-21
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, github-copilot]
 description: "AI can write tests faster than any engineer. The question isn't whether to use AI for tests — it's whether the tests AI writes are testing the right things. The trust and verification problem in AI-first testing."
-author: akashtalole
 mermaid: true
 ---
 

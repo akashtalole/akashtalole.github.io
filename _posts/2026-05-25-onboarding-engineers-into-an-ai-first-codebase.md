@@ -5,7 +5,6 @@ date: 2026-05-25
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code]
 description: "Onboarding in an AI-first team is different from traditional onboarding in specific, important ways. What changes, what the risks are, and how to structure onboarding so new engineers learn the codebase rather than just navigating it with AI."
-author: akashtalole
 mermaid: true
 ---
 

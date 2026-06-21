@@ -5,7 +5,6 @@ date: 2026-04-09
 categories: [ai, claude-code]
 tags: [ai, claude-code]
 description: "Master the Claude Code."
-author: akashtalole
 mermaid: true
 ---
 

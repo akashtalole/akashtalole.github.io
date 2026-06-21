@@ -5,7 +5,6 @@ date: 2026-06-14
 categories: [ai, agentic-ai]
 tags: [agentic-ai, langgraph, crewai, coding-agents, enterprise]
 description: "LangGraph and CrewAI have emerged as the two production-viable agent frameworks in 2026. AutoGen is deprecated. Here's an honest comparison of when each framework fits, with the specific architectural differences that determine the choice."
-author: akashtalole
 mermaid: true
 ---
 

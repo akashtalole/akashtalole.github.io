@@ -5,7 +5,6 @@ date: 2026-05-19
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, github-copilot]
 description: "Code review was designed for humans writing code. When AI writes a significant portion of a PR, the review process needs to change — what to focus on, how to annotate AI-assisted sections, and the failure modes that AI introduces."
-author: akashtalole
 mermaid: true
 ---
 

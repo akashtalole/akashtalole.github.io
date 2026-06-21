@@ -5,7 +5,6 @@ date: 2026-05-06
 categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, agentic-ai, enterprise]
 description: "A single Copilot Studio agent handles one domain well. A multi-agent system handles complex enterprise workflows — routing, handoff, shared context, and orchestration. Here's the architecture and the decisions that matter."
-author: akashtalole
 mermaid: true
 ---
 

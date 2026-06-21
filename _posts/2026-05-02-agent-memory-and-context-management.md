@@ -5,7 +5,6 @@ date: 2026-05-02
 categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Memory is where agentic systems get subtle and hard to debug. Context windows fill up. Conversation history grows. The agent starts forgetting, confusing, or contradicting itself. Here's how to design memory properly from the start."
-author: akashtalole
 mermaid: true
 ---
 

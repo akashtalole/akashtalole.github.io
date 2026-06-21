@@ -5,7 +5,6 @@ date: 2026-05-11
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Everyone's talking about AI-first teams. Most of what gets called 'AI-first' is just 'we have Copilot licences.' Here's the actual distinction — and why it matters for how you structure your team."
-author: akashtalole
 mermaid: true
 ---
 

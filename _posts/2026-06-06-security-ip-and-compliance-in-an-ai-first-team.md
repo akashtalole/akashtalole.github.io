@@ -5,7 +5,6 @@ date: 2026-06-06
 categories: [ai, enterprise]
 tags: [agentic-ai, enterprise, ai-in-sdlc, sdlc]
 description: "Security and compliance aren't afterthoughts in an AI-first team — they're constraints that shape tool selection, data practices, and workflow design. The practical approach to IP protection, data security, and compliance in an AI-assisted engineering environment."
-author: akashtalole
 mermaid: true
 ---
 

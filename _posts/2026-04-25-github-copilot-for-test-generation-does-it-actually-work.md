@@ -5,7 +5,6 @@ date: 2026-04-25
 categories: [ai, github-copilot]
 tags: [github-copilot, sdlc, ai-in-sdlc, coding-agents]
 description: "The honest answer: sometimes yes, sometimes dangerously no. Copilot-generated tests can look complete while testing almost nothing. Here's where they're genuinely useful, where they create false confidence, and how to use them safely."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-05-16
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Most AI team metrics measure the wrong things. Lines of code generated, acceptance rates, time saved — these measure AI activity, not AI value. Here's what to actually measure and why."
-author: akashtalole
 mermaid: true
 ---
 

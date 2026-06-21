@@ -5,7 +5,6 @@ date: 2026-06-19
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "Context windows are finite even at 100K+ tokens. Long-running agents accumulate state, conversation history, and tool outputs that eventually overflow the window. The strategies that keep production agents working correctly over time."
-author: akashtalole
 mermaid: true
 ---
 

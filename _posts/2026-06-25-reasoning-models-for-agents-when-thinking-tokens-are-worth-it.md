@@ -5,7 +5,6 @@ date: 2026-06-25
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, tool-use]
 description: "Reasoning models think before responding — generating extended chain-of-thought that improves accuracy on hard problems at the cost of latency and tokens. When the thinking investment pays off, and when it doesn't."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-05-03
 categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Single-step agents are relatively predictable. Multi-step agents are where things get interesting — and where they fall apart in ways that are hard to diagnose. The orchestration patterns that hold up and the failure modes that will find you eventually."
-author: akashtalole
 mermaid: true
 ---
 

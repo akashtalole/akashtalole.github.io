@@ -5,7 +5,6 @@ date: 2026-05-13
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, claude-code, github-copilot]
 description: "Not every AI tool belongs in every team's stack. Here's how to think about toolchain decisions for an engineering team — what each layer does, how the tools interact, and how to avoid the duplication trap."
-author: akashtalole
 mermaid: true
 ---
 

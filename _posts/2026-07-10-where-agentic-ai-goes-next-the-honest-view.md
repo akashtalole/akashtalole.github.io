@@ -5,7 +5,6 @@ date: 2026-07-10
 categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "30 days of production agentic AI engineering. What the hype gets wrong, what's genuinely changing, the capabilities that are real versus the ones that are demo-ware, and the engineering skills that will matter over the next two years."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-07-05
 categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "Agentic systems that work at 10 users per day face different problems at 10,000. Horizontal scaling, async processing, caching, rate limit management, and the reliability patterns that keep agents working when the underlying LLMs don't."
-author: akashtalole
 mermaid: true
 ---
 

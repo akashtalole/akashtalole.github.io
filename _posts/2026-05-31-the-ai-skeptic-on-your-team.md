@@ -5,7 +5,6 @@ date: 2026-05-31
 categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Every team going through AI adoption has at least one AI skeptic. Some concerns are legitimate. Some are fear-based resistance. Knowing the difference — and responding to each appropriately — is one of the harder parts of leading an AI-first team."
-author: akashtalole
 mermaid: true
 ---
 

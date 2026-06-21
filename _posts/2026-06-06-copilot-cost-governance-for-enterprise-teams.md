@@ -5,7 +5,6 @@ date: 2026-06-06
 categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, ai-in-sdlc]
 description: "The wrong response to Copilot cost surprises is blanket restrictions that cut high-value usage. The right response is targeted governance: spending limits, usage visibility, and smart seat management. How to implement controls without killing adoption."
-author: akashtalole
 mermaid: true
 ---
 

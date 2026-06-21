@@ -5,7 +5,6 @@ date: 2026-05-07
 categories: [ai, copilot-studio]
 tags: [copilot-studio, multi-agent, microsoft, enterprise, sdlc]
 description: "Connectors, custom APIs, authentication patterns, and the integration decisions that determine whether your Copilot Studio agents actually hold up under enterprise load. What works, what breaks, and what to build carefully."
-author: akashtalole
 mermaid: true
 ---
 

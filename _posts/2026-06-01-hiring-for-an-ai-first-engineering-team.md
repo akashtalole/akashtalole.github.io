@@ -5,7 +5,6 @@ date: 2026-06-01
 categories: [ai, engineering-culture]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "What to look for when hiring engineers who will work in an AI-first team. The skills that matter more now, the skills that matter less, and how to interview for AI collaboration ability rather than just raw coding ability."
-author: akashtalole
 mermaid: true
 ---
 

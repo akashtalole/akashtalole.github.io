@@ -5,7 +5,6 @@ date: 2026-05-28
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "AI changes the communication surface between engineering and the rest of the organisation. Technical capabilities change faster, the gap in AI literacy varies widely, and new translation problems emerge. What works."
-author: akashtalole
 mermaid: true
 ---
 

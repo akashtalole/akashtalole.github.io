@@ -5,7 +5,6 @@ date: 2026-06-17
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "The basic RAG tutorial gets you to a working prototype. Production RAG requires hybrid search, re-ranking, query transformation, and failure handling that tutorials don't cover. What separates a demo from a system that actually works."
-author: akashtalole
 mermaid: true
 ---
 

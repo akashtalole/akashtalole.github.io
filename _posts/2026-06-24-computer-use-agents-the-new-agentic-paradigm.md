@@ -5,7 +5,6 @@ date: 2026-06-24
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, tool-use]
 description: "Claude Opus 4.8 and GPT-5.4 can control computers — take screenshots, click buttons, fill forms, navigate applications. Computer use agents open use cases that tool-calling can't reach. The capabilities, the risks, and where they actually fit."
-author: akashtalole
 mermaid: true
 ---
 

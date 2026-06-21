@@ -5,7 +5,6 @@ date: 2026-06-13
 categories: [ai, agentic-ai]
 tags: [agentic-ai, mcp, enterprise, multi-agent, coding-agents]
 description: "Google's Agent2Agent (A2A) protocol defines how AI agents communicate with each other — peer to peer, across systems, across vendors. How it works, how it complements MCP, and what it means for multi-agent enterprise architectures."
-author: akashtalole
 mermaid: true
 ---
 

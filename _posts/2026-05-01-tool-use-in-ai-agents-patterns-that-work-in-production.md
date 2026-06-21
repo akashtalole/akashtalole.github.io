@@ -5,7 +5,6 @@ date: 2026-05-01
 categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, tool-use, automation]
 description: "Function calling works in demos. In production it breaks in ways demos don't show. The tool use patterns that hold up under real load — retry logic, result validation, tool chaining, and error handling the agent can actually reason about."
-author: akashtalole
 mermaid: true
 ---
 

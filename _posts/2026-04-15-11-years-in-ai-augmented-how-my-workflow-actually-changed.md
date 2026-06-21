@@ -5,7 +5,6 @@ date: 2026-04-15
 categories: [ai, meta]
 tags: [claude-code, github-copilot, sdlc, ai-in-sdlc, agentic-ai]
 description: "An honest before-and-after. Eleven years of engineering, eighteen months of AI tooling — here's what actually changed in how I plan, code, review, and ship. And what didn't."
-author: akashtalole
 mermaid: true
 ---
 

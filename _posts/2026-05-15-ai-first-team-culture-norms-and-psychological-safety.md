@@ -5,7 +5,6 @@ date: 2026-05-15
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "The toolchain is the easy part. The culture is where AI adoption succeeds or fails. What norms an AI-first team needs, what psychological safety looks like in this context, and the conversations most teams avoid having."
-author: akashtalole
 mermaid: true
 ---
 

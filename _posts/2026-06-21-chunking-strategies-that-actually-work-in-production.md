@@ -5,7 +5,6 @@ date: 2026-06-21
 categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, rag]
 description: "How you split documents determines what your RAG system can find. Fixed-size chunking is the beginner approach. Semantic chunking, parent-document retrieval, and document-type-aware splitting are what production systems actually use."
-author: akashtalole
 mermaid: true
 ---
 

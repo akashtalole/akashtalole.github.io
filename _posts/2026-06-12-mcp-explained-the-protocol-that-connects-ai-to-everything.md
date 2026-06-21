@@ -5,7 +5,6 @@ date: 2026-06-12
 categories: [ai, agentic-ai]
 tags: [agentic-ai, mcp, coding-agents, tool-use, enterprise]
 description: "Model Context Protocol (MCP) has become the de facto standard for connecting AI agents to tools and data sources. What it is, how it works, how to build an MCP server, and why it matters more than which model you use."
-author: akashtalole
 mermaid: true
 ---
 

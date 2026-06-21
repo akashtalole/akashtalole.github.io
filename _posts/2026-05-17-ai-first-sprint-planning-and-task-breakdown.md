@@ -5,7 +5,6 @@ date: 2026-05-17
 categories: [ai, sdlc]
 tags: [agentic-ai, sdlc, ai-in-sdlc, enterprise]
 description: "Sprint planning in an AI-first team looks different — estimation changes, task decomposition changes, and the relationship between a ticket and its implementation changes. What actually works and what to watch out for."
-author: akashtalole
 mermaid: true
 ---
 

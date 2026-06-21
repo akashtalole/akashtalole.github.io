@@ -5,7 +5,6 @@ date: 2026-07-08
 categories: [ai, agentic-ai]
 tags: [agentic-ai, coding-agents, enterprise, ai-in-sdlc]
 description: "Reasoning models represent a different approach to AI capability — not better pattern matching, but explicit test-time computation. What changed architecturally, why the benchmark gaps are real, and where the technology is heading."
-author: akashtalole
 mermaid: true
 ---
 

@@ -5,7 +5,6 @@ date: 2026-05-09
 categories: [ai, meta]
 tags: [meta, ai, claude-code, github-copilot, copilot-studio, agentic-ai]
 description: "Thirty posts across five arcs. Here's the honest synthesis: the biggest surprises, the things I was wrong about, what actually changed in my thinking, and where I think all of this is heading."
-author: akashtalole
 mermaid: true
 ---
 
