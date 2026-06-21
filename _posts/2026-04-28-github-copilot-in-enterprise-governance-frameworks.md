@@ -6,9 +6,24 @@ categories: [ai, github-copilot]
 tags: [github-copilot, enterprise, sdlc, ai-in-sdlc]
 description: "Getting GitHub Copilot approved and sustainably deployed in an enterprise isn't just a procurement exercise. Policy controls, content exclusions, audit logs, IP considerations, and making the compliance team an ally rather than a blocker."
 author: akashtalole
+mermaid: true
 ---
 
 On Day 7 I covered enterprise setup for Claude Code. Today's the equivalent for GitHub Copilot — but the governance landscape is different enough to warrant its own treatment. Copilot is deeply integrated into GitHub, which gives it stronger enterprise controls out of the box and also raises different questions around IP and code confidentiality.
+
+```mermaid
+flowchart TD
+    A[Copilot Enterprise Governance] --> B[Policy Controls\nOrg-level access + content exclusions]
+    A --> C[IP & Legal\nCode ownership + duplication filter]
+    A --> D[Audit Logs\nAccess + usage + config changes]
+    A --> E[Acceptable Use Policy\nData class limits + review requirements]
+    B --> F[Engage compliance team early]
+    C --> F
+    D --> F
+    E --> F
+    F --> G[Documented approval\nwith signed controls]
+    G --> H[Sustainable rollout\nto all engineers]
+```
 
 ---
 

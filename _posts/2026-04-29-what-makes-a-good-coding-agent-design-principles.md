@@ -6,11 +6,24 @@ categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Arc 4 starts here. Coding agents that work in production aren't just LLMs with tool access — they're systems designed around specific principles: scoped action spaces, recovery from failure, human checkpoints, and evaluations that reflect real use."
 author: akashtalole
+mermaid: true
 ---
 
 Arc 4 starts today. For the next six days I'm covering coding agents — what they are, how to build them, and what I've learned from building them in real enterprise contexts.
 
 I want to start with design principles rather than implementation, because the design mistakes are what cause coding agents to fail in production. Getting the implementation right on a poorly designed agent just means you've reliably built the wrong thing.
+
+```mermaid
+graph TD
+    A[Good Coding Agent] --> B[Scoped Action Space\nMinimum tools required]
+    A --> C[Failure Recovery\nStructured errors + retry strategy]
+    A --> D[Human Checkpoints\nBefore irreversible actions]
+    A --> E[Observability\nLog every tool call + decision]
+    A --> F[Real-task Evaluation\nNot just demo tasks]
+    B --> B1[Read files\nWrite test files\nRun tests only]
+    D --> D1[Low blast radius = autonomous\nHigh blast radius = checkpoint]
+    F --> F1[Track completion rate\ncorrectness rate\nrevision rate]
+```
 
 ---
 

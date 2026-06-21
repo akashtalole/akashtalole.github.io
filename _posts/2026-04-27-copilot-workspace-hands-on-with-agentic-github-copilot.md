@@ -6,11 +6,25 @@ categories: [ai, github-copilot]
 tags: [github-copilot, copilot-workspace, coding-agents, agentic-ai, sdlc]
 description: "Copilot Workspace takes GitHub Copilot from in-editor suggestions to multi-step agentic task execution. Here's what it actually does, how it works in practice, and where it fits alongside Claude Code."
 author: akashtalole
+mermaid: true
 ---
 
 Everything I've covered in Arc 3 so far has been about Copilot as an in-editor assistant — completions, chat, slash commands, context variables. Today's post is about something different: Copilot Workspace, which is GitHub's move into agentic territory.
 
 This is where Copilot stops being a suggestion engine and starts being something closer to an agent.
+
+```mermaid
+flowchart TD
+    A[GitHub Issue\nor Task Description] --> B[Workspace generates Plan\nFiles to change + rationale]
+    B --> C{Human reviews plan}
+    C -- Edit plan --> B
+    C -- Approve --> D[Workspace executes plan\nCode changes across repo]
+    D --> E[Review resulting diff\nTest it manually]
+    E --> F{Correct?}
+    F -- Needs adjustment --> G[Edit code\nor refine plan]
+    G --> D
+    F -- Looks good --> H[Open PR for review]
+```
 
 ---
 

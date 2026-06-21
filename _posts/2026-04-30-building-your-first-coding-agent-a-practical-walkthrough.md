@@ -6,11 +6,24 @@ categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, agent-skills, automation, claude-code]
 description: "Stop reading about coding agents and build one. A practical walkthrough of a real, useful coding agent — the decisions made along the way, the things that broke, and what the finished version looks like."
 author: akashtalole
+mermaid: true
 ---
 
 Yesterday I covered the design principles for coding agents. Today I want to get concrete: let's actually build one.
 
 Not a toy demo. A useful agent that solves a real problem — one I've built and use in my own workflow. I'll walk through the decisions, the things that broke during development, and what the finished version looks like.
+
+```mermaid
+flowchart TD
+    A[Define minimum tools\nread_file + list_files only] --> B[Implement structured\nerror returns]
+    B --> C[Write precise system prompt\nScope + output format]
+    C --> D[Build observe-reason-act loop\nwith message history]
+    D --> E[Test on real cases]
+    E --> F{Misbehaviour?}
+    F -- Yes --> G[Fix in prompt\nor tool description]
+    G --> E
+    F -- No --> H[Deploy: Test Gap\nFinder Agent in production]
+```
 
 ---
 
