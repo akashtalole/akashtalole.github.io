@@ -6,9 +6,24 @@ categories: [ai, claude-code]
 tags: [ai, claude-code]
 description: "Master the Claude Code."
 author: akashtalole
+mermaid: true
 ---
 
 Claude Code represents a new frontier in AI-assisted programming, where advanced language models help developers write, debug, and optimize code more effectively. Built on Anthropic's Claude AI, Claude Code is designed to make coding more intuitive, efficient, and accessible.
+
+```mermaid
+graph TD
+    A[Claude Code] --> B[Code Generation]
+    A --> C[Debugging]
+    A --> D[Code Review]
+    A --> E[Refactoring]
+    A --> F[Documentation]
+    B --> B1[Natural language to code\nBoilerplate & scaffolding]
+    C --> C1[Error analysis\nFix suggestions]
+    D --> D1[Pre-review\nSecurity patterns]
+    E --> E1[Structure improvements\nCode quality]
+    F --> F1[Docstrings\nREADMEs]
+```
 
 ## What is Claude Code?
 

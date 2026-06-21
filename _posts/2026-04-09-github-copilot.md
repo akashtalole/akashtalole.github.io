@@ -6,9 +6,22 @@ categories: [ai, github-copilot]
 tags: [ai, github-copilot]
 description: "Master the GitHub Copilot."
 author: akashtalole
+mermaid: true
 ---
 
 GitHub Copilot is transforming the way developers write code, offering intelligent suggestions and accelerating the coding process. Powered by AI, it acts as a pair programmer that understands context and provides real-time assistance.
+
+```mermaid
+flowchart LR
+    A[Developer writes code] --> B[Copilot analyses context]
+    B --> C[Suggestion generated]
+    C --> D{Developer accepts?}
+    D -- Yes --> E[Code inserted]
+    D -- No / Modify --> F[Developer edits]
+    E --> A
+    F --> A
+    D -- Reject --> A
+```
 
 ## What is GitHub Copilot?
 

@@ -6,6 +6,7 @@ categories: [ai, meta]
 tags: [claude-code, github-copilot, copilot-studio, agentic-ai, sdlc, coding-agents]
 description: "Claude Code, GitHub Copilot, and Microsoft Copilot Studio are not competitors. They solve different problems at different layers. Here's the mental model I use to decide which to reach for — and when to use all three."
 author: akashtalole
+mermaid: true
 ---
 
 Every time I mention using multiple AI tools at work, someone asks the same question: "Which one should I actually use?"
@@ -13,6 +14,17 @@ Every time I mention using multiple AI tools at work, someone asks the same ques
 The framing is wrong. These tools aren't alternatives — they're layers. Choosing between them is like asking whether you should use an IDE, a CI pipeline, or a cloud platform. The answer is yes, for different things, at different times.
 
 But the layers aren't obvious until you've spent real time with all three. So let me break down how I actually think about this.
+
+```mermaid
+flowchart TD
+    A{What are you doing?} --> B{Writing code\nin editor?}
+    B -- Yes --> C[GitHub Copilot\nInline completions\nfast, in-flow]
+    B -- No --> D{Deep reasoning\nor complex task?}
+    D -- Yes --> E[Claude Code\nConversation-driven\ncontext-rich]
+    D -- No --> F{Building an AI\nproduct or workflow?}
+    F -- Yes --> G[Copilot Studio\nAgent builder\nenterprise integrations]
+    F -- No --> D
+```
 
 ---
 

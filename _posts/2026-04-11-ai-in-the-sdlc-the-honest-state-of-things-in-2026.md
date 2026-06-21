@@ -6,6 +6,7 @@ categories: [ai, sdlc]
 tags: [sdlc, ai-in-sdlc, agentic-ai, coding-agents, github-copilot, claude-code]
 description: "Where AI genuinely fits in the software development lifecycle today, where it's oversold, and what 11 years of engineering experience tells me about separating signal from noise."
 author: akashtalole
+mermaid: true
 ---
 
 Every few months someone publishes a diagram showing AI slotted neatly into every phase of the SDLC. Requirements, design, development, testing, deployment, monitoring — little AI icons everywhere. It looks very tidy.
@@ -13,6 +14,17 @@ Every few months someone publishes a diagram showing AI slotted neatly into ever
 Reality is messier. Some of those slots are real. Some are demos that don't survive contact with an actual enterprise codebase. And a few are genuinely transformative in ways the diagrams understate.
 
 After spending real time with these tools across real projects, here's my honest map of where things stand.
+
+```mermaid
+flowchart TD
+    A[Requirements\n⚠ Oversold] --> B[Design\n⚠ Context-limited]
+    B --> C[Development\n✅ Genuine win]
+    C --> D[Code Review\n✅ Pre-review value]
+    D --> E[Testing\n✅ With caveats]
+    E --> F[Documentation\n✅ Best ROI]
+    F --> G[Deployment & Monitoring\n🔄 Emerging]
+    G --> A
+```
 
 ---
 

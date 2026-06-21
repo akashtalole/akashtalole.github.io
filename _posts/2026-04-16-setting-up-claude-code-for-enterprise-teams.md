@@ -6,6 +6,7 @@ categories: [ai, claude-code]
 tags: [claude-code, enterprise, sdlc, ai-in-sdlc, coding-agents]
 description: "Rolling Claude Code out to an enterprise team isn't just an IT ticket. Auth, data handling, governance, cost controls, and rollout strategy — what you actually need to sort out before flipping the switch."
 author: akashtalole
+mermaid: true
 ---
 
 Arc 2 starts today. For the next seven days I'm going deep on Claude Code — how I use it, where it works, where it doesn't, and how to deploy it responsibly in enterprise contexts.
@@ -15,6 +16,19 @@ Let's start at the beginning: getting it set up properly for a team.
 This is where most rollouts go wrong. An engineer discovers Claude Code, starts using it personally, it's great, they tell the team, someone creates a shared account, and six weeks later the security team finds out and asks uncomfortable questions.
 
 The right way to do this is boring but important.
+
+```mermaid
+flowchart TD
+    A[Enterprise Claude Code Rollout] --> B[Auth & Access Control\nSSO + secrets manager + RBAC]
+    A --> C[Data Security\nClassify data + DPA + no PII in prompts]
+    A --> D[Cost Management\nSpend alerts + token budgets]
+    A --> E[Governance\nAcceptable use policy + review requirements]
+    B --> F[Pilot Group\n5–10 engineers, 4–6 weeks]
+    C --> F
+    D --> F
+    E --> F
+    F --> G[Early Adopters] --> H[Full Team Rollout]
+```
 
 ---
 

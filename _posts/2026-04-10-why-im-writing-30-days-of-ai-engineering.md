@@ -6,6 +6,7 @@ categories: [ai, meta]
 tags: [meta, ai, agentic-ai, claude-code, coding-agents]
 description: "Eleven years as an engineer, and the last 18 months changed how I work more than the decade before. Here's why I'm documenting it all — and what I actually want to figure out."
 author: akashtalole
+mermaid: true
 ---
 
 Let me start with the moment that prompted all of this.
@@ -17,6 +18,15 @@ Except this time I opened Claude Code, described what I was staring at, and with
 Not because Claude Code is magic. It made mistakes. I corrected them. But the *speed* at which I could form a hypothesis, test it, and move forward — that was genuinely different from anything I'd experienced before.
 
 That was the moment I realized: this isn't just autocomplete with a better model. Something has actually shifted.
+
+```mermaid
+flowchart LR
+    A[2015–2019\nCloud & DevOps era] --> B[2020–2022\nMLOps & basic AI tools]
+    B --> C[2023\nCopilot autocomplete]
+    C --> D[2024\nClaude Code & chat AI]
+    D --> E[2025\nAgentic AI & multi-agent]
+    E --> F[2026\nAI-augmented engineering\nas the norm]
+```
 
 ---
 

@@ -6,11 +6,23 @@ categories: [ai, claude-code]
 tags: [claude-code, enterprise, coding-agents, github-copilot, sdlc]
 description: "Prompt engineering for coding tasks is not about magic phrases or elaborate templates. It's about giving the model what it needs to do the job. Here are the patterns I actually use — and the mistakes that waste the most time."
 author: akashtalole
+mermaid: true
 ---
 
 "Prompt engineering" has developed a reputation for being either trivially obvious or arcane dark magic, depending on who you ask. The truth is more boring: it's just communication. Giving an AI model what it needs to do a specific job well — clearly, efficiently, without ambiguity.
 
 For coding tasks specifically, there are patterns that consistently produce better output and mistakes that consistently produce worse output. After using Claude Code and GitHub Copilot daily for well over a year, here's what I've actually learned.
+
+```mermaid
+graph TD
+    A[Good Prompt] --> B[Goal First\nState objective before task]
+    A --> C[Show the Pattern\nExamples over descriptions]
+    A --> D[Explicit Constraints\nLanguage, framework, limits]
+    A --> E[Ask for Reasoning\nOn complex tasks]
+    A --> F[Iterate Incrementally\nOne correction at a time]
+    A --> G[Negative Constraints\nState what NOT to do]
+    B & C & D & E & F & G --> H[High-quality output\nFewer iterations needed]
+```
 
 ---
 

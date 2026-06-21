@@ -7,6 +7,7 @@ tags: [ai, claude-code, github-copilot, copilot-studio, agentic-ai, agent-skills
 description: "A structured 30-day blog roadmap covering Claude Code, GitHub Copilot, Microsoft Copilot Studio, agentic AI, coding agents, and AI in SDLC — from a Lead AI Engineer with 11 years of experience."
 author: akashtalole
 pin: true
+mermaid: true
 ---
 
 Eleven years into this industry, and I'll be honest — the last 18 months have been more disruptive to how I work than the previous decade combined. Not in a scary way. In a "I need to document all of this before I forget what it was like before" kind of way.
@@ -18,6 +19,20 @@ Over the next 30 days I'm publishing one post a day covering the AI tools and wo
 Not tutorials copied from docs. Real stuff, with real friction, real decisions, and real outcomes.
 
 Here's the full plan.
+
+```mermaid
+flowchart TD
+    A[30-Day AI Engineering Series] --> B[Arc 1: Foundations\nDays 1–6]
+    A --> C[Arc 2: Claude Code for Enterprise\nDays 7–13]
+    A --> D[Arc 3: GitHub Copilot Mastery\nDays 14–19]
+    A --> E[Arc 4: Coding Agents & Agent Skills\nDays 20–25]
+    A --> F[Arc 5: Copilot Studio & Multi-Agent\nDays 26–30]
+    B --> B1[AI-Augmented mindset\nTool selection\nWorkflow changes]
+    C --> C1[Enterprise setup\nLegacy code\nCI/CD integration]
+    D --> D1[Beyond autocomplete\nTest generation\nGovernance]
+    E --> E1[Agent design\nBuilding agents\nTool use patterns]
+    F --> F1[Copilot Studio\nMulti-agent design\nObservability]
+```
 
 ---
 

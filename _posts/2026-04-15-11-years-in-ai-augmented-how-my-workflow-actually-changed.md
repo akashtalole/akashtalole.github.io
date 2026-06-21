@@ -6,9 +6,27 @@ categories: [ai, meta]
 tags: [claude-code, github-copilot, sdlc, ai-in-sdlc, agentic-ai]
 description: "An honest before-and-after. Eleven years of engineering, eighteen months of AI tooling — here's what actually changed in how I plan, code, review, and ship. And what didn't."
 author: akashtalole
+mermaid: true
 ---
 
 I want to close Arc 1 of this series with something personal: an honest account of what actually changed in my day-to-day work when I started using AI tools seriously. Not the marketing version. The real version — including the parts that didn't change as much as I expected.
+
+```mermaid
+flowchart LR
+    subgraph Before["Before AI Tools"]
+        A1[Orient in new codebase\n1–3 days]
+        B1[Write boilerplate\nManual, slow]
+        C1[Code review\nFull attention on all issues]
+        D1[Documentation\nDeferred, often skipped]
+    end
+    subgraph After["After AI Tools"]
+        A2[Orient in new codebase\nHalf a day]
+        B2[Write boilerplate\nCopilot-assisted, faster]
+        C2[Code review\nFocus on logic & architecture]
+        D2[Documentation\nDrafted instantly, actually done]
+    end
+    Before --> After
+```
 
 ---
 

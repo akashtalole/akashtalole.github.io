@@ -6,6 +6,7 @@ categories: [ai, agent-skills]
 tags: [agent-skills, tool-use, agentic-ai, agents, coding-agents, claude-code, copilot-studio]
 description: "What makes an agent skill actually useful? The anatomy of well-designed skills — inputs, outputs, side effects, error handling, and the design mistakes that make agents unpredictable."
 author: akashtalole
+mermaid: true
 ---
 
 Yesterday I wrote about the agentic AI mental model — the observe-reason-act loop that separates agents from plain LLM calls. Today I want to go one level deeper into the part that most people underdesign: the skills.
@@ -13,6 +14,18 @@ Yesterday I wrote about the agentic AI mental model — the observe-reason-act l
 An agent is only as good as the tools it has access to. Give it poorly designed skills and it will hallucinate workarounds, misuse them, or fail in ways that are hard to debug. Give it well-designed skills and the same underlying model becomes dramatically more reliable.
 
 This is the engineering problem nobody talks about enough.
+
+```mermaid
+graph TD
+    A[Agent Skill] --> B[Name\nVerb-noun, unambiguous]
+    A --> C[Description\nWritten for the agent]
+    A --> D[Parameters\nMinimal & strongly typed]
+    A --> E[Output\nStructured & consistent]
+    A --> F[Side Effects\nRead-only vs Write]
+    A --> G[Error Handling\nStructured failure info]
+    F --> F1[Read-only: safe to retry]
+    F --> F2[Write: document impact]
+```
 
 ---
 
