@@ -167,4 +167,4 @@ This means clients can cache the tool list rather than requesting it on every se
 
 ---
 
-*Day 4 of 7. Previous: [Beyond Vibe Coding](/posts/beyond-vibe-coding-ai-native-engineering/). Next: [Autonomous PR Agents](/posts/autonomous-pr-agents-reviewing-ai-written-code/)*
+*Day 4 of 7. Previous: [Beyond Vibe Coding](/posts/beyond-vibe-coding-ai-native-engineering/).*

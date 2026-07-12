@@ -197,4 +197,4 @@ Start with these five. Each adds reliability that no amount of model improvement
 
 ---
 
-*First in a new 7-part series on AI engineering patterns for mid-2026. Next: [Context Engineering — The Discipline That Replaced Prompt Engineering](/posts/context-engineering-not-prompt-engineering/)*
+*First in a new 7-part series on AI engineering patterns for mid-2026.*

@@ -141,4 +141,4 @@ AI-native engineering isn't slower than vibe coding. It's slower to the first ve
 
 ---
 
-*Day 3 of 7. Previous: [Context Engineering](/posts/context-engineering-not-prompt-engineering/). Next: [MCP Goes Stateless](/posts/mcp-goes-stateless-july-2026-rc/)*
+*Day 3 of 7. Previous: [Context Engineering](/posts/context-engineering-not-prompt-engineering/).*

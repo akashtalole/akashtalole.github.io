@@ -154,4 +154,4 @@ That shift is fundamentally a domain knowledge problem, not a code reading probl
 
 ---
 
-*Day 5 of 7. Previous: [MCP Goes Stateless](/posts/mcp-goes-stateless-july-2026-rc/). Next: [Self-Healing CI](/posts/self-healing-ci-agentic-pipelines/)*
+*Day 5 of 7. Previous: [MCP Goes Stateless](/posts/mcp-goes-stateless-july-2026-rc/).*

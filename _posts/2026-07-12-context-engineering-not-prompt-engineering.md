@@ -185,4 +185,4 @@ The first is a writing task. The second is a systems design task. The second is 
 
 ---
 
-*Day 2 of 7. Previous: [Harness Engineering](/posts/harness-engineering-the-ai-control-plane/). Next: [Beyond Vibe Coding](/posts/beyond-vibe-coding-ai-native-engineering/)*
+*Day 2 of 7. Previous: [Harness Engineering](/posts/harness-engineering-the-ai-control-plane/).*

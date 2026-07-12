@@ -284,4 +284,4 @@ The goal isn't to eliminate human involvement in CI failures. It's to ensure hum
 
 ---
 
-*Day 6 of 7. Previous: [Autonomous PR Agents](/posts/autonomous-pr-agents-reviewing-ai-written-code/). Next: [Spec-Driven Development](/posts/spec-driven-development-with-ai-agents/)*
+*Day 6 of 7. Previous: [Autonomous PR Agents](/posts/autonomous-pr-agents-reviewing-ai-written-code/).*
