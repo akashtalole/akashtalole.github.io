@@ -6,6 +6,7 @@ categories: [ai, coding-agents]
 tags: [agentic-ai, coding-agents, agent-skills, tool-use]
 description: "Long-term memory is what separates agents that get smarter over time from agents that start from scratch on every session. The four memory patterns, how to implement each, and the engineering decisions that make agent memory practical."
 mermaid: true
+render_with_liquid: false
 ---
 
 The context window gives agents short-term memory. But context windows clear between sessions. A customer service agent that asks the same clarifying questions every interaction, an engineering assistant that re-learns your codebase conventions each session, a research agent that loses all prior findings on restart — these are agents without long-term memory.
