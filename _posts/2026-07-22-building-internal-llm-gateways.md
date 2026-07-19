@@ -287,4 +287,4 @@ Set a retention policy that matches your compliance framework. GDPR requires you
 
 ---
 
-*Day 5 of 7. Previous: [Agent Sandboxing](/posts/agent-sandboxing-and-isolation/). Next: [Multi-Tenant AI Infrastructure](/posts/multi-tenant-ai-infrastructure/)*
+*Day 5 of 7. Previous: [Agent Sandboxing](/posts/agent-sandboxing-and-isolation/)*

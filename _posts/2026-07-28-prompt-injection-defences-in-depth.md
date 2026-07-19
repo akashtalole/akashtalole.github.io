@@ -250,4 +250,4 @@ An agent that suddenly starts calling `send_email` or `read_file` in a pattern i
 
 ---
 
-*Previous: [Technical Debt in AI-Generated Codebases](/posts/technical-debt-in-ai-generated-codebases/) — Next: [AI-Assisted Security Scanning](/posts/ai-assisted-security-scanning/)*
+*Previous: [Technical Debt in AI-Generated Codebases](/posts/technical-debt-in-ai-generated-codebases/)*

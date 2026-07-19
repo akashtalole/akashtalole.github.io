@@ -280,4 +280,4 @@ The `[full-eval]` commit message trigger lets you run the expensive suite on dem
 
 ---
 
-*Previous: [AI Code Review at Scale](/posts/ai-code-review-at-scale/) — Next: [Technical Debt in AI-Generated Codebases](/posts/technical-debt-in-ai-generated-codebases/)*
+*Previous: [AI Code Review at Scale](/posts/ai-code-review-at-scale/)*

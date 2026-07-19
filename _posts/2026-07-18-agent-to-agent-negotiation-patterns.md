@@ -230,4 +230,4 @@ If your current orchestrator is a bottleneck, instrument it first. If the orches
 
 ---
 
-*Day 1 of 7. Previous: [Spec-Driven Development](/posts/spec-driven-development-with-ai-agents/). Next: [Debugging Production Agents](/posts/debugging-production-agents-trace-analysis/)*
+*Day 1 of 7. Previous: [Spec-Driven Development](/posts/spec-driven-development-with-ai-agents/)*

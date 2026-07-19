@@ -238,4 +238,4 @@ Build a tool classification layer that routes tool calls to the right execution 
 
 ---
 
-*Day 4 of 7. Previous: [Semantic Caching](/posts/semantic-caching-for-ai-workloads/). Next: [Building an Internal LLM Gateway](/posts/building-internal-llm-gateways/)*
+*Day 4 of 7. Previous: [Semantic Caching](/posts/semantic-caching-for-ai-workloads/)*

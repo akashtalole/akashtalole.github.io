@@ -228,4 +228,4 @@ Track these as time-series metrics. Increasing duplicate count is the clearest e
 
 ---
 
-*Previous: [Testing Non-Deterministic Systems](/posts/testing-non-deterministic-ai-systems/) — Next: [Prompt Injection Defences In Depth](/posts/prompt-injection-defences-in-depth/)*
+*Previous: [Testing Non-Deterministic Systems](/posts/testing-non-deterministic-ai-systems/)*

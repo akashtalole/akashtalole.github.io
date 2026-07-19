@@ -201,4 +201,4 @@ POST-INCIDENT:
 
 ---
 
-*Previous: [Multi-Tenant AI Infrastructure](/posts/multi-tenant-ai-infrastructure/) — Next: [AI Code Review at Scale](/posts/ai-code-review-at-scale/)*
+*Previous: [Multi-Tenant AI Infrastructure](/posts/multi-tenant-ai-infrastructure/)*

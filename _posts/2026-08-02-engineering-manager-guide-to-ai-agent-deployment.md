@@ -100,4 +100,4 @@ What non-technical stakeholders need to know: what the agent can do reliably, wh
 
 ---
 
-**Previous:** [Measuring AI Engineering Productivity](/posts/measuring-ai-engineering-productivity/) | **Next:** [Knowledge Management in AI-First Teams](/posts/knowledge-management-in-ai-first-teams/)
+**Previous:** [Measuring AI Engineering Productivity](/posts/measuring-ai-engineering-productivity/)

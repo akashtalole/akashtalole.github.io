@@ -177,4 +177,4 @@ The teams I have seen get the most from AI review treat it as a pre-filter: catc
 
 ---
 
-*Previous: [Agent Incident Response](/posts/agent-incident-response-playbooks/) — Next: [Testing Non-Deterministic Systems](/posts/testing-non-deterministic-ai-systems/)*
+*Previous: [Agent Incident Response](/posts/agent-incident-response-playbooks/)*

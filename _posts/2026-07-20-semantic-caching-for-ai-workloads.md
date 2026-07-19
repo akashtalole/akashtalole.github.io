@@ -202,4 +202,4 @@ Semantic caching is a tool for repetitive, stateless, read-only query patterns. 
 
 ---
 
-*Day 3 of 7. Previous: [Debugging Production Agents](/posts/debugging-production-agents-trace-analysis/). Next: [Agent Sandboxing](/posts/agent-sandboxing-and-isolation/)*
+*Day 3 of 7. Previous: [Debugging Production Agents](/posts/debugging-production-agents-trace-analysis/)*

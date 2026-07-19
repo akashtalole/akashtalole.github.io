@@ -88,4 +88,4 @@ The goal isn't to prove ROI with a number your CFO can put in a deck. It's to un
 
 ---
 
-**Previous:** [The AI Platform Engineering Team](/posts/the-ai-platform-engineering-team/) | **Next:** [The Engineering Manager's Guide to AI Agent Deployment](/posts/engineering-manager-guide-to-ai-agent-deployment/)
+**Previous:** [The AI Platform Engineering Team](/posts/the-ai-platform-engineering-team/)

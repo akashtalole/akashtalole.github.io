@@ -195,4 +195,4 @@ Langfuse supports scoring and evaluation hooks that can fire these. LangSmith ha
 
 ---
 
-*Day 2 of 7. Previous: [Agent-to-Agent Negotiation](/posts/agent-to-agent-negotiation-patterns/). Next: [Semantic Caching](/posts/semantic-caching-for-ai-workloads/)*
+*Day 2 of 7. Previous: [Agent-to-Agent Negotiation](/posts/agent-to-agent-negotiation-patterns/)*

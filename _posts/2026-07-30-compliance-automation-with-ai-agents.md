@@ -98,4 +98,4 @@ The goal isn't to remove humans from compliance. It's to make the human work hig
 
 ---
 
-**Previous:** [AI-Assisted Security Scanning](/posts/ai-assisted-security-scanning/) | **Next:** [The AI Platform Engineering Team](/posts/the-ai-platform-engineering-team/)
+**Previous:** [AI-Assisted Security Scanning](/posts/ai-assisted-security-scanning/)

@@ -90,4 +90,4 @@ What not to measure: internal team velocity metrics, story points, or lines of i
 
 ---
 
-**Previous:** [Compliance Automation with AI Agents](/posts/compliance-automation-with-ai-agents/) | **Next:** [Measuring AI Engineering Productivity](/posts/measuring-ai-engineering-productivity/)
+**Previous:** [Compliance Automation with AI Agents](/posts/compliance-automation-with-ai-agents/)

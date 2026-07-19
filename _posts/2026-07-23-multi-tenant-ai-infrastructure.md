@@ -297,4 +297,4 @@ The cost to operate this for 10-15 teams is a 3-engineer-month initial build and
 
 ---
 
-*Day 6 of 7. Previous: [Building an Internal LLM Gateway](/posts/building-internal-llm-gateways/). Next: post 7 coming tomorrow.*
+*Day 6 of 7. Previous: [Building an Internal LLM Gateway](/posts/building-internal-llm-gateways/)*

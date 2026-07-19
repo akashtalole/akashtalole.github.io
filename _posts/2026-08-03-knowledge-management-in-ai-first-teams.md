@@ -117,4 +117,4 @@ The goal isn't to know everything — it's to maintain a map of what you don't k
 
 ---
 
-**Previous:** [The Engineering Manager's Guide to AI Agent Deployment](/posts/engineering-manager-guide-to-ai-agent-deployment/) | **Next:** [Hiring for AI-Native Engineering Skills in 2026](/posts/hiring-for-ai-native-engineering-skills/)
+**Previous:** [The Engineering Manager's Guide to AI Agent Deployment](/posts/engineering-manager-guide-to-ai-agent-deployment/)
