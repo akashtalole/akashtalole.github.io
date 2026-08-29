@@ -5,6 +5,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc, coding-agents]
 description: "AI-generated code produces more defects per PR than human-written code, and a meaningful share go uncaught — automated review agents that run before human review catch the categories humans reliably miss."
 mermaid: true
+render_with_liquid: false
 ---
 
 Here's the number that started this series: AI-generated code now accounts for a large share of new commits on the teams I work with, and it produces more issues per PR than human-written code does — while roughly a quarter of the resulting defects go uncaught through review. That second half is the part people don't talk about enough. It's not that AI code is worse in some obvious way; it's that it reads as confidently correct. Clean formatting, sensible variable names, a docstring that sounds right. A human reviewer skims it, the shape looks familiar, and the bug that a slower read would have caught slides through. This post is about the practice that's actually closing that gap: review agents that run before a human ever opens the diff.
