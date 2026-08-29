@@ -5,6 +5,7 @@ categories: [ai, coding-agents]
 tags: [coding-agents, agentic-ai, ai-in-sdlc, enterprise]
 description: "CI pipelines fail. Usually at the worst time. Agentic CI adds a layer that diagnoses failures, attempts fixes, and either resolves the issue automatically or surfaces a precise description of what needs human attention."
 mermaid: true
+render_with_liquid: false
 ---
 
 CI pipelines fail for predictable reasons. Flaky tests. Dependency version conflicts. Transient network errors. Environment drift. Type errors introduced by an unrelated merge. Most failures are diagnosable from the logs; most are fixable by an engineer with ten minutes and the right context.
