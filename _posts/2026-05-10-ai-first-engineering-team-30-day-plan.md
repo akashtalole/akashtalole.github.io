@@ -6,7 +6,6 @@ categories: [ai, meta]
 tags: [meta, ai, agentic-ai, sdlc, enterprise]
 description: "A 30-day series on what changes when an engineering team — not just an individual engineer — adopts AI as a first-class part of how they work. From culture and workflows to governance and the human side."
 mermaid: true
-pin: true
 image:
   path: assets/posts/30-day-ai-engineering-blog-plan/ai-first-engineering-team-30-day-plan.png
   alt: "30 Day Blog"
