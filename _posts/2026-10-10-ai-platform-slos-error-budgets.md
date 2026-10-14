@@ -37,7 +37,7 @@ flowchart LR
 
 **Latency SLO.** P50/P95/P99 for time-to-first-token (TTFT) and total response time. TTFT matters separately from total latency because a streaming UI feels responsive even if total generation takes a while — but if TTFT itself is slow, users perceive the system as broken regardless of streaming.
 
-**Quality SLO.** This is the one that doesn't exist in traditional SRE vocabulary. It's a quality floor, measured by running a sampled slice of production traffic through your eval harness and tracking the pass rate over time. I've written about the continuous monitoring mechanics that feed this in [Continuous Quality Monitoring in AI Production](/posts/continuous-quality-monitoring-ai-production/) — that post covers the *how* of sampling and scoring; this one is about what you do with the number once you have it: turn it into an SLO with a target and a burn-rate alert, the same way you'd treat availability.
+**Quality SLO.** This is the one that doesn't exist in traditional SRE vocabulary. It's a quality floor, measured by running a sampled slice of production traffic through your eval harness and tracking the pass rate over time. The mechanics of sampling and scoring production traffic are their own topic; this post is about what you do with the resulting number once you have it: turn it into an SLO with a target and a burn-rate alert, the same way you'd treat availability.
 
 ## Setting the quality threshold empirically
 
