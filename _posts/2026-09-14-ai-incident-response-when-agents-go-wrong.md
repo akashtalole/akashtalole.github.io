@@ -5,6 +5,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc, coding-agents]
 description: "AI incidents follow different patterns than software outages — wrong outputs, unexpected actions, and data exposures require a response playbook designed specifically for non-deterministic AI systems."
 mermaid: true
+render_with_liquid: false
 ---
 
 Every engineering team has an incident response playbook for software outages. Most don't have one for when the AI does something wrong. These are different problems requiring different playbooks, and you need both.

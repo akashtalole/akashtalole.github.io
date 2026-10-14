@@ -5,6 +5,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc, coding-agents]
 description: "An AI SRE co-pilot isn't a replacement for on-call engineers — it's an always-available assistant that handles the information gathering and preliminary analysis so engineers can focus on decisions and remediation."
 mermaid: true
+render_with_liquid: false
 ---
 
 On-call engineers spend a disproportionate amount of time on information gathering. "What's the current error rate? What changed in the last two hours? Has this happened before? What does the runbook say?" These questions have deterministic answers available in your monitoring systems, deployment history, and runbook library. Getting those answers manually, under pressure, at 2am, takes time and mental bandwidth that should be spent on the actual problem.

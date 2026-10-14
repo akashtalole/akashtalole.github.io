@@ -5,6 +5,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "Multi-agent systems are harder to test than single-agent systems — non-determinism, agent interdependencies, and emergent behavior require testing strategies that go beyond unit tests and assertion-based checks."
 mermaid: true
+render_with_liquid: false
 ---
 
 Testing a single agent is hard enough: you have non-deterministic outputs, no reliable assert-equal for LLM responses, and every test call costs real tokens. Testing a system of agents compounds these problems. You have more failure points, interdependencies between agents that unit tests cannot catch, emergent behavior that only appears when agents interact, and a cost structure that makes comprehensive test coverage expensive enough to skip. The engineers who skip it regret it in production.

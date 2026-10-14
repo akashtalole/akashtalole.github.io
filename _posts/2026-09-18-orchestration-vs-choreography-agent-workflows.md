@@ -5,6 +5,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, coding-agents, ai-in-sdlc]
 description: "Orchestration gives you control and observability at the cost of a central bottleneck; choreography gives you scale and resilience at the cost of debuggability — both are right for different problems."
 mermaid: true
+render_with_liquid: false
 ---
 
 This distinction comes from microservices architecture, and it maps cleanly onto multi-agent systems. Orchestration and choreography are not competing philosophies — they are tools with different strengths, and most production systems end up using both, for different parts of the same workflow. The mistake is applying one universally because it's what your framework makes easy.

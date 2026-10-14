@@ -5,6 +5,7 @@ categories: [ai, agentic-ai]
 tags: [agentic-ai, enterprise, ai-in-sdlc, coding-agents]
 description: "Prompts are production code — they change system behavior, they break in production, and they need version control, approval workflows, and rollback capability just like software deployments."
 mermaid: true
+render_with_liquid: false
 ---
 
 At some point every AI team reaches the same inflection point: prompts have multiplied across codebases, config files, Notion docs, and Slack DMs, and nobody knows which version is running in production. A bug report comes in, and the first question — "what prompt triggered this?" — takes three engineers an hour to answer. This is the moment you need a prompt registry, and the longer you wait to build one, the more expensive that moment becomes.
